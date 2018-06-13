@@ -179,3 +179,12 @@ function load_content() {
 	}
     }
 }
+
+/* required functions to include other HTML file templates */
+$(function(){
+    $("#base_generic_top").load("base_generic_top.html"); 
+});
+
+$(function(){
+    $("#base_generic_bottom").load("base_generic_bottom.html"); 
+});

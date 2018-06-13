@@ -149,3 +149,12 @@ function load_content() {
 $(function() {
     $(".bac[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7,before_label:'vorher',after_label:'nachher'});
 });
+
+/* required functions to include other HTML file templates */
+$(function(){
+    $("#base_generic_top").load("base_generic_top.html"); 
+});
+
+$(function(){
+    $("#base_generic_bottom").load("base_generic_bottom.html"); 
+});

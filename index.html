@@ -1,257 +1,293 @@
-{% extends "base_generic.html" %}
-{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Der Polsterer ~ Berlin</title>
 
 
-{% block content %}
-      <div class="row tube_row">
-	<div class="col-sm-12">
-	  <div class="image">
-	    <!--<h4><strong>Der Polsterer - Berlin</strong></h4>-->
-	    <h0>Wir verleihen Ihren Möbeln ein neues Leben!</h0>
-	    <img class="gallery_index" src="{% static 'images/firstpage_narrow.png' %}" alt="workshop picture" width="100%">
-	    <img class="gallery_index" src="{% static 'images/firstpage_narrow2.png' %}" alt="workshop picture" width="100%">
-	    <img class="gallery_index" src="{% static 'images/firstpage_narrow.png' %}" alt="workshop picture" width="100%">
-	  </div>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- add bootstrap JS and CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- import google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif" rel="stylesheet">
+
+  <!-- twentytwenty is for the before/after slider -->
+  <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+  
+  <!-- Add additional CSS in static file -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Include top of document -->
+  <div id="base_generic_top"></div> 
+  <main>
+    
+    <div class="row tube_row">
+      <div class="col-sm-12">
+	<div class="image">
+	  <!--<h4><strong>Der Polsterer - Berlin</strong></h4>-->
+	  <h0>Wir verleihen Ihren Möbeln ein neues Leben!</h0>
+	  <img class="gallery_index" src="images/firstpage_narrow.png" alt="workshop picture" width="100%">
+	  <img class="gallery_index" src="images/firstpage_narrow2.png" alt="workshop picture" width="100%">
+	  <img class="gallery_index" src="images/firstpage_narrow.png" alt="workshop picture" width="100%">
 	</div>
       </div>
+    </div>
 
-      <div class="row tube_row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8" style="text-align:center">
-	  <h1>
-	    Wir sind Ihr Experte in Berlin
-	  </h1>
-	  <p>
-	    <em>
+    <div class="row tube_row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8" style="text-align:center">
+	<h1>
+	  Wir sind Ihr Experte in Berlin
+	</h1>
+	<p>
+	  <em>
 	    An- & Verkauf von Antiquitäten, Restauration und Polsterarbeiten aller Art,<br>
 	    Spezialist für Lederverarbeitung & Raumausstattung
-	    </em>
-	  </p>
+	  </em>
+	</p>
 
-	    <button type="button" class="button" onclick="window.location.href='kontakt'">JETZT KONTAKT AUFNEHMEN</button>
+	<button type="button" class="button" onclick="window.location.href='kontakt'">JETZT KONTAKT AUFNEHMEN</button>
 
-	</div>
-	<div class="col-sm-2"></div>
       </div>
+      <div class="col-sm-2"></div>
+    </div>
 
-      <div class="row bg1">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8 cl" style="text-align:center">
-	  <figure class="three_images">
+    <div class="row bg1">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8 cl" style="text-align:center">
+	<figure class="three_images">
+	  <a href="shop">
+	    <img class="image_small" src="images/antiquitaeten.png" alt="antiquitaeten" width="100%">
+	  </a>
+	  <figcaption>
+	    <strong style="color:rgb(40,90,40);">ANTIQUITÄTEN</strong>
+	    <h4>Unrestaurierte Möbel</h4>
+	  </figcaption>
+	</figure>
+	<figure class="three_images">
+	  <a href="shop">
+	    <img class="image_small" src="images/antiquitaeten.png" alt="antiquitaeten" width="100%">
+	  </a>
+	  <figcaption>
+	    <strong style="color:rgb(40,90,40);">SOFAS, SESSEL & STÜHLE</strong>
+	    <h4>Restaurierte Stilmöbel</h4>
+	  </figcaption>
+	</figure>
+	<figure class="three_images">
+	  <a href="shop">
+	    <img class="image_small" src="images/antiquitaeten.png" alt="antiquitaeten" width="100%">
+	  </a>
+	  <figcaption>
+	    <strong style="color:rgb(40,90,40);">INSPIRATION</strong>
+	    <h4>Schöner Wohnen</h4>
+	  </figcaption>
+	</figure>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+
+
+    <div class="row tube_row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8" style="text-align:center">
+	<h1>
+	  Biedermeier, Jugendstil, Gründerzeit, Barock & Moderne
+	</h1>
+	<s1>
+	  Wir haben ständig eine Auswahl unrestaurierter Möbel in unserem
+	  Lager vorrätig, die nach Ihren Wünschen aufgearbeitet und bezogen
+	  werden können.<br>
+	</s1>
+	<button class="button" onclick="plusDivs(-1,0)" style="float:left;margin-top:120px;">&#10094;</button>
+
+	<div class="image cl">
+	  <figure class="gallery_small">
 	    <a href="shop">
-	      <img class="image_small" src="{% static 'images/antiquitaeten.png' %}" alt="antiquitaeten" width="100%">
+	      <img class="image_small" src="images/02.jpg" alt="workshop picture" width="100%">
 	    </a>
 	    <figcaption>
-	      <strong style="color:rgb(40,90,40);">ANTIQUITÄTEN</strong>
-	      <h4>Unrestaurierte Möbel</h4>
+	      <strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
+	      <h4> Knoll Antimott Sessel 765 €</h4>		
 	    </figcaption>
 	  </figure>
-	  <figure class="three_images">
+
+	  <figure class="gallery_small" style="text-align:center;">
 	    <a href="shop">
-	      <img class="image_small" src="{% static 'images/antiquitaeten.png' %}" alt="antiquitaeten" width="100%">
+	      <img class="image_small" src="images/03.jpg" alt="workshop picture" width="100%">
 	    </a>
 	    <figcaption>
-	      <strong style="color:rgb(40,90,40);">SOFAS, SESSEL & STÜHLE</strong>
-	      <h4>Restaurierte Stilmöbel</h4>
+	      <strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
+	      <h4> Knoll Antimott Sessel <br>765 €</h4>		
 	    </figcaption>
 	  </figure>
-	  <figure class="three_images">
+
+	  <figure class="gallery_small">
 	    <a href="shop">
-	      <img class="image_small" src="{% static 'images/antiquitaeten.png' %}" alt="antiquitaeten" width="100%">
+	      <img class="image_small" src="images/04.jpg" alt="workshop picture" width="100%">
 	    </a>
 	    <figcaption>
-	      <strong style="color:rgb(40,90,40);">INSPIRATION</strong>
-	      <h4>Schöner Wohnen</h4>
+	      <strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
+	      <h4> Knoll Antimott Sessel <br>765 €</h4>		
 	    </figcaption>
 	  </figure>
-	</div>
-	<div class="col-sm-2"></div>
-      </div>
 
-
-      <div class="row tube_row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8" style="text-align:center">
-	  <h1>
-	    Biedermeier, Jugendstil, Gründerzeit, Barock & Moderne
-	  </h1>
-	  <s1>
-	    Wir haben ständig eine Auswahl unrestaurierter Möbel in unserem
-	    Lager vorrätig, die nach Ihren Wünschen aufgearbeitet und bezogen
-	    werden können.<br>
-	  </s1>
-	  <button class="button" onclick="plusDivs(-1,0)" style="float:left;margin-top:120px;">&#10094;</button>
-	  
-	  <div class="image cl">
-	    <figure class="gallery_small">
-	      <a href="shop">
-		<img class="image_small" src="{% static 'images/02.jpg' %}" alt="workshop picture" width="100%">
-	      </a>
-	      <figcaption>
-		<strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
-		<h4> Knoll Antimott Sessel 765 €</h4>		
-	      </figcaption>
-	    </figure>
-
-	    <figure class="gallery_small" style="text-align:center;">
-	      <a href="shop">
-		<img class="image_small" src="{% static 'images/03.jpg' %}" alt="workshop picture" width="100%">
-	      </a>
-	      <figcaption>
-		<strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
-		<h4> Knoll Antimott Sessel <br>765 €</h4>		
-	      </figcaption>
-	    </figure>
-
-	    <figure class="gallery_small">
-	      <a href="shop">
-		<img class="image_small" src="{% static 'images/04.jpg' %}" alt="workshop picture" width="100%">
-	      </a>
-	      <figcaption>
-		<strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
-		<h4> Knoll Antimott Sessel <br>765 €</h4>		
-	      </figcaption>
-	    </figure>
-
-	    <figure class="gallery_small">
-	      <a href="shop">
-		<img class="image_small" src="{% static 'images/05.png' %}" alt="workshop picture" width="100%">
-	      </a>
-	      <figcaption>
-		<strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
-		<h4> Knoll Antimott Sessel <br>765 €</h4>		
-	      </figcaption>
-	    </figure>
-
-	    <figure class="gallery_small">
-	      <a href="shop">
-		<img class="image_small" src="{% static 'images/06.png' %}" alt="workshop picture" width="100%">
-	      </a>
-	      <figcaption>
-		<strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
-		<h4> Knoll Antimott Sessel <br>765 €</h4>		
-	      </figcaption>
-	    </figure>
-
-	    <figure class="gallery_small">
-	      <a href="shop">
-		<img class="image_small" src="{% static 'images/07.jpg' %}" alt="workshop picture" width="100%">
-	      </a>
-	      <figcaption>
-		<strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
-		<h4> Knoll Antimott Sessel <br>765 €</h4>		
-	      </figcaption>
-	    </figure>
-	    
-	    <button class="button" onclick="plusDivs(1,0)" style="float:right;margin-top:120px;">&#10095;</button>
-	  </div>
-	</div>
-	<div class="col-sm-2"></div>
-      </div>
-
-
-      <div class="row bg1 tube_row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8" style="text-align:center">
-	  <figure>
-	    <img src="{% static 'images/quotationmark.png' %}" alt="quote" width="10%" style="margin-top:20px;">
+	  <figure class="gallery_small">
+	    <a href="shop">
+	      <img class="image_small" src="images/05.png" alt="workshop picture" width="100%">
+	    </a>
+	    <figcaption>
+	      <strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
+	      <h4> Knoll Antimott Sessel <br>765 €</h4>		
+	    </figcaption>
 	  </figure>
-	  <h2><em>
+
+	  <figure class="gallery_small">
+	    <a href="shop">
+	      <img class="image_small" src="images/06.png" alt="workshop picture" width="100%">
+	    </a>
+	    <figcaption>
+	      <strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
+	      <h4> Knoll Antimott Sessel <br>765 €</h4>		
+	    </figcaption>
+	  </figure>
+
+	  <figure class="gallery_small">
+	    <a href="shop">
+	      <img class="image_small" src="images/07.jpg" alt="workshop picture" width="100%">
+	    </a>
+	    <figcaption>
+	      <strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
+	      <h4> Knoll Antimott Sessel <br>765 €</h4>		
+	    </figcaption>
+	  </figure>
+
+	  <button class="button" onclick="plusDivs(1,0)" style="float:right;margin-top:120px;">&#10095;</button>
+	</div>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+
+
+    <div class="row bg1 tube_row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8" style="text-align:center">
+	<figure>
+	  <img src="images/quotationmark.png" alt="quote" width="10%" style="margin-top:20px;">
+	</figure>
+	<h2><em>
 	    "Cuptatio ratquis exeribus pro deliqua ecuptate veritia sitaeperiat
 	    quibus se vel ipsum quamusam qui aborrovid molorum vendigenda
 	    doluptia quiam"
-	  </em></h2>
-	  <p style="margin-bottom:20px;">
-	    ~Max Mustermann
-	  </p>
-	</div>
-	<div class="col-sm-2"></div>
+	</em></h2>
+	<p style="margin-bottom:20px;">
+	  ~Max Mustermann
+	</p>
       </div>
+      <div class="col-sm-2"></div>
+    </div>
 
-      
-      <div class="row tube_row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8" style="text-align:center">
-	  <h1>
-	    Unser Know-How
-	  </h1>
-	  <s1>
-	    Erfahren Sie mehr über unser Handwerk. <br>
-	    Profitieren Sie von unserem Wissen über Polstermöbel, Stoffe und Pflege.
-	  </s1>
-	  <p>
-	    <button type="button" class="button" onclick="window.location.href='knowhow'">MEHR</button>
-	  </p>
-	  <figure>
-	    <img src="{% static 'images/polish_narrow.png' %}" alt="quote" style="margin-bottom:20px;">
-	    <figcaption>
-	      <strong style="color:rgb(40,90,40);">PFLEGE</strong>
-	      <h3>So bleiben Möbel schön</h3>
-	      <p style="margin:0 auto;max-width:70%">Arione od quaernam, occae. Cabo. Ga. Abor ad molupti cor re
-		poreiuris eum eatuisd antibus consecepudaipid eictem ratem. Arione
-		od quaernam, occae. Cabo. Ga. Abor ad molupti cor re preiuris
-		eum eatiusd antibus consecepuda volor aut earum et volor aut earum
-		et ab imo.
-	      </p>
-	    </figcaption>
-	  </figure>
-	  <figure class="two_images cl">
-	    <img src="{% static 'images/stoff.png' %}" alt="quote" width="100%" style="margin-bottom:20px;">
-	    <figcaption>
-	      <strong style="color:rgb(40,90,40);">PFLEGE</strong>
-	      <h3>So bleiben Möbel schön</h3>
-	      <p style="margin:0 auto;max-width:70%">Arione od quaernam, occae.
-		Cabo. Ga. Abor ad molupti cor re
-		poreiuris eum eatuisd antibus consecepudaipid eictem ratem.
-	      </p>
-	    </figcaption>
-	  </figure>	  
-	  <figure class="two_images cl">
-	    <img src="{% static 'images/polish_narrow.png' %}" alt="quote" width="100%" style="margin-bottom:20px;">
-	    <figcaption>
-	      <strong style="color:rgb(40,90,40);">STOFFE</strong>
-	      <h3>Stoffe, Leder, Fell</h3>
-	      <p style="margin:0 auto;max-width:70%">Quaernam, occae. Cabo. Ga.
-		Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
-		volor aut earum et ab imo endigentis eniendipid eictem ratem.
-	      </p>
-	    </figcaption>
-	  </figure>
-	</div>
-	<div class="col-sm-2"></div>
+
+    <div class="row tube_row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8" style="text-align:center">
+	<h1>
+	  Unser Know-How
+	</h1>
+	<s1>
+	  Erfahren Sie mehr über unser Handwerk. <br>
+	  Profitieren Sie von unserem Wissen über Polstermöbel, Stoffe und Pflege.
+	</s1>
+	<p>
+	  <button type="button" class="button" onclick="window.location.href='knowhow'">MEHR</button>
+	</p>
+	<figure>
+	  <img src="images/polish_narrow.png" alt="quote" style="margin-bottom:20px;">
+	  <figcaption>
+	    <strong style="color:rgb(40,90,40);">PFLEGE</strong>
+	    <h3>So bleiben Möbel schön</h3>
+	    <p style="margin:0 auto;max-width:70%">Arione od quaernam, occae. Cabo. Ga. Abor ad molupti cor re
+	      poreiuris eum eatuisd antibus consecepudaipid eictem ratem. Arione
+	      od quaernam, occae. Cabo. Ga. Abor ad molupti cor re preiuris
+	      eum eatiusd antibus consecepuda volor aut earum et volor aut earum
+	      et ab imo.
+	    </p>
+	  </figcaption>
+	</figure>
+	<figure class="two_images cl">
+	  <img src="images/stoff.png" alt="quote" width="100%" style="margin-bottom:20px;">
+	  <figcaption>
+	    <strong style="color:rgb(40,90,40);">PFLEGE</strong>
+	    <h3>So bleiben Möbel schön</h3>
+	    <p style="margin:0 auto;max-width:70%">Arione od quaernam, occae.
+	      Cabo. Ga. Abor ad molupti cor re
+	      poreiuris eum eatuisd antibus consecepudaipid eictem ratem.
+	    </p>
+	  </figcaption>
+	</figure>	  
+	<figure class="two_images cl">
+	  <img src="images/polish_narrow.png" alt="quote" width="100%" style="margin-bottom:20px;">
+	  <figcaption>
+	    <strong style="color:rgb(40,90,40);">STOFFE</strong>
+	    <h3>Stoffe, Leder, Fell</h3>
+	    <p style="margin:0 auto;max-width:70%">Quaernam, occae. Cabo. Ga.
+	      Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
+	      volor aut earum et ab imo endigentis eniendipid eictem ratem.
+	    </p>
+	  </figcaption>
+	</figure>
       </div>
+      <div class="col-sm-2"></div>
+    </div>
 
 
-      <div class="row tube_row bg1">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8" style="text-align:center">
-	  <h1>
-	    #derpolsterer
-	  </h1>
-	  <s1>
-	      Wir sehen Sie und hören Ihnen zu. <br>
-	      Ganz einfach Fotos auf Instagram hochladen oder twittern, um dabei zu sein.
-	  </s1><br>
-	  <figure class="four_images cl">
-	    <img src="{% static 'images/couch.png' %}" alt="antiquitaeten" width="100%">
-	  </figure>
-	  <figure class="four_images cl">
-	    <img src="{% static 'images/sessel.png' %}" alt="antiquitaeten" width="100%">
-	  </figure>
-	  <figure class="four_images cl">
-	    <img src="{% static 'images/couch.png' %}" alt="antiquitaeten" width="100%">
-	  </figure>
-	  <figure class="four_images cl">
-	    <img src="{% static 'images/sessel.png' %}" alt="antiquitaeten" width="100%">
-	  </figure>
-	  <p>
-	    <button type="button" class="button" target="_blank" onclick="window.location.href='https:www.instagram.com'">INSTAGRAM</button>
-	  </p>
-	</div>
-	<div class="col-sm-2"></div>
+    <div class="row tube_row bg1">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8" style="text-align:center">
+	<h1>
+	  #derpolsterer
+	</h1>
+	<s1>
+	  Wir sehen Sie und hören Ihnen zu. <br>
+	  Ganz einfach Fotos auf Instagram hochladen oder twittern, um dabei zu sein.
+	</s1><br>
+	<figure class="four_images cl">
+	  <img src="images/couch.png" alt="antiquitaeten" width="100%">
+	</figure>
+	<figure class="four_images cl">
+	  <img src="images/sessel.png" alt="antiquitaeten" width="100%">
+	</figure>
+	<figure class="four_images cl">
+	  <img src="images/couch.png" alt="antiquitaeten" width="100%">
+	</figure>
+	<figure class="four_images cl">
+	  <img src="images/sessel.png" alt="antiquitaeten" width="100%">
+	</figure>
+	<p>
+	  <button type="button" class="button" target="_blank" onclick="window.location.href='https:www.instagram.com'">INSTAGRAM</button>
+	</p>
       </div>
+      <div class="col-sm-2"></div>
+    </div>
 
-      <script type="text/javascript" src="{% static 'js/scripts_index.js' %}"></script>
+    <!-- Include bottom of document -->
+    <div id="base_generic_bottom"></div> 
 
-      {% endblock %}
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="js/scripts_index.js"></script>
+  </main>
+</body>
+
+</html>
+
+
       

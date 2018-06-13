@@ -1,18 +1,44 @@
-{% extends "base_generic.html" %}
-{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Der Polsterer ~ Berlin</title>
 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% block content %}
+  <!-- add bootstrap JS and CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<div class="page_id" id="leistungen">
+  <!-- import google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif" rel="stylesheet">
+
+  <!-- twentytwenty is for the before/after slider -->
+  <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+  
+  <!-- Add additional CSS in static file -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Include top of document -->
+  <div id="base_generic_top"></div> 
+  <main>
+
+    <div class="page_id" id="leistungen">
       <div class="row">
 	<div class="col-sm-12">
 	  <div class="image">
-	    <img src="{% static 'images/front_narrow.png' %}" alt="front store picture" width="100%">
+	    <img src="images/front_narrow.png" alt="front store picture" width="100%">
 	  </div>
 	</div>
       </div>
-
+      
       <div class="row">
 	<div class="col-sm-12 breadcrumb">
 	  HOME // LEISTUNGEN
@@ -26,7 +52,7 @@
 	    Individuelle Beratung
 	  </h1>
 	  <figure class="seven_images cl">
-	    <img src="{% static 'images/beratung_01.png' %}" class="image_row" alt="placeholder" width="100%">
+	    <img src="images/beratung_01.png" class="image_row" alt="placeholder" width="100%">
 	    <figcaption>
 	      <h4>1. Beratung</h4>
 	      Vor Ort bei uns, bei Ihnen zuhause oder am Telefon: Sie sagen uns,
@@ -35,10 +61,10 @@
 	    </figcaption>
 	  </figure>
 	  <figure class="seven_images cl" style="margin-top:5%">
-	    <img src="{% static 'images/beratung_pfeil.png' %}" alt="placeholder" width="20%">
+	    <img src="images/beratung_pfeil.png" alt="placeholder" width="20%">
 	  </figure>
 	  <figure class="seven_images cl">
-	    <img src="{% static 'images/beratung_02.png' %}" class="image_row" alt="placeholder" width="100%">
+	    <img src="images/beratung_02.png" class="image_row" alt="placeholder" width="100%">
 	    <figcaption>
 	      <h4>2. Vermaßung</h4>
 	      Dann messen wir Ihre Möbel aus und besprechen optionale Verarbeitung wie
@@ -46,10 +72,10 @@
 	    </figcaption>
 	  </figure>
 	  <figure class="seven_images cl" style="margin-top:5%">
-	    <img src="{% static 'images/beratung_pfeil.png' %}" alt="placeholder" width="20%">
+	    <img src="images/beratung_pfeil.png" alt="placeholder" width="20%">
 	  </figure>
 	  <figure class="seven_images cl">
-	    <img src="{% static 'images/beratung_03.png' %}" class="image_row" alt="placeholder" width="100%">
+	    <img src="images/beratung_03.png" class="image_row" alt="placeholder" width="100%">
 	    <figcaption>
 	      <h4>3. Bezugsstoff</h4>
 	      Jetzt geht es um die Farbe. Suchen Sie sich aus unserer großen Auswahl
@@ -58,10 +84,10 @@
 	    </figcaption>
 	  </figure>
 	  <figure class="seven_images cl" style="margin-top:5%">
-	    <img src="{% static 'images/beratung_pfeil.png' %}" alt="placeholder" width="20%">
+	    <img src="images/beratung_pfeil.png" alt="placeholder" width="20%">
 	  </figure>
 	  <figure class="seven_images cl">
-	    <img src="{% static 'images/beratung_04.png' %}" class="image_row" alt="placeholder" width="100%">
+	    <img src="images/beratung_04.png" class="image_row" alt="placeholder" width="100%">
 	    <figcaption>
 	      <h4>4. Verarbeitung</h4>
 	      Nun sind wir gefragt! Wir vereinbaren einen Termin zur Abholung und
@@ -91,8 +117,8 @@
 	    <div class="col-sm-2"></div>
 	    <div class="col-sm-4" style="text-align:right">
 	      <div id="container_ba" class="bac">
-		<img src="{% static 'images/vorher.png' %}">
-		<img src="{% static 'images/nachher.png' %}">
+		<img src="images/vorher.png">
+		<img src="images/nachher.png">
 	      </div>
 	    </div>
 	    <div class="col-sm-4">
@@ -118,7 +144,7 @@
 	    Raumausstattung zum Wohlfühlen
 	  </h1>
 	  <figure class="four_images cl">
-	    <img src="{% static 'images/raum_01.png' %}" class="image_row" alt="placeholder" width="100%">
+	    <img src="images/raum_01.png" class="image_row" alt="placeholder" width="100%">
 	    <figcaption>
 	      <h4>Aufarbeitung</h4>
 	      Ein vorhandenes Polstermöbel wird auf Wunsch aufgearbeitet. Zu einem
@@ -127,7 +153,7 @@
 	    </figcaption>
 	  </figure>
 	  <figure class="four_images cl">
-	    <img src="{% static 'images/raum_02.png' %}" class="image_row" alt="placeholder" width="100%">
+	    <img src="images/raum_02.png" class="image_row" alt="placeholder" width="100%">
 	    <figcaption>
 	      <h4>Anfertigung</h4>
 	      Mit Ihnen gemeinsam entwerfen wir auf Wunsch ein Sofa für die "Problemecke"
@@ -136,7 +162,7 @@
 	    </figcaption>
 	  </figure>
 	  <figure class="four_images cl">
-	    <img src="{% static 'images/raum_03.png' %}" class="image_row" alt="placeholder" width="100%">
+	    <img src="images/raum_03.png" class="image_row" alt="placeholder" width="100%">
 	    <figcaption>
 	      <h4>Restauration</h4>
 	      Holzteile an Polstermöbeln oder ganze Holzmöbel werden von uns im Detail
@@ -144,7 +170,7 @@
 	    </figcaption>
 	  </figure>
 	  <figure class="four_images cl">
-	    <img src="{% static 'images/raum_04.png' %}" class="image_row" alt="placeholder" width="100%">
+	    <img src="images/raum_04.png" class="image_row" alt="placeholder" width="100%">
 	    <figcaption>
 	      <h4>Polsterrestaurierung</h4>
 	      Eine unserer Spezialitäten ist die Polsterrestaurierung.
@@ -163,7 +189,7 @@
 	  <div class="row">
 	    <div class="col-sm-2"></div>
 	    <div class="col-sm-4" style="text-align:right">
-	      <img src="{% static 'images/placeholder.png' %}" alt="placeholder" width="50%">
+	      <img src="images/placeholder.png" alt="placeholder" width="50%">
 	    </div>
 	    <div class="col-sm-4">
 	      <p style="text-align:left">
@@ -193,12 +219,12 @@
 
 	  <div class="row tube_row">
 	    <div class="col-sm-8" style="text-align:right">
-	      <img src="{% static 'images/placeholder.png' %}" alt="placeholder" width="60%">
+	      <img src="images/placeholder.png" alt="placeholder" width="60%">
 	    </div>
 	    <div class="col-sm-4" style="text-align:left">
-	      <img src="{% static 'images/placeholder.png' %}" alt="placeholder" width="40%"><br>
-	      <img src="{% static 'images/placeholder.png' %}" alt="placeholder" width="40%"><br>
-	      <img src="{% static 'images/placeholder.png' %}" alt="placeholder" width="40%">
+	      <img src="images/placeholder.png" alt="placeholder" width="40%"><br>
+	      <img src="images/placeholder.png" alt="placeholder" width="40%"><br>
+	      <img src="images/placeholder.png" alt="placeholder" width="40%">
 	    </div>
 	  </div>
 	  
@@ -252,7 +278,7 @@
 	  <s1>
 	      Das haben wir alles schon gemacht. Blättern Sie durch unseren Online-Katalog.
 	  </s1>
-	  <img src="{% static 'images/placeholder.png' %}" alt="placeholder" width="40%" style="margin-top:20px">
+	  <img src="images/placeholder.png" alt="placeholder" width="40%" style="margin-top:20px">
 	</div>
 	<div class="col-sm-2"></div>
       </div>
@@ -269,16 +295,16 @@
 	      Ganz einfach Fotos auf Instagram hochladen oder twittern, um dabei zu sein.
 	  </s1>
 	  <figure class="four_images cl">
-	    <img src="{% static 'images/couch.png' %}" alt="antiquitaeten" width="100%">
+	    <img src="images/couch.png" alt="antiquitaeten" width="100%">
 	  </figure>
 	  <figure class="four_images cl">
-	    <img src="{% static 'images/sessel.png' %}" alt="antiquitaeten" width="100%">
+	    <img src="images/sessel.png" alt="antiquitaeten" width="100%">
 	  </figure>
 	  <figure class="four_images cl">
-	    <img src="{% static 'images/couch.png' %}" alt="antiquitaeten" width="100%">
+	    <img src="images/couch.png" alt="antiquitaeten" width="100%">
 	  </figure>
 	  <figure class="four_images cl">
-	    <img src="{% static 'images/sessel.png' %}" alt="antiquitaeten" width="100%">
+	    <img src="images/sessel.png" alt="antiquitaeten" width="100%">
 	  </figure>
 	  <p>
 	    <button type="button" class="button" target="_blank" onclick="window.location.href='https:www.instagram.com'">INSTAGRAM</button>
@@ -286,13 +312,16 @@
 	</div>
 	<div class="col-sm-2"></div>
       </div>
-</div>
-<script
-   src="https://code.jquery.com/jquery-3.2.1.js"
-   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-   crossorigin="anonymous"></script>
+    </div>
 
-<script type="text/javascript" src="{% static 'js/jquery.twentytwenty.js' %}"></script>
-<script type="text/javascript" src="{% static 'js/jquery.event.move.js' %}"></script>
-<script type="text/javascript" src="{% static 'js/scripts_leistungen.js' %}"></script>      
-{% endblock %}
+    <!-- Include bottom of document -->
+    <div id="base_generic_bottom"></div> 
+  </main>
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript" src="js/jquery.twentytwenty.js"></script>
+  <script type="text/javascript" src="js/jquery.event.move.js"></script>
+  <script type="text/javascript" src="js/scripts_leistungen.js"></script>      
+</body>
+</html>

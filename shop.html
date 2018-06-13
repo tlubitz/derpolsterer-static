@@ -1,40 +1,70 @@
-{% extends "base_generic.html" %}
-{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Der Polsterer ~ Berlin</title>
 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% block content %}
+  <!-- add bootstrap JS and CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<div class="page_id" id="shop">
+  <!-- import google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif" rel="stylesheet">
 
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="image">
-	<img src="{% static 'images/front_narrow.png' %}" alt="front store picture" width="100%">
+  <!-- twentytwenty is for the before/after slider -->
+  <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+  
+  <!-- Add additional CSS in static file -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Include top of document -->
+  <div id="base_generic_top"></div> 
+  <main>
+
+    <div class="page_id" id="shop">
+      <div class="row">
+	<div class="col-sm-12">
+	  <div class="image">
+	    <img src="images/front_narrow.png" alt="front store picture" width="100%">
+	  </div>
+	</div>
+      </div>
+      
+      <div class="row">
+	<div class="col-sm-12 breadcrumb">
+	  HOME // SHOP
+	</div>
+      </div>
+      
+      <div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8" style="text-align:center">
+	  <h1>
+	    
+	  </h1>
+	  <s1><p>
+	  </p></s1>
+	</div>
+	<div class="col-sm-2"></div>
       </div>
     </div>
-  </div>
+    
+    <!-- Include bottom of document -->
+    <div id="base_generic_bottom"></div>
+  </main>
 
-  <div class="row">
-    <div class="col-sm-12 breadcrumb">
-      HOME // SHOP
-    </div>
-  </div>
-  
-  <div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8" style="text-align:center">
-      <h1>
-	
-      </h1>
-      <s1><p>
-      </p></s1>
-      
-    </div>
-    <div class="col-sm-2"></div>
-  </div>
-  
-</div>
-      
-      <script type="text/javascript" src="{% static 'js/scripts_shop.js' %}"></script>  
-      
-{% endblock %}
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript" src="js/scripts_shop.js"></script>  
+</body>
+</html>
+
+

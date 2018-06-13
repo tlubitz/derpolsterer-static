@@ -1,14 +1,40 @@
-{% extends "base_generic.html" %}
-{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Der Polsterer ~ Berlin</title>
 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% block content %}
-<div class="page_id" id="derpolsterer">
+  <!-- add bootstrap JS and CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- import google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif" rel="stylesheet">
+
+  <!-- twentytwenty is for the before/after slider -->
+  <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+  
+  <!-- Add additional CSS in static file -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Include top of document -->
+  <div id="base_generic_top"></div> 
+  <main>
+
+    <div class="page_id" id="derpolsterer">
       <div class="row">
 	<div class="col-sm-12">
 	  <div class="image">
-	    <img src="{% static 'images/front_narrow.png' %}" alt="front store picture" width="100%">
+	    <img src="images/front_narrow.png" alt="front store picture" width="100%">
 	  </div>
 	</div>
       </div>
@@ -18,7 +44,7 @@
 	  HOME // DER POLSTERER
       	</div>
       </div>
-
+      
       <div class="row tube_row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8" style="text-align:center">
@@ -69,21 +95,21 @@
 	      sowie ein paar Einblicke in unser Ladenlokal.
 	  </s1><br>
 	  <figure class="three_images cl">
-	    <img src="{% static 'images/placeholder.png' %}" alt="antiquitaeten" width="100%" style="margin-bottom:10px;">
+	    <img src="images/placeholder.png" alt="antiquitaeten" width="100%" style="margin-bottom:10px;">
 	    <figcaption>
 	      <strong style="color:rgb(40,90,40);">ANTIQUITÄTEN</strong>
 	      <h4>Unrestaurierte Möbel</h4>
 	    </figcaption>
 	  </figure>
 	  <figure class="three_images cl">
-	    <img src="{% static 'images/placeholder.png' %}" alt="antiquitaeten" width="100%" style="margin-bottom:10px;">
+	    <img src="images/placeholder.png" alt="antiquitaeten" width="100%" style="margin-bottom:10px;">
 	    <figcaption>
 	      <strong style="color:rgb(40,90,40);">SOFAS, SESSEL & STÜHLE</strong>
 	      <h4>Restaurierte Stilmöbel</h4>
 	    </figcaption>
 	  </figure>
 	  <figure class="three_images cl">
-	    <img src="{% static 'images/placeholder.png' %}" alt="antiquitaeten" width="100%" style="margin-bottom:10px;">
+	    <img src="images/placeholder.png" alt="antiquitaeten" width="100%" style="margin-bottom:10px;">
 	    <figcaption>
 	      <strong style="color:rgb(40,90,40);">UNSERE WERKSTATT</strong>
 	      <h4>Hier arbeiten wir</h4>
@@ -107,7 +133,7 @@
 	  <p>
 	    <button type="button" class="button" onclick="window.location.href='kontakt'">JETZT KONTAKT AUFNEHMEN</button>
 	  </p>
-	  <img src="{% static 'images/front_narrow.png' %}" alt="front store picture" width="80%">
+	  <img src="images/front_narrow.png" alt="front store picture" width="80%">
   
 	</div>
 	<div class="col-sm-2"></div>
@@ -124,16 +150,16 @@
 	      Ganz einfach Fotos auf Instagram hochladen oder twittern, um dabei zu sein.
 	  </em></h3>
 	  <figure class="four_images cl">
-	    <img src="{% static 'images/placeholder.png' %}" alt="antiquitaeten" width="100%">
+	    <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
 	  </figure>
 	  <figure class="four_images cl">
-	    <img src="{% static 'images/placeholder.png' %}" alt="antiquitaeten" width="100%">
+	    <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
 	  </figure>
 	  <figure class="four_images cl">
-	    <img src="{% static 'images/placeholder.png' %}" alt="antiquitaeten" width="100%">
+	    <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
 	  </figure>
 	  <figure class="four_images cl">
-	    <img src="{% static 'images/placeholder.png' %}" alt="antiquitaeten" width="100%">
+	    <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
 	  </figure>
 	  <p>
 	    <button type="button" class="button" target="_blank" onclick="window.location.href='https:www.instagram.com'">INSTAGRAM</button>
@@ -141,8 +167,17 @@
 	</div>
 	<div class="col-sm-2"></div>
       </div>
-</div>
+    </div>
+    
+    <!-- Include bottom of document -->
+    <div id="base_generic_bottom"></div> 
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="js/scripts_derpolsterer.js"></script>  
+  </main>
+</body>
+</html>
 
-<script type="text/javascript" src="{% static 'js/scripts_derpolsterer.js' %}"></script>  
+
+
+
       
-{% endblock %}

@@ -1,365 +1,395 @@
-{% extends "base_generic.html" %}
-{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Der Polsterer ~ Berlin</title>
 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% block content %}
-
-<div class="page_id" id="shop">
-
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="image">
-	<img src="{% static 'images/front_narrow.png' %}" alt="front store picture" width="100%">
-      </div>
-    </div>
-  </div>
+  <!-- add bootstrap JS and CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   
-  <div class="row">
-    <div class="col-sm-12 breadcrumb">
-      HOME // IMPRESSUM
-    </div>
-  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- import google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif" rel="stylesheet">
+
+  <!-- twentytwenty is for the before/after slider -->
+  <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
   
-  <article id="impressum" style="margin-bottom:40px">
-    <div class="row">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8" style="text-align:center">
-	<h3>
-	  Impressum
-	</h3>
-	<p>
-	  <h4>Angaben gemäß § 5 TMG</h4>
- 	  Manfred Kranz<br>
-	  Raumausstattung Kranz<br>
-	  Bänschstrasse 50<br>
-	  10247 Berlin
-	</p>
-	<p>
-	  <h4>Kontakt</h4>
-	  Telefon: +49 (0) 30 417 21 866<br>
-	  Telefax: +49 (0) 30 417 24 715<br>
-	  Email: &#107;<!--. . .e2e @ ,-->&#114;&#097;<!--@23.. @ ,-->&#110;&#122;&#064;<!--.@@@.dswl @ ,-->&#100;<!--,d,dw..w @ ,-->&#101;&#114;<!--,d,a@..@@ @ ,..-->&#112;&#111;<!--. @ ,@-->&#108;&#115;&#116;&#101;<!--@ @ ##,#-->&#114;&#101;&#114;&#045;&#098;<!--@##%23 @ ,-->&#101;&#114;&#108;<!--oks.. -- .@ ,-->&#105;&#110;&#046;&#100;<!--@.. @-s. ,-->&#101;
-	</p>
-	<p>
-	  Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: DE 236779579
-	  Aufsichtsbehörde: Handwerkskammer Berlin<br>
-	  Angaben zur Berufshaftpflichtversicherung:<br>
-	  Name und Sitz der Gesellschaft: Allianz Versicherung, An den Treptowers 3, 12435 Berlin<br>
-	  Geltungsraum der Versicherung: Deutschland
-	</p>
+  <!-- Add additional CSS in static file -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Include top of document -->
+  <div id="base_generic_top"></div> 
+  <main>
+    
+    <div class="page_id" id="shop">
+      <div class="row">
+	<div class="col-sm-12">
+	  <div class="image">
+	    <img src="images/front_narrow.png" alt="front store picture" width="100%">
+	  </div>
+	</div>
       </div>
-      <div class="col-sm-2"></div>
-    </div>
-  </article>
-
-  <article id="disclaimer" style="margin-bottom:40px">
-    <div class="row">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8" style="text-align:left">
-	<h3>
-	  Disclaimer / Haftungsausschluss
-	</h3>
-	<p>
-	  <h4>Haftung für Inhalte</h4>
-	  Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
-	</p>
-	<p>
-	  <h4>Haftung für Links</h4>
-	  Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
-	</p>
-	<p>
-	  <h4>Urheberrecht</h4>
-	  Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
-	</p>
-      </div>
-      <div class="col-sm-2"></div>
-    </div>
-  </article>
-
-  <article id="lzb" style="margin-bottom:40px">
-    <div class="row">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8" style="text-align:left">
-	<h3>
-	  Liefer- und Zahlungsbedingungen
-	</h3>
-	<p>
-	  <h4>Deutschland</h4>
-	  Bezahlmethoden: PayPal (Kreditkarte, Lastschrift, Überweisung); Bei Auswahl dieser Zahlungsart erfolgt im nächsten Schritt die Weiterleitung zu PayPal. Wenn dort die erforderlichen Daten eingetragen worden sind, geht es automatisch zurück in diesen Shop, um die Bestellung abzuschließen.
-	</p>
-	<p>
-	  <h4>Ausland</h4>
-	  Bei Lieferungen in das Ausland können Zölle, Steuern und Gebühren anfallen, die im angezeigten Gesamtpreis nicht enthalten sind.
-	</p>
-      </div>
-      <div class="col-sm-2"></div>
-    </div>
-  </article>
-
-  <article id="agb" style="margin-bottom:40px">
-    <div class="row">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8" style="text-align:left">
-	<h3>
-	  Allgemeine Geschäftsbedingungen (AGB)
-	</h3>
-	<p>
-	  <h4>§1 Geltung gegenüber Unternehmern und Begriffsdefinitionen</h4>
-	  (1) Die nachfolgenden Allgemeinen Geschäftbedingungen gelten für alle Lieferungen zwischen uns und einem Verbraucher in ihrer zum Zeitpunkt der Bestellung gültigen Fassung.<br>
-	  Verbraucher ist jede natürliche Person, die ein Rechtsgeschäft zu Zwecken abschließt, die überwiegend weder ihrer gewerblichen noch ihrer selbständigen beruflichen Tätigkeit zugerechnet werden können (§ 13 BGB).
-	</p>
-	<p>
-	  <h4>§2 Zustandekommen eines Vertrages, Speicherung des Vertragstextes</h4>
-	  (1) Die folgenden Regelungen über den Vertragsabschluss gelten für Bestellungen über unseren Internetshop http://derpolsterer.jimdo.com/<br>
-	  (2) Im Falle des Vertragsschlusses kommt der Vertrag mit<br><br>
-	  Der Polsterer<br>
-	  Manfred Kranz<br>
-	  Bänschstr.50<br>
-	  D-10247 Berlin<br><br>
-	  zustande.<br>
-	  (3) Die Präsentation der Waren in unserem Internetshop stellen kein rechtlich bindendes Vertragsangebot unsererseits dar, sondern sind nur eine unverbindliche Aufforderungen an den Verbraucher, Waren zu bestellen. Mit der Bestellung der gewünschten Ware gibt der Verbraucher ein für ihn verbindliches Angebot auf Abschluss eines Kaufvertrages ab.<br>
-	  Die Annahme des Angebots erfolgt schriftlich oder in Textform oder durch Übersendung der bestellten Ware innerhalb von einer Woche. Nach fruchtlosem Ablauf der Frist gilt das Angebot als abgelehnt.<br>
-	  (4) Bei Eingang einer Bestellung in unserem Internetshop gelten folgende Regelungen: Der Verbraucher gibt ein bindendes Vertragsangebot ab, indem er die in unserem Internetshop vorgesehene Bestellprozedur erfolgreich durchläuft.<br>
-	  Die Bestellung erfolgt in folgenden Schritten:<br><br>
-	  1) Auswahl der gewünschten Ware<br>
-	  2) Bestätigen durch Anklicken der Buttons „Bestellen“<br>
-	  3) Prüfung der Angaben im Warenkorb<br>
-	  4) Betätigung des Buttons „zur Kasse“<br>
-	  5) Verbindliche Absendung der Bestellung durch Anklicken des Buttons „kostenpflichtig bestellen“ bzw. „kaufen“<br><br>
-	  Der Verbraucher kann vor dem verbindlichen Absenden der Bestellung durch Betätigen der in dem von ihm verwendeten Internet-Browser enthaltenen „Zurück“-Taste nach Kontrolle seiner Angaben wieder zu der Internetseite gelangen, auf der die Angaben des Kunden erfasst werden und Eingabefehler berichtigen bzw. durch Schließen des Internetbrowsers den Bestellvorgang abbrechen. Wir bestätigen den Eingang der Bestellung unmittelbar durch eine automatisch generierte E-Mail (Eingangsbestätigung). Diese stellt noch keine Annahme des Angebotes dar. Die Annahme des Angebots erfolgt schriftlich, in Textform oder durch Übersendung der bestellten Ware innerhalb einer Woche.<br>
-	  (5) Speicherung des Vertragstextes bei Bestellungen über unseren Internetshop : Wir senden Ihnen die Bestelldaten und unsere AGB per E-Mail zu. Die AGB können Sie jederzeit auch unter http://derpolsterer.jimdo.com/j/shop/terms einsehen. Ihre Bestelldaten sind aus Sicherheitsgründen nicht mehr über das Internet zugänglich.
-	</p>
-	<p>
-	  <h4>§3 Preise, Versandkosten, Zahlung, Fälligkeit</h4>
-	  (1) Die angegebenen Preise enthalten die gesetzliche Umsatzsteuer und sonstige Preisbestandteile. Hinzu kommen etwaige Versandkosten.<br>
-	  (2) Der Verbraucher hat die Möglichkeit der Zahlung per Vorkasse, Nachnahme, PayPal.<br>
-	  (3) Hat der Verbraucher die Zahlung per Vorkasse gewählt, so verpflichtet er sich, den Kaufpreis unverzüglich nach Vertragsschluss zu zahlen. Soweit wir per Nachnahme liefern, tritt die Fälligkeit der Kaufpreisforderung mit Erhalt der Ware ein.
-	</p>
-	<p>
-	  <h4>§4 Lieferung</h4>
-	  (1) Sofern wir dies in der Produktbeschreibung nicht deutlich anders angegeben haben, sind alle von uns angebotenen Artikel sofort versandfertig. Die Lieferung erfolgt hier spätesten innerhalb von 5 Werktagen. Dabei beginnt die Frist für die Lieferung im Falle der Zahlung per Vorkasse am Tag nach Zahlungsauftrag an die mit der Überweisung beauftragte Bank und bei allen anderen Zahlungsarten am Tag nach Vertragsschluss zu laufen. Fällt das Fristende auf einen Samstag, Sonntag oder gesetzlichen Feiertag am Lieferort, so endet die Frist am nächsten Werktag.<br>
-	  (2) Die Gefahr des zufälligen Untergangs und der zufälligen Verschlechterung der verkauften Sache geht auch beim Versendungskauf erst mit der Übergabe der Sache an den Käufer auf diesen über.
-	</p>
-	<p>
-	  <h4>§5 Eigentumsvorbehalt</h4>
-	  Wir behalten uns das Eigentum an der Ware bis zur vollständigen Bezahlung des Kaufpreises vor.
-	</p>
-      </div>
-      <div class="col-sm-2"></div>
-    </div>
-  </article>
-
-  <article id="wrb" style="margin-bottom:40px">
-    <div class="row">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8" style="text-align:left">
-	<h3>
-	  Widerrufsbelehrung
-	</h3>
-	<p>
-	  <h4>Widerrufsrecht</h4>
-	  Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag an dem Sie oder ein von Ihnen benannter Dritter, der nicht der Beförderer ist, die Waren in Besitz genommen haben bzw. hat. 
-Um Ihr Widerrufsrecht auszuüben, müssen Sie uns,<br><br>
-
- 	  Manfred Kranz<br>
-	  Bänschstrasse 50<br>
-	  10247 Berlin<br>
-	  Telefon: +49 (0) 30 417 21 866<br>
-	  Telefax: +49 (0) 30 417 24 715<br>
-	  Mobil: +49 (0) 172 276 41 95<br>
-	  Email: &#107;<!--. . .e2e @ ,-->&#114;&#097;<!--@23.. @ ,-->&#110;&#122;&#064;<!--.@@@.dswl @ ,-->&#100;<!--,d,dw..w @ ,-->&#101;&#114;<!--,d,a@..@@ @ ,..-->&#112;&#111;<!--. @ ,@-->&#108;&#115;&#116;&#101;<!--@ @ ##,#-->&#114;&#101;&#114;&#045;&#098;<!--@##%23 @ ,-->&#101;&#114;&#108;<!--oks.. -- .@ ,-->&#105;&#110;&#046;&#100;<!--@.. @-s. ,-->&#101;,<br><br>
-
-	  mittels einer eindeutigen Erklärung (z.B. ein mit der Post versandter Brief, Telefax oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür das Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.
-	</p>
-	<p>
-	  <h4>Folgen des Widerrufs</h4>
-	  Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Lieferkosten (mit Ausnahme der zusätzlichen Kosten, die sich daraus ergeben, dass Sie eine andere Art der Lieferung als die von uns angebotene, günstigste Standardlieferung gewählt haben), unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf dieses Vertrags bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart; in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet.Wir können die Rückzahlung verweigern,bis wir die Waren wieder zurückerhalten haben oder bis Sie den Nachweis erbracht haben,dass Sie die Waren zurückgesandt haben, je nachdem, welches der frühere Zeitpunkt ist.<br>
-	  Sie haben die Waren unverzüglich und in jedem Fall spätestens binnen vierzehn Tagen ab dem Tag, an dem Sie uns über den Widerruf dieses Vertrags unterrichten,an uns zurückzusenden oder zu übergeben. Die Frist ist gewahrt, wenn Sie die Waren vor Ablauf der Frist von vierzehn Tagen absenden.Sie tragen die unmittelbaren Kosten der Rücksendung der Waren.
-	</p>
-      </div>
-      <div class="col-sm-2"></div>
-    </div>
-  </article>
-
-  <article id="datenschutz" style="margin-bottom:40px">
-    <div class="row">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8" style="text-align:left">
-	<h3>
-	  Datenschutz
-	</h3>
-	<p>
-	  <h4>Datenschutzerklärung</h4>
-	  Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.<br>
-	  Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.<br>
-	  Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
-	</p>
-	<p>
-	  <h4>Datenschutzerklärung für die Nutzung von Facebook-Plugins (Like-Button)</h4>
-	  Auf unseren Seiten sind Plugins des sozialen Netzwerks Facebook, Anbieter Facebook Inc., 1 Hacker Way, Menlo Park, California 94025, USA, integriert. Die Facebook-Plugins erkennen Sie an dem Facebook-Logo oder dem "Like-Button" ("Gefällt mir") auf unserer Seite. Eine Übersicht über die Facebook-Plugins finden Sie hier: http://developers.facebook.com/docs/plugins/.<br>
-	  Wenn Sie unsere Seiten besuchen, wird über das Plugin eine direkte Verbindung zwischen Ihrem Browser und dem Facebook-Server hergestellt. Facebook erhält dadurch die Information, dass Sie mit Ihrer IP-Adresse unsere Seite besucht haben. Wenn Sie den Facebook "Like-Button" anklicken während Sie in Ihrem Facebook-Account eingeloggt sind, können Sie die Inhalte unserer Seiten auf Ihrem Facebook-Profil verlinken. Dadurch kann Facebook den Besuch unserer Seiten Ihrem Benutzerkonto zuordnen. Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie deren Nutzung durch Facebook erhalten. Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Facebook unter http://de-de.facebook.com/policy.php.<br>
-	  Wenn Sie nicht wünschen, dass Facebook den Besuch unserer Seiten Ihrem Facebook- Nutzerkonto zuordnen kann, loggen Sie sich bitte aus Ihrem Facebook-Benutzerkonto aus.
-	</p>
-	<p>
-	  <h4>Auskunft, Löschung, Sperrung</h4>
-	  Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden.
-	</p>
-	<p>
-	  <h4>Kontaktformular</h4>
-	  Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
-	</p>
-	<p>
-	  <h4>Google Analytics Ergänzung</h4>
-	  Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. („Google“). Google Analytics verwendet sog. „Cookies“, Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Im Falle der Aktivierung der IP-Anonymisierung auf dieser Webseite, wird Ihre IP-Adresse von Google jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Websitebetreiber zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt. Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem Sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: http://tools.google.com/dlpage/gaoptout<br>
-	  Sie können die Erfassung durch Google Analytics verhindern, indem Sie auf folgenden Link klicken. Es wird ein Opt-Out-Cookie gesetzt, der die zukünftige Erfassung Ihrer Daten beim Besuch dieser Website verhindert.<br>
-	  Nähere Informationen zu Nutzungsbedingungen und Datenschutz finden Sie unter den Google Analytics Bedingungen bzw. unter der Google Analytics Übersicht. Wir weisen Sie darauf hin, dass auf dieser Webseite Google Analytics um den Code "gat._anonymizeIp();" erweitert wurde, um eine anonymisierte Erfassung von IP-Adressen (sog. IP-Masking) zu gewährleisten.
-	</p>
-	<p>
-	  <h4>reCAPTCHA</h4>
-	  Zum Schutz Ihrer Anfragen per Internetformular verwenden wir den Dienst reCAPTCHA des Unternehmens Google Inc. (Google). Die Abfrage dient der Unterscheidung, ob die Eingabe durch einen Menschen oder missbräuchlich durch automatisierte, maschinelle Verarbeitung erfolgt. Die Abfrage schließt den Versand der IP-Adresse und ggf. weiterer von Google für den Dienst reCAPTCHA benötigter Daten an Google ein. Zu diesem Zweck wird Ihre Eingabe an Google übermittelt und dort weiter verwendet. Ihre IP-Adresse wird von Google jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung dieses Dienstes auszuwerten. Die im Rahmen von reCaptcha von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt. Für diese Daten gelten die abweichenden Datenschutzbestimmungen des Unternehmens Google. Weitere Informationen zu den Datenschutzrichtlinien von Google finden Sie unter: https://policies.google.com/privacy?hl=de
-	</p>
-      </div>
-      <div class="col-sm-2"></div>
-    </div>
-  </article>
-  
-  <article id="cookies" style="margin-bottom:40px">
-    <div class="row">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8" style="text-align:left">
-	<h3>
-	  Cookie policy
-	</h3>
-	<p>
-	  Mit dieser Cookie Richtlinie informiert der Website-Betreiber den Nutzer der Website über den Einsatz von Cookies oder ähnlichen Speichertechnologien (nachfolgend „Cookies“) auf dieser Website.
-	  <h4>Was sind Cookies?</h4>
-	  Cookies sind kleine Textdateien, die vom Webbrowser auf dem Endgerät des Nutzers zur Speicherung von bestimmten Informationen abgelegt werden. Beim nächsten Aufruf unserer Website mit demselben Endgerät werden die in Cookies gespeicherten Informationen an unsere Website („First Party Cookie“) oder eine andere Website, zu der das Cookie gehört („Third Party Cookie“), zurückgesandt.<br>
-	  Durch die im Cookie gespeicherten und zurückgesandten Informationen erkennt die jeweilige Website, dass der Nutzer diese mit dem Webbrowser seines Endgeräts bereits aufgerufen und besucht hat. Diese Informationen nutzen wir, um dem Nutzer die Website gemäß seinen Präferenzen optimal anzeigen zu können.<br>
-	  Es wird hierbei aber nur das Cookie selbst auf dem Endgerät identifiziert. Eine darüber hinausgehende Speicherung von personenbezogenen Daten erfolgt nur, wenn der Nutzer uns seine ausdrückliche Zustimmung dafür gibt oder wenn diese Speicherung unbedingt erforderlich ist, um den angebotenen und aufgerufenen Dienst nutzen zu können.
-	</p>
-	<p>
-	  <h4>Zustimmung zur Verwendung von Cookies</h4>
-	  Cookies, die nicht unbedingt erforderlich sind, um die Dienste auf dieser Website zur Verfügung zu stellen, werden erst nach der Einwilligung verwendet. Indem der Nutzer diese Website nach dem Einblenden des Cookie-Banners aktiv weiter nutzt, willigt er in die Verwendung von Cookies ein.<br>
-	  Seine Cookie Einstellungen kann der Nutzer jederzeit individuell anpassen, indem er zum Beispiel einzelne Cookie-Kategorien aktiviert oder deaktiviert.<br>
-	  Wie der Nutzer Cookies generell (inklusive der unbedingt erforderlichen Cookies) in seinem Browser deaktivieren oder löschen kann, wird unter Punkt 4 beschrieben.<br>
-	  Je nach Verwendungszweck und Funktion unterteilen wir die von der Website verwendeten Cookies in die folgenden Kategorien:<br><br>
-	  Unbedingt erforderliche Cookies;<br>
-	  Funktionale-Cookies;<br>
-	  Performance-Cookies;<br>
-	  Marketing-Cookies.
-	</p>
-	<p>
-	  <h4>Unbedingt erforderliche Cookies</h4>
-	  Unbedingt erforderliche Cookies sorgen dafür, dass diese Website, beziehungsweise der Dienst, ordnungsgemäß funktioniert. Das heißt, ohne diese Cookies ist diese Website, beziehungsweise der Dienst, nicht wie vorgesehen nutzbar. Diese Art von Cookies wird ausschließlich von dem Betreiber der Website verwendet (First Party Cookies) und sämtliche Informationen, die in den Cookies gespeichert sind, werden nur an diese Website gesendet.<br>
-	  Auf unserer Webseite kommen folgende unbedingt erforderlichen Cookies zum Einsatz:
-	  <table class="table">
-	    <tr>
-	      <th>Name</th>
-	      <th>Zweck</th>
-	      <th>Laufzeit</th>
-	    </tr>
-	    <tr>
-	      <td>ckies_functional</td>
-	      <td>Schalter für Functional Cookies</td>
-	      <td>1 Jahr</td>
-	    </tr>
-	    <tr>
-	      <td>ckies_marketing</td>
-	      <td>Schalter für Marketing Cookies</td>
-	      <td>1 Jahr</td>
-	    </tr>
-	    <tr>
-	      <td>ckies_performance</td>
-	      <td>Schalter für Performance Cookies</td>
-	      <td>1 Jahr</td>
-	    </tr>
-	  </table>
-	  Die Nutzung von unbedingt erforderlichen Cookies auf dieser Website ist ohne die Einwilligung des Nutzers möglich. Aus diesem Grund können unbedingt erforderliche Cookies auch nicht einzeln deaktiviert bzw. aktiviert werden. Diese Funktion steht nur bei einwilligungspflichtigen Cookies, also den Funktionalen Cookies, den Performance-Cookies und den Marketing-Cookies, zur Verfügung. Der Nutzer hat allerdings jederzeit die Möglichkeit, Cookies generell in seinem Browser zu deaktivieren (siehe Punkt 4).<br>
-	  Die Rechtsgrundlage für die Nutzung der First Party Cookies ist ein berechtigtes Interesse (d. h. Interesse an der Analyse, Optimierung und dem wirtschaftlichen Betrieb dieser Website und Leistungen) im Sinne des Art. 6 (1) (f) DSGVO).
-	</p>
-	<p>
-	  <h4>Funktionale Cookies</h4>
-	  Funktionale Cookies ermöglichen dieser Webseite, getätigte Angaben, wie z. B. den Benutzernamen oder die Sprachauswahl, zu speichern und dem Nutzer darauf basierend verbesserte und personalisierte Funktionen anzubieten. Diese Cookies sammeln und speichern ausschließlich anonymisierte Informationen.<br>
-	  Auf unserer Webseite kommen folgende Funktionale Cookies zum Einsatz:
-	  <table class="table">
-	    <tr>
-	      <th>Name</th>
-	      <th>Zweck</th>
-	      <th>Laufzeit</th>
-	    </tr>
-	    <tr>
-	      <td>cookielaw</td>
-	      <td>Wurde das Cookie Banner angeklickt</td>
-	      <td>1 Jahr</td>
-	    </tr>
-	    <tr>
-	      <td>shd</td>
-	      <td>Wird gesetzt wenn der Nutzer sich auf seiner Jimdo-Seite anmeldet</td>
-	      <td>1 Jahr</td>
-	    </tr>
-	  </table>
-
-	  Der Nutzer kann der Verwendung von Funktionalen Cookies jederzeit widersprechen, indem er seine Cookie Einstellungen entsprechend anpasst.<br>
-	  Die Rechtsgrundlage für die Nutzung der First Party Cookies ist ein berechtigtes Interesse (d. h. Interesse an der Analyse, Optimierung und dem wirtschaftlichen Betrieb dieser Website und Leistungen) im Sinne des Art. 6 (1) (f) DSGVO).
-	</p>
-	<p>
-	  <h4>Performance Cookies</h4>
-	  Performance Cookies sammeln Informationen darüber, wie unsere Webseiten genutzt werden, um darauf basierend deren Attraktivität, Inhalt und Funktionalität zu verbessern. Diese Cookies helfen uns beispielsweise festzustellen, ob und welche Unterseiten unserer Webseite besucht werden und für welche Inhalte sich die Nutzer besonders interessieren. Wir erfassen die Anzahl der Zugriffe auf eine Seite, die Anzahl der aufgerufenen Unterseiten, die auf unserer Webseite verbrachte Zeit, die Reihenfolge der besuchten Seiten, welche Suchbegriffe dich zu uns geführt haben, das Land, die Region und gegebenenfalls die Stadt aus der der Zugriff erfolgt, sowie den Anteil von mobilen Endgeräten, die auf unsere Webseiten zugreifen. Die aus technischen Gründen übermittelte IP-Adresse deines Rechners wird automatisch anonymisiert und ermöglicht uns keinen Rückschluss auf den einzelnen Nutzer.<br>
-	  Der Nutzer der Website hat auch das Recht, aus Gründen, die sich aus seiner besonderen Situation ergeben, bei der Verarbeitung ihn betreffender personenbezogener Daten, die zu statistischen Zwecken gem. Art. 89 Abs. 1 DSGVO erfolgt, zu widersprechen. Zur Wahrnehmung dieser und anderer Betroffenenrechte, kann sich ein Betroffener jederzeit an die unten angegebene Kontaktadresse wenden.<br>
-	  Der Nutzer der Website kann der Verwendung von Performance-Cookies jederzeit widersprechen, indem er seine Cookie Einstellungen entsprechend anpasst.<br>
-	  Die Rechtsgrundlage für die Nutzung der First Party Cookies ist ein berechtigtes Interesse (d. h. Interesse an der Analyse, Optimierung und dem wirtschaftlichen Betrieb unserer Webseite und Leistungen) im Sinne des Art. 6 (1) (f) DSGVO).
-	</p>
-	<p>
-	  <h4>Marketing Cookies / Third Party Cookies</h4>
-	  Marketing-Cookies stammen von externen Werbeunternehmen (Third Party Cookies) und werden verwendet, um Informationen über die vom Nutzer besuchten Websites zu sammeln, um zielgruppenorientierte Werbung für den Benutzer zu erstellen.<br>
-	  Auf unserer Webseite kommen folgende Marketing Cookies zum Einsatz:
-	  
-	  <table class="table">
-	    <tr>
-	      <th>Name</th>
-	      <th>Zweck</th>
-	      <th>Laufzeit</th>
-	    </tr>
-	    <tr>
-	      <td>__utma</td>
-	      <td>Jimdo Statistikfunktion (Google Analytics)</td>
-	      <td>2 Jahre</td>
-	    </tr>
-	    <tr>
-	      <td>__utmb</td>
-	      <td>Jimdo Statistikfunktion (Google Analytics)</td>
-	      <td>30 Minuten</td>
-	    </tr>
-	    <tr>
-	      <td>__utmc</td>
-	      <td>Jimdo Statistikfunktion (Google Analytics)</td>
-	      <td>Session</td>
-	    </tr>
-	    <tr>
-	      <td>__utmz</td>
-	      <td>Jimdo Statistikfunktion (Google Analytics)</td>
-	      <td>6 Monate</td>
-	    </tr>
-	    <tr>
-	      <td>__utmt_b</td>
-	      <td>Jimdo Statistikfunktion (Google Analytics)</td>
-	      <td>1 Tag</td>
-	    </tr>
-	  </table>
-	  Der Nutzer kann der Verwendung von Marketing-Cookies jederzeit widersprechen, indem er seine Cookie Einstellungen entsprechend anpasst.<br>
-	  Aufgrund der beschriebenen Verwendungszwecke (vgl. § 6. a.) liegt die Rechtsgrundlage für die Verarbeitung personenbezogener Daten unter Verwendung von Cookies in Art. 6 Abs. 1 lit. f DSGVO. Falls der Nutzer auf Grundlage eines von uns auf der Website erteilten Hinweises („Cookie-Banner“) eine Einwilligung zur Verwendung von Cookies erteilt hat, richtet sich die Rechtmäßigkeit der Verwendung zusätzlich nach Art. 6 Abs. 1 S. 1 lit. a DSGVO.
-	</p>
-	<p>
-	  <h4>Deaktivierung oder Löschung sämtlicher Cookies</h4>
-	  Der Nutzer kann seinen Webbrowser so einstellen, dass das Speichern von Cookies auf seinem Endgerät generell verhindert wird beziehungsweise er jedes Mal gefragt wird, ob er mit dem Setzen von Cookies einverstanden ist. Einmal gesetzte Cookies kann der Nutzer jederzeit wieder löschen. Wie das Ganze funktioniert, wird in Hilfe-Funktion des jeweiligen Webbrowsers beschrieben.<br>
-	  Eine generelle Deaktivierung von Cookies kann gegebenenfalls zu Funktionseinschränkungen dieser Website führen.
-	</p>
-      </div>
-      <div class="col-sm-2"></div>
-    </div>
-  </article>
-</div>
       
-<script type="text/javascript" src="{% static 'js/scripts_impressum.js' %}"></script>  
+      <div class="row">
+	<div class="col-sm-12 breadcrumb">
+	  HOME // IMPRESSUM
+	</div>
+      </div>
       
-{% endblock %}
+      <article id="impressum" style="margin-bottom:40px">
+	<div class="row">
+	  <div class="col-sm-2"></div>
+	  <div class="col-sm-8" style="text-align:center">
+	    <h3>
+	      Impressum
+	    </h3>
+	    <p>
+	      <h4>Angaben gemäß § 5 TMG</h4>
+ 	      Manfred Kranz<br>
+	      Raumausstattung Kranz<br>
+	      Bänschstrasse 50<br>
+	      10247 Berlin
+	    </p>
+	    <p>
+	      <h4>Kontakt</h4>
+	      Telefon: +49 (0) 30 417 21 866<br>
+	      Telefax: +49 (0) 30 417 24 715<br>
+	      Email: &#107;<!--. . .e2e @ ,-->&#114;&#097;<!--@23.. @ ,-->&#110;&#122;&#064;<!--.@@@.dswl @ ,-->&#100;<!--,d,dw..w @ ,-->&#101;&#114;<!--,d,a@..@@ @ ,..-->&#112;&#111;<!--. @ ,@-->&#108;&#115;&#116;&#101;<!--@ @ ##,#-->&#114;&#101;&#114;&#045;&#098;<!--@##%23 @ ,-->&#101;&#114;&#108;<!--oks.. -- .@ ,-->&#105;&#110;&#046;&#100;<!--@.. @-s. ,-->&#101;
+	    </p>
+	    <p>
+	      Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: DE 236779579
+	      Aufsichtsbehörde: Handwerkskammer Berlin<br>
+	      Angaben zur Berufshaftpflichtversicherung:<br>
+	      Name und Sitz der Gesellschaft: Allianz Versicherung, An den Treptowers 3, 12435 Berlin<br>
+	      Geltungsraum der Versicherung: Deutschland
+	    </p>
+	  </div>
+	  <div class="col-sm-2"></div>
+	</div>
+      </article>
+      
+      <article id="disclaimer" style="margin-bottom:40px">
+	<div class="row">
+	  <div class="col-sm-2"></div>
+	  <div class="col-sm-8" style="text-align:left">
+	    <h3>
+	      Disclaimer / Haftungsausschluss
+	    </h3>
+	    <p>
+	      <h4>Haftung für Inhalte</h4>
+	      Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+	    </p>
+	    <p>
+	      <h4>Haftung für Links</h4>
+	      Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+	    </p>
+	    <p>
+	      <h4>Urheberrecht</h4>
+	      Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+	    </p>
+	  </div>
+	  <div class="col-sm-2"></div>
+	</div>
+      </article>
+      
+      <article id="lzb" style="margin-bottom:40px">
+	<div class="row">
+	  <div class="col-sm-2"></div>
+	  <div class="col-sm-8" style="text-align:left">
+	    <h3>
+	      Liefer- und Zahlungsbedingungen
+	    </h3>
+	    <p>
+	      <h4>Deutschland</h4>
+	      Bezahlmethoden: PayPal (Kreditkarte, Lastschrift, Überweisung); Bei Auswahl dieser Zahlungsart erfolgt im nächsten Schritt die Weiterleitung zu PayPal. Wenn dort die erforderlichen Daten eingetragen worden sind, geht es automatisch zurück in diesen Shop, um die Bestellung abzuschließen.
+	    </p>
+	    <p>
+	      <h4>Ausland</h4>
+	      Bei Lieferungen in das Ausland können Zölle, Steuern und Gebühren anfallen, die im angezeigten Gesamtpreis nicht enthalten sind.
+	    </p>
+	  </div>
+	  <div class="col-sm-2"></div>
+	</div>
+      </article>
+      
+      <article id="agb" style="margin-bottom:40px">
+	<div class="row">
+	  <div class="col-sm-2"></div>
+	  <div class="col-sm-8" style="text-align:left">
+	    <h3>
+	      Allgemeine Geschäftsbedingungen (AGB)
+	    </h3>
+	    <p>
+	      <h4>§1 Geltung gegenüber Unternehmern und Begriffsdefinitionen</h4>
+	      (1) Die nachfolgenden Allgemeinen Geschäftbedingungen gelten für alle Lieferungen zwischen uns und einem Verbraucher in ihrer zum Zeitpunkt der Bestellung gültigen Fassung.<br>
+	      Verbraucher ist jede natürliche Person, die ein Rechtsgeschäft zu Zwecken abschließt, die überwiegend weder ihrer gewerblichen noch ihrer selbständigen beruflichen Tätigkeit zugerechnet werden können (§ 13 BGB).
+	    </p>
+	    <p>
+	      <h4>§2 Zustandekommen eines Vertrages, Speicherung des Vertragstextes</h4>
+	      (1) Die folgenden Regelungen über den Vertragsabschluss gelten für Bestellungen über unseren Internetshop http://derpolsterer.jimdo.com/<br>
+	      (2) Im Falle des Vertragsschlusses kommt der Vertrag mit<br><br>
+	      Der Polsterer<br>
+	      Manfred Kranz<br>
+	      Bänschstr.50<br>
+	      D-10247 Berlin<br><br>
+	      zustande.<br>
+	      (3) Die Präsentation der Waren in unserem Internetshop stellen kein rechtlich bindendes Vertragsangebot unsererseits dar, sondern sind nur eine unverbindliche Aufforderungen an den Verbraucher, Waren zu bestellen. Mit der Bestellung der gewünschten Ware gibt der Verbraucher ein für ihn verbindliches Angebot auf Abschluss eines Kaufvertrages ab.<br>
+	      Die Annahme des Angebots erfolgt schriftlich oder in Textform oder durch Übersendung der bestellten Ware innerhalb von einer Woche. Nach fruchtlosem Ablauf der Frist gilt das Angebot als abgelehnt.<br>
+	      (4) Bei Eingang einer Bestellung in unserem Internetshop gelten folgende Regelungen: Der Verbraucher gibt ein bindendes Vertragsangebot ab, indem er die in unserem Internetshop vorgesehene Bestellprozedur erfolgreich durchläuft.<br>
+	      Die Bestellung erfolgt in folgenden Schritten:<br><br>
+	      1) Auswahl der gewünschten Ware<br>
+	      2) Bestätigen durch Anklicken der Buttons „Bestellen“<br>
+	      3) Prüfung der Angaben im Warenkorb<br>
+	      4) Betätigung des Buttons „zur Kasse“<br>
+	      5) Verbindliche Absendung der Bestellung durch Anklicken des Buttons „kostenpflichtig bestellen“ bzw. „kaufen“<br><br>
+	      Der Verbraucher kann vor dem verbindlichen Absenden der Bestellung durch Betätigen der in dem von ihm verwendeten Internet-Browser enthaltenen „Zurück“-Taste nach Kontrolle seiner Angaben wieder zu der Internetseite gelangen, auf der die Angaben des Kunden erfasst werden und Eingabefehler berichtigen bzw. durch Schließen des Internetbrowsers den Bestellvorgang abbrechen. Wir bestätigen den Eingang der Bestellung unmittelbar durch eine automatisch generierte E-Mail (Eingangsbestätigung). Diese stellt noch keine Annahme des Angebotes dar. Die Annahme des Angebots erfolgt schriftlich, in Textform oder durch Übersendung der bestellten Ware innerhalb einer Woche.<br>
+	      (5) Speicherung des Vertragstextes bei Bestellungen über unseren Internetshop : Wir senden Ihnen die Bestelldaten und unsere AGB per E-Mail zu. Die AGB können Sie jederzeit auch unter http://derpolsterer.jimdo.com/j/shop/terms einsehen. Ihre Bestelldaten sind aus Sicherheitsgründen nicht mehr über das Internet zugänglich.
+	    </p>
+	    <p>
+	      <h4>§3 Preise, Versandkosten, Zahlung, Fälligkeit</h4>
+	      (1) Die angegebenen Preise enthalten die gesetzliche Umsatzsteuer und sonstige Preisbestandteile. Hinzu kommen etwaige Versandkosten.<br>
+	      (2) Der Verbraucher hat die Möglichkeit der Zahlung per Vorkasse, Nachnahme, PayPal.<br>
+	      (3) Hat der Verbraucher die Zahlung per Vorkasse gewählt, so verpflichtet er sich, den Kaufpreis unverzüglich nach Vertragsschluss zu zahlen. Soweit wir per Nachnahme liefern, tritt die Fälligkeit der Kaufpreisforderung mit Erhalt der Ware ein.
+	    </p>
+	    <p>
+	      <h4>§4 Lieferung</h4>
+	      (1) Sofern wir dies in der Produktbeschreibung nicht deutlich anders angegeben haben, sind alle von uns angebotenen Artikel sofort versandfertig. Die Lieferung erfolgt hier spätesten innerhalb von 5 Werktagen. Dabei beginnt die Frist für die Lieferung im Falle der Zahlung per Vorkasse am Tag nach Zahlungsauftrag an die mit der Überweisung beauftragte Bank und bei allen anderen Zahlungsarten am Tag nach Vertragsschluss zu laufen. Fällt das Fristende auf einen Samstag, Sonntag oder gesetzlichen Feiertag am Lieferort, so endet die Frist am nächsten Werktag.<br>
+	      (2) Die Gefahr des zufälligen Untergangs und der zufälligen Verschlechterung der verkauften Sache geht auch beim Versendungskauf erst mit der Übergabe der Sache an den Käufer auf diesen über.
+	    </p>
+	    <p>
+	      <h4>§5 Eigentumsvorbehalt</h4>
+	      Wir behalten uns das Eigentum an der Ware bis zur vollständigen Bezahlung des Kaufpreises vor.
+	    </p>
+	  </div>
+	  <div class="col-sm-2"></div>
+	</div>
+      </article>
+      
+      <article id="wrb" style="margin-bottom:40px">
+	<div class="row">
+	  <div class="col-sm-2"></div>
+	  <div class="col-sm-8" style="text-align:left">
+	    <h3>
+	      Widerrufsbelehrung
+	    </h3>
+	    <p>
+	      <h4>Widerrufsrecht</h4>
+	      Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag an dem Sie oder ein von Ihnen benannter Dritter, der nicht der Beförderer ist, die Waren in Besitz genommen haben bzw. hat. 
+	      Um Ihr Widerrufsrecht auszuüben, müssen Sie uns,<br><br>
+	      
+ 	      Manfred Kranz<br>
+	      Bänschstrasse 50<br>
+	      10247 Berlin<br>
+	      Telefon: +49 (0) 30 417 21 866<br>
+	      Telefax: +49 (0) 30 417 24 715<br>
+	      Mobil: +49 (0) 172 276 41 95<br>
+	      Email: &#107;<!--. . .e2e @ ,-->&#114;&#097;<!--@23.. @ ,-->&#110;&#122;&#064;<!--.@@@.dswl @ ,-->&#100;<!--,d,dw..w @ ,-->&#101;&#114;<!--,d,a@..@@ @ ,..-->&#112;&#111;<!--. @ ,@-->&#108;&#115;&#116;&#101;<!--@ @ ##,#-->&#114;&#101;&#114;&#045;&#098;<!--@##%23 @ ,-->&#101;&#114;&#108;<!--oks.. -- .@ ,-->&#105;&#110;&#046;&#100;<!--@.. @-s. ,-->&#101;,<br><br>
+	      
+	      mittels einer eindeutigen Erklärung (z.B. ein mit der Post versandter Brief, Telefax oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür das Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.
+	    </p>
+	    <p>
+	      <h4>Folgen des Widerrufs</h4>
+	      Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Lieferkosten (mit Ausnahme der zusätzlichen Kosten, die sich daraus ergeben, dass Sie eine andere Art der Lieferung als die von uns angebotene, günstigste Standardlieferung gewählt haben), unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf dieses Vertrags bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart; in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet.Wir können die Rückzahlung verweigern,bis wir die Waren wieder zurückerhalten haben oder bis Sie den Nachweis erbracht haben,dass Sie die Waren zurückgesandt haben, je nachdem, welches der frühere Zeitpunkt ist.<br>
+	      Sie haben die Waren unverzüglich und in jedem Fall spätestens binnen vierzehn Tagen ab dem Tag, an dem Sie uns über den Widerruf dieses Vertrags unterrichten,an uns zurückzusenden oder zu übergeben. Die Frist ist gewahrt, wenn Sie die Waren vor Ablauf der Frist von vierzehn Tagen absenden.Sie tragen die unmittelbaren Kosten der Rücksendung der Waren.
+	    </p>
+	  </div>
+	  <div class="col-sm-2"></div>
+	</div>
+      </article>
+      
+      <article id="datenschutz" style="margin-bottom:40px">
+	<div class="row">
+	  <div class="col-sm-2"></div>
+	  <div class="col-sm-8" style="text-align:left">
+	    <h3>
+	      Datenschutz
+	    </h3>
+	    <p>
+	      <h4>Datenschutzerklärung</h4>
+	      Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.<br>
+	      Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.<br>
+	      Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
+	    </p>
+	    <p>
+	      <h4>Datenschutzerklärung für die Nutzung von Facebook-Plugins (Like-Button)</h4>
+	      Auf unseren Seiten sind Plugins des sozialen Netzwerks Facebook, Anbieter Facebook Inc., 1 Hacker Way, Menlo Park, California 94025, USA, integriert. Die Facebook-Plugins erkennen Sie an dem Facebook-Logo oder dem "Like-Button" ("Gefällt mir") auf unserer Seite. Eine Übersicht über die Facebook-Plugins finden Sie hier: http://developers.facebook.com/docs/plugins/.<br>
+	      Wenn Sie unsere Seiten besuchen, wird über das Plugin eine direkte Verbindung zwischen Ihrem Browser und dem Facebook-Server hergestellt. Facebook erhält dadurch die Information, dass Sie mit Ihrer IP-Adresse unsere Seite besucht haben. Wenn Sie den Facebook "Like-Button" anklicken während Sie in Ihrem Facebook-Account eingeloggt sind, können Sie die Inhalte unserer Seiten auf Ihrem Facebook-Profil verlinken. Dadurch kann Facebook den Besuch unserer Seiten Ihrem Benutzerkonto zuordnen. Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie deren Nutzung durch Facebook erhalten. Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Facebook unter http://de-de.facebook.com/policy.php.<br>
+	      Wenn Sie nicht wünschen, dass Facebook den Besuch unserer Seiten Ihrem Facebook- Nutzerkonto zuordnen kann, loggen Sie sich bitte aus Ihrem Facebook-Benutzerkonto aus.
+	    </p>
+	    <p>
+	      <h4>Auskunft, Löschung, Sperrung</h4>
+	      Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden.
+	    </p>
+	    <p>
+	      <h4>Kontaktformular</h4>
+	      Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+	    </p>
+	    <p>
+	      <h4>Google Analytics Ergänzung</h4>
+	      Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. („Google“). Google Analytics verwendet sog. „Cookies“, Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Im Falle der Aktivierung der IP-Anonymisierung auf dieser Webseite, wird Ihre IP-Adresse von Google jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Websitebetreiber zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt. Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem Sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: http://tools.google.com/dlpage/gaoptout<br>
+	      Sie können die Erfassung durch Google Analytics verhindern, indem Sie auf folgenden Link klicken. Es wird ein Opt-Out-Cookie gesetzt, der die zukünftige Erfassung Ihrer Daten beim Besuch dieser Website verhindert.<br>
+	      Nähere Informationen zu Nutzungsbedingungen und Datenschutz finden Sie unter den Google Analytics Bedingungen bzw. unter der Google Analytics Übersicht. Wir weisen Sie darauf hin, dass auf dieser Webseite Google Analytics um den Code "gat._anonymizeIp();" erweitert wurde, um eine anonymisierte Erfassung von IP-Adressen (sog. IP-Masking) zu gewährleisten.
+	    </p>
+	    <p>
+	      <h4>reCAPTCHA</h4>
+	      Zum Schutz Ihrer Anfragen per Internetformular verwenden wir den Dienst reCAPTCHA des Unternehmens Google Inc. (Google). Die Abfrage dient der Unterscheidung, ob die Eingabe durch einen Menschen oder missbräuchlich durch automatisierte, maschinelle Verarbeitung erfolgt. Die Abfrage schließt den Versand der IP-Adresse und ggf. weiterer von Google für den Dienst reCAPTCHA benötigter Daten an Google ein. Zu diesem Zweck wird Ihre Eingabe an Google übermittelt und dort weiter verwendet. Ihre IP-Adresse wird von Google jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung dieses Dienstes auszuwerten. Die im Rahmen von reCaptcha von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt. Für diese Daten gelten die abweichenden Datenschutzbestimmungen des Unternehmens Google. Weitere Informationen zu den Datenschutzrichtlinien von Google finden Sie unter: https://policies.google.com/privacy?hl=de
+	    </p>
+	  </div>
+	  <div class="col-sm-2"></div>
+	</div>
+      </article>
+      
+      <article id="cookies" style="margin-bottom:40px">
+	<div class="row">
+	  <div class="col-sm-2"></div>
+	  <div class="col-sm-8" style="text-align:left">
+	    <h3>
+	      Cookie policy
+	    </h3>
+	    <p>
+	      Mit dieser Cookie Richtlinie informiert der Website-Betreiber den Nutzer der Website über den Einsatz von Cookies oder ähnlichen Speichertechnologien (nachfolgend „Cookies“) auf dieser Website.
+	      <h4>Was sind Cookies?</h4>
+	      Cookies sind kleine Textdateien, die vom Webbrowser auf dem Endgerät des Nutzers zur Speicherung von bestimmten Informationen abgelegt werden. Beim nächsten Aufruf unserer Website mit demselben Endgerät werden die in Cookies gespeicherten Informationen an unsere Website („First Party Cookie“) oder eine andere Website, zu der das Cookie gehört („Third Party Cookie“), zurückgesandt.<br>
+	      Durch die im Cookie gespeicherten und zurückgesandten Informationen erkennt die jeweilige Website, dass der Nutzer diese mit dem Webbrowser seines Endgeräts bereits aufgerufen und besucht hat. Diese Informationen nutzen wir, um dem Nutzer die Website gemäß seinen Präferenzen optimal anzeigen zu können.<br>
+	      Es wird hierbei aber nur das Cookie selbst auf dem Endgerät identifiziert. Eine darüber hinausgehende Speicherung von personenbezogenen Daten erfolgt nur, wenn der Nutzer uns seine ausdrückliche Zustimmung dafür gibt oder wenn diese Speicherung unbedingt erforderlich ist, um den angebotenen und aufgerufenen Dienst nutzen zu können.
+	    </p>
+	    <p>
+	      <h4>Zustimmung zur Verwendung von Cookies</h4>
+	      Cookies, die nicht unbedingt erforderlich sind, um die Dienste auf dieser Website zur Verfügung zu stellen, werden erst nach der Einwilligung verwendet. Indem der Nutzer diese Website nach dem Einblenden des Cookie-Banners aktiv weiter nutzt, willigt er in die Verwendung von Cookies ein.<br>
+	      Seine Cookie Einstellungen kann der Nutzer jederzeit individuell anpassen, indem er zum Beispiel einzelne Cookie-Kategorien aktiviert oder deaktiviert.<br>
+	      Wie der Nutzer Cookies generell (inklusive der unbedingt erforderlichen Cookies) in seinem Browser deaktivieren oder löschen kann, wird unter Punkt 4 beschrieben.<br>
+	      Je nach Verwendungszweck und Funktion unterteilen wir die von der Website verwendeten Cookies in die folgenden Kategorien:<br><br>
+	      Unbedingt erforderliche Cookies;<br>
+	      Funktionale-Cookies;<br>
+	      Performance-Cookies;<br>
+	      Marketing-Cookies.
+	    </p>
+	    <p>
+	      <h4>Unbedingt erforderliche Cookies</h4>
+	      Unbedingt erforderliche Cookies sorgen dafür, dass diese Website, beziehungsweise der Dienst, ordnungsgemäß funktioniert. Das heißt, ohne diese Cookies ist diese Website, beziehungsweise der Dienst, nicht wie vorgesehen nutzbar. Diese Art von Cookies wird ausschließlich von dem Betreiber der Website verwendet (First Party Cookies) und sämtliche Informationen, die in den Cookies gespeichert sind, werden nur an diese Website gesendet.<br>
+	      Auf unserer Webseite kommen folgende unbedingt erforderlichen Cookies zum Einsatz:
+	      <table class="table">
+		<tr>
+		  <th>Name</th>
+		  <th>Zweck</th>
+		  <th>Laufzeit</th>
+		</tr>
+		<tr>
+		  <td>ckies_functional</td>
+		  <td>Schalter für Functional Cookies</td>
+		  <td>1 Jahr</td>
+		</tr>
+		<tr>
+		  <td>ckies_marketing</td>
+		  <td>Schalter für Marketing Cookies</td>
+		  <td>1 Jahr</td>
+		</tr>
+		<tr>
+		  <td>ckies_performance</td>
+		  <td>Schalter für Performance Cookies</td>
+		  <td>1 Jahr</td>
+		</tr>
+	      </table>
+	      Die Nutzung von unbedingt erforderlichen Cookies auf dieser Website ist ohne die Einwilligung des Nutzers möglich. Aus diesem Grund können unbedingt erforderliche Cookies auch nicht einzeln deaktiviert bzw. aktiviert werden. Diese Funktion steht nur bei einwilligungspflichtigen Cookies, also den Funktionalen Cookies, den Performance-Cookies und den Marketing-Cookies, zur Verfügung. Der Nutzer hat allerdings jederzeit die Möglichkeit, Cookies generell in seinem Browser zu deaktivieren (siehe Punkt 4).<br>
+	      Die Rechtsgrundlage für die Nutzung der First Party Cookies ist ein berechtigtes Interesse (d. h. Interesse an der Analyse, Optimierung und dem wirtschaftlichen Betrieb dieser Website und Leistungen) im Sinne des Art. 6 (1) (f) DSGVO).
+	    </p>
+	    <p>
+	      <h4>Funktionale Cookies</h4>
+	      Funktionale Cookies ermöglichen dieser Webseite, getätigte Angaben, wie z. B. den Benutzernamen oder die Sprachauswahl, zu speichern und dem Nutzer darauf basierend verbesserte und personalisierte Funktionen anzubieten. Diese Cookies sammeln und speichern ausschließlich anonymisierte Informationen.<br>
+	      Auf unserer Webseite kommen folgende Funktionale Cookies zum Einsatz:
+	      <table class="table">
+		<tr>
+		  <th>Name</th>
+		  <th>Zweck</th>
+		  <th>Laufzeit</th>
+		</tr>
+		<tr>
+		  <td>cookielaw</td>
+		  <td>Wurde das Cookie Banner angeklickt</td>
+		  <td>1 Jahr</td>
+		</tr>
+		<tr>
+		  <td>shd</td>
+		  <td>Wird gesetzt wenn der Nutzer sich auf seiner Jimdo-Seite anmeldet</td>
+		  <td>1 Jahr</td>
+		</tr>
+	      </table>
+	      
+	      Der Nutzer kann der Verwendung von Funktionalen Cookies jederzeit widersprechen, indem er seine Cookie Einstellungen entsprechend anpasst.<br>
+	      Die Rechtsgrundlage für die Nutzung der First Party Cookies ist ein berechtigtes Interesse (d. h. Interesse an der Analyse, Optimierung und dem wirtschaftlichen Betrieb dieser Website und Leistungen) im Sinne des Art. 6 (1) (f) DSGVO).
+	    </p>
+	    <p>
+	      <h4>Performance Cookies</h4>
+	      Performance Cookies sammeln Informationen darüber, wie unsere Webseiten genutzt werden, um darauf basierend deren Attraktivität, Inhalt und Funktionalität zu verbessern. Diese Cookies helfen uns beispielsweise festzustellen, ob und welche Unterseiten unserer Webseite besucht werden und für welche Inhalte sich die Nutzer besonders interessieren. Wir erfassen die Anzahl der Zugriffe auf eine Seite, die Anzahl der aufgerufenen Unterseiten, die auf unserer Webseite verbrachte Zeit, die Reihenfolge der besuchten Seiten, welche Suchbegriffe dich zu uns geführt haben, das Land, die Region und gegebenenfalls die Stadt aus der der Zugriff erfolgt, sowie den Anteil von mobilen Endgeräten, die auf unsere Webseiten zugreifen. Die aus technischen Gründen übermittelte IP-Adresse deines Rechners wird automatisch anonymisiert und ermöglicht uns keinen Rückschluss auf den einzelnen Nutzer.<br>
+	      Der Nutzer der Website hat auch das Recht, aus Gründen, die sich aus seiner besonderen Situation ergeben, bei der Verarbeitung ihn betreffender personenbezogener Daten, die zu statistischen Zwecken gem. Art. 89 Abs. 1 DSGVO erfolgt, zu widersprechen. Zur Wahrnehmung dieser und anderer Betroffenenrechte, kann sich ein Betroffener jederzeit an die unten angegebene Kontaktadresse wenden.<br>
+	      Der Nutzer der Website kann der Verwendung von Performance-Cookies jederzeit widersprechen, indem er seine Cookie Einstellungen entsprechend anpasst.<br>
+	      Die Rechtsgrundlage für die Nutzung der First Party Cookies ist ein berechtigtes Interesse (d. h. Interesse an der Analyse, Optimierung und dem wirtschaftlichen Betrieb unserer Webseite und Leistungen) im Sinne des Art. 6 (1) (f) DSGVO).
+	    </p>
+	    <p>
+	      <h4>Marketing Cookies / Third Party Cookies</h4>
+	      Marketing-Cookies stammen von externen Werbeunternehmen (Third Party Cookies) und werden verwendet, um Informationen über die vom Nutzer besuchten Websites zu sammeln, um zielgruppenorientierte Werbung für den Benutzer zu erstellen.<br>
+	      Auf unserer Webseite kommen folgende Marketing Cookies zum Einsatz:
+	      
+	      <table class="table">
+		<tr>
+		  <th>Name</th>
+		  <th>Zweck</th>
+		  <th>Laufzeit</th>
+		</tr>
+		<tr>
+		  <td>__utma</td>
+		  <td>Jimdo Statistikfunktion (Google Analytics)</td>
+		  <td>2 Jahre</td>
+		</tr>
+		<tr>
+		  <td>__utmb</td>
+		  <td>Jimdo Statistikfunktion (Google Analytics)</td>
+		  <td>30 Minuten</td>
+		</tr>
+		<tr>
+		  <td>__utmc</td>
+		  <td>Jimdo Statistikfunktion (Google Analytics)</td>
+		  <td>Session</td>
+		</tr>
+		<tr>
+		  <td>__utmz</td>
+		  <td>Jimdo Statistikfunktion (Google Analytics)</td>
+		  <td>6 Monate</td>
+		</tr>
+		<tr>
+		  <td>__utmt_b</td>
+		  <td>Jimdo Statistikfunktion (Google Analytics)</td>
+		  <td>1 Tag</td>
+		</tr>
+	      </table>
+	      Der Nutzer kann der Verwendung von Marketing-Cookies jederzeit widersprechen, indem er seine Cookie Einstellungen entsprechend anpasst.<br>
+	      Aufgrund der beschriebenen Verwendungszwecke (vgl. § 6. a.) liegt die Rechtsgrundlage für die Verarbeitung personenbezogener Daten unter Verwendung von Cookies in Art. 6 Abs. 1 lit. f DSGVO. Falls der Nutzer auf Grundlage eines von uns auf der Website erteilten Hinweises („Cookie-Banner“) eine Einwilligung zur Verwendung von Cookies erteilt hat, richtet sich die Rechtmäßigkeit der Verwendung zusätzlich nach Art. 6 Abs. 1 S. 1 lit. a DSGVO.
+	    </p>
+	    <p>
+	      <h4>Deaktivierung oder Löschung sämtlicher Cookies</h4>
+	      Der Nutzer kann seinen Webbrowser so einstellen, dass das Speichern von Cookies auf seinem Endgerät generell verhindert wird beziehungsweise er jedes Mal gefragt wird, ob er mit dem Setzen von Cookies einverstanden ist. Einmal gesetzte Cookies kann der Nutzer jederzeit wieder löschen. Wie das Ganze funktioniert, wird in Hilfe-Funktion des jeweiligen Webbrowsers beschrieben.<br>
+	      Eine generelle Deaktivierung von Cookies kann gegebenenfalls zu Funktionseinschränkungen dieser Website führen.
+	    </p>
+	  </div>
+      <div class="col-sm-2"></div>
+	</div>
+      </article>
+    </div>
+    
+    <!-- Include bottom of document -->
+    <div id="base_generic_bottom"></div>
+  </main>
+  
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript" src="js/scripts_impressum.js"></script>  
+</body>
+</html>

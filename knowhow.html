@@ -1,17 +1,42 @@
-{% extends "base_generic.html" %}
-{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Der Polsterer ~ Berlin</title>
 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% block content %}
+  <!-- add bootstrap JS and CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<div class="page_id" id="knowhow">
+  <!-- import google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif" rel="stylesheet">
 
+  <!-- twentytwenty is for the before/after slider -->
+  <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+  
+  <!-- Add additional CSS in static file -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Include top of document -->
+  <div id="base_generic_top"></div> 
+  <main>
+
+    <div class="page_id" id="knowhow">
       <div class="row tube_row" style="margin-bottom:0;padding-bottom:0">
 	<div class="col-sm-12 breadcrumb">
 	  HOME // KNOW-HOW
       	</div>
       </div>
-  
+      
       <div class="row tube_row" style="margin-top:0px;padding-top:0px;">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8" style="text-align:center">
@@ -32,7 +57,7 @@
 	  </p>
 
 	  <figure>
-	    <img src="{% static 'images/polish_narrow.png' %}" alt="quote" style="margin-bottom:20px;width:100%">
+	    <img src="images/polish_narrow.png" alt="quote" style="margin-bottom:20px;width:100%">
 	    <figcaption>
 	      <strong style="color:rgb(40,90,40);">PFLEGE</strong>
 	      <h3>So bleiben Möbel schön</h3>
@@ -47,7 +72,7 @@
 	    </figcaption>
 	  </figure>
 	  <figure class="two_images cl">
-	    <img src="{% static 'images/stoff.png' %}" alt="quote" width="100%" style="margin-bottom:20px;">
+	    <img src="images/stoff.png" alt="quote" width="100%" style="margin-bottom:20px;">
 	    <figcaption>
 	      <strong style="color:rgb(40,90,40);">PFLEGE</strong>
 	      <h3>So bleiben Möbel schön</h3>
@@ -61,7 +86,7 @@
 	    </figcaption>
 	  </figure>	  
 	  <figure class="two_images cl">
-	    <img src="{% static 'images/polish_narrow.png' %}" alt="quote" width="100%" style="margin-bottom:20px;">
+	    <img src="images/polish_narrow.png" alt="quote" width="100%" style="margin-bottom:20px;">
 	    <figcaption>
 	      <strong style="color:rgb(40,90,40);">STOFFE</strong>
 	      <h3>Stoffe, Leder, Fell</h3>
@@ -101,7 +126,7 @@
 	  
 	  <figure class="three_images cl">
 	    <a href="shop">
-	      <img src="{% static 'images/placeholder.png' %}" alt="antiquitaeten" width="100%" style="margin-bottom:10px;">
+	      <img src="images/placeholder.png" alt="antiquitaeten" width="100%" style="margin-bottom:10px;">
 	    </a>
 	    <figcaption>
 	      <strong style="color:rgb(40,90,40);">ZUR GALERIE</strong>
@@ -110,7 +135,7 @@
 	  </figure>
 	  <figure class="three_images cl">
 	    <a href="shop">
-	      <img src="{% static 'images/placeholder.png' %}" alt="antiquitaeten" width="100%" style="margin-bottom:10px;">
+	      <img src="images/placeholder.png" alt="antiquitaeten" width="100%" style="margin-bottom:10px;">
 	    </a>
 	    <figcaption>
 	      <strong style="color:rgb(40,90,40);">ZUR GALERIE</strong>
@@ -119,7 +144,7 @@
 	  </figure>
 	  <figure class="three_images cl">
 	    <a href="shop">
-	      <img src="{% static 'images/placeholder.png' %}" alt="antiquitaeten" width="100%" style="margin-bottom:10px;">
+	      <img src="images/placeholder.png" alt="antiquitaeten" width="100%" style="margin-bottom:10px;">
 	    </a>
 	    <figcaption>
 	      <strong style="color:rgb(40,90,40);">ZUR GALERIE</strong>
@@ -159,8 +184,8 @@
 	    <div class="col-sm-2"></div>
 	    <div class="col-sm-4" style="text-align:right">
 	      <div id="container_ba" class="bac">
-		<img src="{% static 'images/vorher.png' %}">
-		<img src="{% static 'images/nachher.png' %}">
+		<img src="images/vorher.png">
+		<img src="images/nachher.png">
 	      </div>
 	    </div>
 	    <div class="col-sm-4">
@@ -189,16 +214,16 @@
 	      Ganz einfach Fotos auf Instagram hochladen oder twittern, um dabei zu sein.
 	  </s1>
 	  <figure class="four_images">
-	    <img src="{% static 'images/couch.png' %}" alt="antiquitaeten" width="100%">
+	    <img src="images/couch.png" alt="antiquitaeten" width="100%">
 	  </figure>
 	  <figure class="four_images">
-	    <img src="{% static 'images/sessel.png' %}" alt="antiquitaeten" width="100%">
+	    <img src="images/sessel.png" alt="antiquitaeten" width="100%">
 	  </figure>
 	  <figure class="four_images">
-	    <img src="{% static 'images/couch.png' %}" alt="antiquitaeten" width="100%">
+	    <img src="images/couch.png" alt="antiquitaeten" width="100%">
 	  </figure>
 	  <figure class="four_images">
-	    <img src="{% static 'images/sessel.png' %}" alt="antiquitaeten" width="100%">
+	    <img src="images/sessel.png" alt="antiquitaeten" width="100%">
 	  </figure>
 	  <p>
 	    <button type="button" class="button" target="_blank" onclick="window.location.href='https:www.instagram.com'">INSTAGRAM</button>
@@ -206,11 +231,16 @@
 	</div>
 	<div class="col-sm-2"></div>
       </div>
+    </div>
 
-</div>
-
-<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="{% static 'js/scripts_knowhow.js' %}"></script>  
-<script type="text/javascript" src="{% static 'js/jquery.twentytwenty.js' %}"></script>
-<script type="text/javascript" src="{% static 'js/jquery.event.move.js' %}"></script>      
-{% endblock %}
+    <!-- Include bottom of document -->
+    <div id="base_generic_bottom"></div>
+  </main>
+ 
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript" src="js/scripts_knowhow.js"></script>  
+  <script type="text/javascript" src="js/jquery.twentytwenty.js"></script>
+  <script type="text/javascript" src="js/jquery.event.move.js"></script>      
+</body>
+</html>
