@@ -1,0 +1,216 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="page_id" id="knowhow">
+
+      <div class="row tube_row" style="margin-bottom:0;padding-bottom:0">
+	<div class="col-sm-12 breadcrumb">
+	  HOME // KNOW-HOW
+      	</div>
+      </div>
+  
+      <div class="row tube_row" style="margin-top:0px;padding-top:0px;">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8" style="text-align:center">
+	  <h1>
+	    Unser Know-How
+	  </h1>
+	  <s1>
+	      Erfahren Sie mehr über unser Handwerk. <br>
+	      Profitieren Sie von unserem Wissen über Polstermöbel, Stoffe und Pflege.
+	  </s1>
+	  
+	  <p style="font-size:24px;font-weight:bold;margin-top:20px;">Filter:</p>
+	  <em>(Mehrfachauswahl möglich)</em>
+	  <p>
+	    <button type="button_filter" class="button" id="button_pflege" onclick="content_filter('pflege')">Pflege</button>
+	    <button type="button_filter" class="button" id="button_stoffe" onclick="content_filter('stoffe')">Stoffe</button>
+	    <button type="button_filter" class="button" id="button_polster" onclick="content_filter('polster')">Polster</button>
+	  </p>
+
+	  <figure>
+	    <img src="{% static 'images/polish_narrow.png' %}" alt="quote" style="margin-bottom:20px;width:100%">
+	    <figcaption>
+	      <strong style="color:rgb(40,90,40);">PFLEGE</strong>
+	      <h3>So bleiben Möbel schön</h3>
+	      <p style="margin:0 auto;max-width:70%">Arione od quaernam, occae. Cabo. Ga. Abor ad molupti cor re
+		poreiuris eum eatuisd antibus consecepudaipid eictem ratem. Arione
+		od quaernam, occae. Cabo. Ga. Abor ad molupti cor re preiuris
+		eum eatiusd antibus consecepuda volor aut earum et volor aut earum
+		et ab imo.
+	      <p>
+		<button type="button" class="button" onclick="window.location.href='knowhow'">MEHR</button>
+	      </p>
+	    </figcaption>
+	  </figure>
+	  <figure class="two_images cl">
+	    <img src="{% static 'images/stoff.png' %}" alt="quote" width="100%" style="margin-bottom:20px;">
+	    <figcaption>
+	      <strong style="color:rgb(40,90,40);">PFLEGE</strong>
+	      <h3>So bleiben Möbel schön</h3>
+	      <p style="margin:0 auto;max-width:70%">Arione od quaernam, occae.
+		Cabo. Ga. Abor ad molupti cor re
+		poreiuris eum eatuisd antibus consecepudaipid eictem ratem.
+	      <p>
+		<button type="button" class="button" onclick="window.location.href='knowhow'">MEHR</button>
+	      </p>
+	      </p>
+	    </figcaption>
+	  </figure>	  
+	  <figure class="two_images cl">
+	    <img src="{% static 'images/polish_narrow.png' %}" alt="quote" width="100%" style="margin-bottom:20px;">
+	    <figcaption>
+	      <strong style="color:rgb(40,90,40);">STOFFE</strong>
+	      <h3>Stoffe, Leder, Fell</h3>
+	      <p style="margin:0 auto;max-width:70%">Quaernam, occae. Cabo. Ga.
+		Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
+		volor aut earum et ab imo endigentis eniendipid eictem ratem.
+	      <p>
+		<button type="button" class="button" onclick="window.location.href='knowhow'">MEHR</button>
+	      </p>
+	      </p>
+	    </figcaption>
+	  </figure>
+
+
+
+
+
+
+
+	</div>
+	<div class="col-sm-2"></div>
+      </div>
+      
+
+      <div class="row tube_row bg1 polster">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8" style="text-align:center">
+	  <h1>
+	    Unsere Polsterstoffe
+	  </h1>
+	  <s1>
+	      Hier finden Sie eine Auswahl der bei uns erhältlichen Bezugsstoffe.
+	      Bitte beachten Sie, dass farbliche Abweichungen vom Originalstoff auf Bildern
+	      nicht unüblich sind. Sie können sich viele Stoffe aber gern auch in unserem
+	      Ladenlokal anschauen, um einen besseren Eindruck zu bekommen.
+	  </s1>
+	  
+	  <figure class="three_images cl">
+	    <a href="shop">
+	      <img src="{% static 'images/placeholder.png' %}" alt="antiquitaeten" width="100%" style="margin-bottom:10px;">
+	    </a>
+	    <figcaption>
+	      <strong style="color:rgb(40,90,40);">ZUR GALERIE</strong>
+	      <h4>Stoffmuster</h4>
+	    </figcaption>
+	  </figure>
+	  <figure class="three_images cl">
+	    <a href="shop">
+	      <img src="{% static 'images/placeholder.png' %}" alt="antiquitaeten" width="100%" style="margin-bottom:10px;">
+	    </a>
+	    <figcaption>
+	      <strong style="color:rgb(40,90,40);">ZUR GALERIE</strong>
+	      <h4>Ledermuster</h4>
+	    </figcaption>
+	  </figure>
+	  <figure class="three_images cl">
+	    <a href="shop">
+	      <img src="{% static 'images/placeholder.png' %}" alt="antiquitaeten" width="100%" style="margin-bottom:10px;">
+	    </a>
+	    <figcaption>
+	      <strong style="color:rgb(40,90,40);">ZUR GALERIE</strong>
+	      <h4>Fellmuster</h4>
+	    </figcaption>
+	  </figure>
+	  <div class="row">
+	    <div class="col-sm-1"></div>
+	    <div class="col-sm-10">
+	      <p>
+		Bitte beachten Sie, dass wir hier nur eine kleine Auswahl der über uns
+		beziehbaren Bezugsstoffe präsentieren. In unserem Ladengeschäft haben wir eine
+		deutlich größere Auswahl an Ledermustern zur Ansicht verfügbar.<br>
+		Des Weiteren möchten wir darauf hinweisen, dass fast alle Hersteller, mit
+		denen wir zusammenarbeiten, umfangreiche Mustergalerien auf ihren Webseiten
+		bereitstellen. Die Links zu diesen Seiten finden Sie unter der
+		<a href="partner">Seite der Partner</a>.
+	      </p>
+	    </div>
+	    <div class="col-sm-1"></div>
+	  </div>
+	</div>
+	<div class="col-sm-2"></div>
+      </div>
+
+      <div class="row tube_row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8" style="text-align:center">
+	  <h1>
+	    Vorher & Nachher
+	  </h1>
+	  <s1>
+	    Schreiben Sie Ihre alten Möbel nicht ab. <br>
+	    Sehen Sie von uns restaurierte Möbelstücke im Vorher-Nachher-Vergleich.
+	  </s1>
+	  <div class="row" style="margin-top:20px;">
+	    <div class="col-sm-2"></div>
+	    <div class="col-sm-4" style="text-align:right">
+	      <div id="container_ba" class="bac">
+		<img src="{% static 'images/vorher.png' %}">
+		<img src="{% static 'images/nachher.png' %}">
+	      </div>
+	    </div>
+	    <div class="col-sm-4">
+	      <p>
+		<h4>50er Jahre Knoll Antimott Sessel</h4>
+		<p style="text-align:left;">Sequo evercia magnamusamet doluptentet faceptam, quid qui ra si ut re
+		  liqui acest ate nimpora pro voluptae. Et eumquatio. Endit apiciis mod
+		  magni blamenecab illabo. Tem que prat poremquo bea sandes minist,
+		  vende consequam.</p>
+	      </p>
+	    </div>
+	    <div class="col-sm-2"></div>
+	  </div>
+	</div>
+	<div class="col-sm-2"></div>
+      </div>  
+
+      <div class="row tube_row bg1">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8" style="text-align:center">
+	  <h1>
+	    #derpolsterer
+	  </h1>
+	  <s1>
+	      Wir sehen Sie und hören Ihnen zu. <br>
+	      Ganz einfach Fotos auf Instagram hochladen oder twittern, um dabei zu sein.
+	  </s1>
+	  <figure class="four_images">
+	    <img src="{% static 'images/couch.png' %}" alt="antiquitaeten" width="100%">
+	  </figure>
+	  <figure class="four_images">
+	    <img src="{% static 'images/sessel.png' %}" alt="antiquitaeten" width="100%">
+	  </figure>
+	  <figure class="four_images">
+	    <img src="{% static 'images/couch.png' %}" alt="antiquitaeten" width="100%">
+	  </figure>
+	  <figure class="four_images">
+	    <img src="{% static 'images/sessel.png' %}" alt="antiquitaeten" width="100%">
+	  </figure>
+	  <p>
+	    <button type="button" class="button" target="_blank" onclick="window.location.href='https:www.instagram.com'">INSTAGRAM</button>
+	  </p>
+	</div>
+	<div class="col-sm-2"></div>
+      </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="{% static 'js/scripts_knowhow.js' %}"></script>  
+<script type="text/javascript" src="{% static 'js/jquery.twentytwenty.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.event.move.js' %}"></script>      
+{% endblock %}

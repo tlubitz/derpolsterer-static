@@ -1,0 +1,436 @@
+/* GENERAL */
+
+body {
+    background-color: rgb(246,246,246);
+    color: rgb(0,0,0);
+    font-family: 'PT Sans', sans-serif;
+}
+
+h0 {
+    font-family: 'PT Serif', serif;
+    font-size: 60pt;
+    line-hight: 60pt;
+}
+
+h1 {
+    font-family: 'PT Serif', serif;
+    font-size: 35pt;
+    line-height: 42pt;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'PT Serif', serif;
+    font-size: 24pt;
+    line-height: 26pt;
+    text-align: center;
+    margin-top: 5px;
+}
+
+h4 {
+    font-family: 'PT Serif', serif;
+    font-size: 18pt;
+    line-height: 22pt;
+    text-align: center;
+    margin-top: 0px;
+}
+
+s1 {
+    font-size: 25px;
+    line-height: 30px;
+    font-style: italic;
+}
+
+
+.tube_row {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.bg1 {
+    background-color: lightgrey;
+}
+
+.bg2 {
+    background-color: rgb(40,90,40);  /* green */
+    color: rgb(255,250,250);          /* white */
+}
+
+/* NAVBAR and TOP OF THE PAGE */
+.navbar-dp {
+    float:right;
+    margin-bottom: none;
+    padding-top:10px;
+}
+
+.navbrand {
+    color:rgb(0,0,0);
+    padding-top:20px;
+    line-height:30px;
+}
+
+ul li a.black {
+    color:rgb(0,0,0) !important;
+    padding-top:20px;
+    font-weight:bold;
+    line-height:30px;
+    padding-left:40px;
+    padding-right:40px;
+}
+
+#black {
+    color:rgb(0,0,0);
+    padding-top:20px;
+    font-weight:bold;
+    line-height:30px;
+}
+
+.black:hover {
+    text-decoration: underline !important;
+    text-decoration-color: rgb(40,90,40) !important;
+}
+
+.navbar {
+    z-index: 3;
+    border-style: none;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    top:30px;
+    width:100%;
+    position:fixed;
+    box-shadow: 5px 5px 5px lightgrey;
+}
+
+#topline {
+    z-index: 3;
+    background-color: rgb(40,90,40);  /* green */
+    color: rgb(255,250,250);          /* white */
+    height: 30px;
+    vertical-align:text-bottom;
+    position: fixed;
+    top:0px;
+    width:100%;
+    font-weight:bold;
+}
+
+#toptext {
+    margin-top:4px;
+    margin-left:50px;
+}
+
+#bottomtext {
+    margin-top:4px;
+}
+
+#nav_height {
+    height:90px;
+}
+
+/* BREADCRUMB */
+
+.breadcrumb {
+    color: rgb(40,90,40);  /* green */
+    text-align: left;
+    margin-left: 50px;
+    font-size: 12px;
+    font-weight: bold;
+    width:300px;
+}
+
+/* FOOTER */
+
+#footer {
+    background-color: rgb(40,90,40);  /* green */
+    color: rgb(255,250,250);          /* white */
+    text-align:center;
+    line-height:10px;
+    padding-top:10px;
+    width:100%;
+}
+
+.footer_link {
+    color:rgb(255,250,250);          /* white */
+}
+
+.footer_link:hover {
+    color:rgb(255,250,250);          /* white */
+    text-decoration:underline;
+    text-decoration-color:rgb(255,250,250);          /* white */
+}
+
+
+
+/* MAIN PAGE, PICTURE + HEADER */
+
+/*.image{
+    position: relative;
+    text-align: center;
+}*/
+
+/*.image h4{
+    z-index: 2;
+    position: absolute;
+    top: 420px;
+    left: 50px;
+    text-align: left;
+    background: rgb(40,90,40);  /* green
+    color: rgb(255,250,250);    /* white
+    padding: 4px 10px 4px 10px;
+} */
+
+.image h0{
+    z-index: 2;
+    position: absolute;
+    bottom: 8%;
+    left: 3.5%;
+    max-width: 40%;
+    padding: 20px 10px 20px 20px;
+    /* margin-top: -13px; /* 1/2 height */
+    text-align: left;
+    background: rgb(255,250,250,0.5);    /* white */
+    line-height: 60pt;
+}
+
+/*.image img{
+    z-index: 1;
+}*/
+
+/* MAIN PAGE, Contact tube */
+
+div p em {
+    text-align: center;
+}
+
+.button {
+    padding: 7px 13px 7px 13px;
+    margin: 20px 0px 20px 0px;
+    background: rgb(40,90,40);  /* green */
+    color: rgb(255,250,250);    /* white */
+}
+
+.button:hover {
+    font-style: italic;
+}
+
+.button_filter {
+    padding: 7px 13px 7px 13px;
+    margin: 20px 0px 20px 0px;
+    background: rgb(40,90,40);  /* green */
+    color: rgb(255,250,250);    /* white */
+}
+
+.button_filter:hover {
+    font-style: italic;
+}
+
+/* MAIN PAGE, 3 images in row */
+
+.three_images {
+    width: 33.33%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    float: left;
+    padding-left: 20px;
+}
+
+.image_small {
+    margin-bottom: 10px;
+}
+
+.cl::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+figcaption strong {
+    padding-bottom: 0;
+}
+
+/* MAIN PAGE, gallery small */
+
+.gallery_small {
+    float: left;
+    width: 18%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.gallery_small2 {
+    float: left;
+    width: 18%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+/* MAIN PAGE, quote */
+div h2 em {
+    color: rgb(40,90,40);  /* green */
+}
+
+.center_column {
+    text-align: center;
+}
+
+/* MAIN PAGE, know how */
+.two_images {
+    width: 50%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    float: left;
+    padding-left:15px;
+}
+
+/* MAIN PAGE, #derpolsterer */
+
+.four_images {
+    width: 24%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    float: left;
+    padding-left:15px;
+}
+
+.seven_images {
+    width: 14%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    float: left;
+}
+
+.image_row {
+    padding:20px;
+    margin-bottom: 10px;
+}
+
+/* Google Map */
+
+.mapouter{
+    position:relative;
+    height:500px;
+    width:600px;
+    margin: 0 auto;
+
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    height:500px;
+    width:600px;
+}
+
+.bac {
+
+}
+
+
+/* timeline */
+
+* {
+    box-sizing: border-box;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: rgb(40,90,40);  /* green */
+    top: 15px;
+    bottom: 55px;
+    left: 31%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container[data-descr] {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The squares on the timeline with the years */
+.container[data-descr]::after {
+    content: attr(data-descr);
+    position: absolute;
+    font-size: 20px;
+    color: rgb(40,90,40);  /* green */
+    font-weight:bold;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    padding: 5px 15px 5px 15px;
+    background-color: white;
+    border: 4px solid rgb(40,90,40);
+    top: 15px;
+    z-index: 1;
+}
+
+/* Place the container to the right */
+.right {
+    left: 30px;
+}
+
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding-left: 30px;
+    background-color:     rgb(246,246,246);
+    position: relative;
+    border-radius: 6px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+

@@ -1,0 +1,55 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="row tube_row">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8" style="text-align:center">
+    <h1>
+      Unser Know-How
+    </h1>
+    <s1>
+      <p>
+	Erfahren Sie mehr über unser Handwerk. <br>
+	Profitieren Sie von unserem Wissen über Polstermöbel, Stoffe und Pflege.
+      </p>
+    </s1>
+  </div>
+  <div class="col-sm-2"></div>
+</div>    
+
+
+
+
+<div class="row tube_row bg1">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8" style="text-align:center">
+    <h1>
+      #derpolsterer
+    </h1>
+    <h3><em>
+	Wir sehen Sie und hören Ihnen zu. <br>
+	Ganz einfach Fotos auf Instagram hochladen oder twittern, um dabei zu sein.
+    </em></h3>
+    <figure class="four_images">
+      <img src="{% static 'images/placeholder.png' %}" alt="antiquitaeten" width="70%">
+    </figure>
+    <figure class="four_images">
+      <img src="{% static 'images/placeholder.png' %}" alt="antiquitaeten" width="70%">
+    </figure>
+    <figure class="four_images">
+      <img src="{% static 'images/placeholder.png' %}" alt="antiquitaeten" width="70%">
+    </figure>
+    <figure class="four_images">
+      <img src="{% static 'images/placeholder.png' %}" alt="antiquitaeten" width="70%">
+    </figure>
+    <p>
+      <button type="button" class="button" target="_blank" onclick="window.location.href='https:www.instagram.com'">INSTAGRAM</button>
+    </p>
+  </div>
+  <div class="col-sm-2"></div>
+</div>
+
+{% endblock %}

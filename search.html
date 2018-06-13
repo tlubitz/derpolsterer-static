@@ -1,0 +1,33 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="page_id" id="search_page">
+
+  <div class="row tube_row">
+    <div class="col-sm-12 breadcrumb">
+      HOME // SEARCH
+    </div>
+  </div>
+
+
+  <div class="row tube_row">
+    <div class="col-sm-12">
+      <h4> Search results for <span id="search_query">{{ query }}</span>:</h4>
+    </div>
+  </div>
+  
+  <!-- SEARCH TOOL TRYOUT
+  <div id="tipue_search_content">
+    dsa
+  </div>
+  -->
+
+  
+  
+</div>
+      
+<script type="text/javascript" src="{% static 'js/scripts_search.js' %}"></script>  
+      
+{% endblock %}
