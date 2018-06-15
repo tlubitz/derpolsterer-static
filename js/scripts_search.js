@@ -8,16 +8,6 @@ var z = document.getElementById(page_id)
 z.style.textDecoration = "underline";
 z.style.textDecorationColor = "rgb(40,90,40)";
 
-
-/* SEARCH TOOL TRYOUTS
-var sq = document.getElementById("search_query");
-console.log(sq.innerHTML)
-var x = document.getElementsByClassName(sq.innerHTML)
-console.log(x)
-for (i=0; i<x.length; i++) {
-    x[i].style.display = 'block';
-} */
-
 /* required functions to include other HTML file templates */
 $(function(){
     $("#base_generic_top").load("base_generic_top.html"); 
@@ -25,4 +15,8 @@ $(function(){
 
 $(function(){
     $("#base_generic_bottom").load("base_generic_bottom.html"); 
+});
+
+$(document).ready(function() {
+     $('#tipue_search_input').tipuesearch();
 });

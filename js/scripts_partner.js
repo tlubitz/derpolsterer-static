@@ -20,10 +20,8 @@ function plusDivs(n) {
 }
 
 function showDivs(n) {
-
     var i;
     var x = document.getElementsByClassName("gallery_small");
-    console.log(x)
 
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none"; 
@@ -37,7 +35,6 @@ function showDivs(n) {
 	if ((slideIndex+j) > x.length-1)
 	{slideIndex = 0-j};
 
-	console.log('show:',slideIndex+j)
 	x[slideIndex+j].style.display = "block";
 	
     };

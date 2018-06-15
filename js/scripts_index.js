@@ -29,7 +29,6 @@ function showDivs(n) {
 
     var i;
     var x = document.getElementsByClassName("gallery_small");
-    console.log(x)
 
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none"; 
@@ -43,7 +42,6 @@ function showDivs(n) {
 	if ((slideIndex2+j) > x.length-1)
 	{slideIndex2 = 0-j};
 
-	console.log('show:',slideIndex2+j)
 	x[slideIndex2+j].style.display = "block";
 	
     };
@@ -57,6 +55,3 @@ $(function(){
 $(function(){
     $("#base_generic_bottom").load("base_generic_bottom.html"); 
 });
-
-
-

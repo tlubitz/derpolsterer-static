@@ -11,6 +11,11 @@ http://www.tipue.com/search
 
 /* basics */
 
+.searc {
+    margin: auto;
+    width: 20%;
+    float:center;
+}
 
 .tipue_search_group:after
 {
