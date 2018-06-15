@@ -283,11 +283,11 @@ div h2 em {
 
 /* MAIN PAGE, know how */
 .two_images {
-    width: 50%;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    float: left;
-    padding-left:15px;
+    width: 50% !important;
+    padding-bottom: 50px !important;
+    padding-top: 50px !important;
+    float: left !important;
+    padding-left:15px !important;
 }
 
 /* MAIN PAGE, #derpolsterer */

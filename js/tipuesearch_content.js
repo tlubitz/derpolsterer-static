@@ -11,5 +11,4 @@ var tipuesearch = {"pages": [
     {"title": "", "text": "", "img": "", "tags": "JavaScript", "url": "http://www.tipue.com/search"},
     {"title": "", "text": "", "img": "", "tags": "JavaScript", "url": "http://www.tipue.com/search"},
     {"title": "", "text": "", "img": "", "tags": "JavaScript", "url": "http://www.tipue.com/search"}
-
 ]};
