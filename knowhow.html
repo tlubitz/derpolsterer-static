@@ -1,42 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
-  <title>Der Polsterer ~ Berlin</title>
+    <title>Der Polsterer ~ Berlin</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- add bootstrap JS; normalize for JS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    
+    <!-- import google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif" rel="stylesheet">
 
-  <!-- add bootstrap JS and CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- twentytwenty is for the before/after slider -->
+    <link href="css/twentytwenty.css" rel="stylesheet" type="text/css">
 
-  <!-- import google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif" rel="stylesheet">
-
-  <!-- twentytwenty is for the before/after slider -->
-  <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
-  
-  <!-- Add additional CSS in static file -->
-  <link rel="stylesheet" href="css/styles.css">
-
-  <!-- Add additional CSS and JS for the search tool -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="css/tipuesearch.css">
-  <script src="js/tipuesearch_content.js"></script>
-  <script src="js/tipuesearch_set.js"></script>
-  <script src="js/tipuesearch.min.js"></script>
+    <!-- Add additional CSS in static file -->
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
   <!-- Include top of document -->
   <div id="base_generic_top"></div> 
   <main>
-
+    
     <div class="page_id" id="knowhow">
       <div class="row tube_row" style="margin-bottom:0;padding-bottom:0">
 	<div class="col-sm-12 breadcrumb">
@@ -54,7 +42,6 @@
 	      Erfahren Sie mehr über unser Handwerk. <br>
 	      Profitieren Sie von unserem Wissen über Polstermöbel, Stoffe und Pflege.
 	  </s1>
-	  
 	  <p style="font-size:24px;font-weight:bold;margin-top:20px;">Filter:</p>
 	  <em>(Mehrfachauswahl möglich)</em>
 	  <p>
@@ -62,7 +49,6 @@
 	    <button type="button_filter" class="button" id="button_stoffe" onclick="content_filter('stoffe')">Stoffe</button>
 	    <button type="button_filter" class="button" id="button_polster" onclick="content_filter('polster')">Polster</button>
 	  </p>
-
 	  <figure>
 	    <img src="images/polish_narrow.png" alt="quote" style="margin-bottom:20px;width:100%">
 	    <figcaption>
@@ -106,18 +92,10 @@
 	      </p>
 	    </figcaption>
 	  </figure>
-
-
-
-
-
-
-
 	</div>
 	<div class="col-sm-2"></div>
       </div>
       
-
       <div class="row tube_row bg1 polster">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8" style="text-align:center">
@@ -130,7 +108,6 @@
 	      nicht unüblich sind. Sie können sich viele Stoffe aber gern auch in unserem
 	      Ladenlokal anschauen, um einen besseren Eindruck zu bekommen.
 	  </s1>
-	  
 	  <figure class="three_images cl">
 	    <a href="shop">
 	      <img src="images/placeholder.png" alt="antiquitaeten" width="100%" style="margin-bottom:10px;">
@@ -185,7 +162,7 @@
 	  </h1>
 	  <s1>
 	    Schreiben Sie Ihre alten Möbel nicht ab. <br>
-	    Sehen Sie von uns restaurierte Möbelstücke im Vorher-Nachher-Vergleich.
+	    Sehen Sie von uns restaurierte Möbelstücke im Vorher-Nachher-Vergleich.<br>
 	  </s1>
 	  <div class="row" style="margin-top:20px;">
 	    <div class="col-sm-2"></div>
@@ -218,7 +195,7 @@
 	  </h1>
 	  <s1>
 	      Wir sehen Sie und hören Ihnen zu. <br>
-	      Ganz einfach Fotos auf Instagram hochladen oder twittern, um dabei zu sein.
+	      Ganz einfach Fotos auf Instagram hochladen oder twittern, um dabei zu sein.<br>
 	  </s1>
 	  <figure class="four_images">
 	    <img src="images/couch.png" alt="antiquitaeten" width="100%">
@@ -244,8 +221,9 @@
     <div id="base_generic_bottom"></div>
   </main>
  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.js"></script>
   <script type="text/javascript" src="js/scripts_knowhow.js"></script>  
   <script type="text/javascript" src="js/jquery.twentytwenty.js"></script>
   <script type="text/javascript" src="js/jquery.event.move.js"></script>      

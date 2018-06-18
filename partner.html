@@ -1,35 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
-  <title>Der Polsterer ~ Berlin</title>
+    <title>Der Polsterer ~ Berlin</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- add bootstrap and CSS; normalize for JS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+   
+    <!-- import google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif" rel="stylesheet">
 
-  <!-- add bootstrap JS and CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-  <!-- import google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif" rel="stylesheet">
-
-  <!-- twentytwenty is for the before/after slider -->
-  <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
-  
-  <!-- Add additional CSS in static file -->
-  <link rel="stylesheet" href="css/styles.css">
-
-  <!-- Add additional CSS and JS for the search tool -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="css/tipuesearch.css">
-  <script src="js/tipuesearch_content.js"></script>
-  <script src="js/tipuesearch_set.js"></script>
-  <script src="js/tipuesearch.min.js"></script>
+    <!-- Add additional CSS in static file -->
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -43,294 +28,284 @@
 	  HOME // PARTNER
       	</div>
       </div>
-  
-    <div class="row">
-      <div class="col-sm-12" style="text-align:center;">
-	<h1>Unsere Partner</h1>
-	<s1>
-	  <p>
-	    Wir arbeiten nur mit hochwertigen Materialien und Zubehören von
-	    namhaften oder lokalen Herstellern.
-	  </p>
-	</s1>
+      
+      <div class="row">
+	<div class="col-sm-12" style="text-align:center;">
+	  <h1>Unsere Partner</h1>
+	  <s1>
+	    <p>
+	      Wir arbeiten nur mit hochwertigen Materialien und Zubehören von
+	      namhaften oder lokalen Herstellern.
+	    </p>
+	  </s1>
 	  <p style="font-size:24px;font-weight:bold;margin-top:20px;">Filter:</p>
 	  <em>(Mehrfachauswahl möglich)</em>	  <p>
 	    <button type="button" class="button" id="button_leder" onclick="content_filter('leder')">Leder</button>
 	    <button type="button" class="button" id="button_stoffe" onclick="content_filter('stoffe')">Stoffe</button>
 	    <button type="button" class="button" id="button_zubehoer" onclick="content_filter('zubehoer')">Zubehör</button>
 	  </p>
-      </div>
-    </div>
-
-
-    <div class="row">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8" style="text-align:center">
-	<figure class="four_images leder cl">
-	  <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
-	  <figcaption>
-	    LEDER<br>
-	    <h4>Dieckmann Leder</h4>
-	    <p>Arione od quaernam, occae. Cabo. Ga.
-	      Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
-	      volor aut earum.
-	    </p>
-	  </figcaption>
-	</figure>
-	<figure class="four_images stoffe cl">
-	  <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
-	  <figcaption>
-	    STOFFE<br>
-	    <h4>Casal</h4>
-	    <p>Arione od quaernam, occae. Cabo. Ga.
-	      Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
-	      volor aut earum.
-	    </p>
-	  </figcaption>
-	</figure>
-	<figure class="four_images stoffe cl">
-	  <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
-	  <figcaption>
-	    STOFFE<br>
-	    <h4>KOBE</h4>
-	    <p>Arione od quaernam, occae. Cabo. Ga.
-	      Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
-	      volor aut earum.
-	    </p>
-	  </figcaption>
-	</figure>
-	<figure class="four_images stoffe cl">
-	  <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
-	  <figcaption>
-	    STOFFE<br>
-	    <h4>Rentmeister</h4>
-	    <p>Arione od quaernam, occae. Cabo. Ga.
-	      Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
-	      volor aut earum.
-	    </p>
-	  </figcaption>
-	</figure>
-
-	<figure class="four_images leder cl">
-	  <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
-	  <figcaption>
-	    LEDER<br>
-	    <h4>Hans Reinke</h4>
-	    <p>Arione od quaernam, occae. Cabo. Ga.
-	      Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
-	      volor aut earum.
-	    </p>
-	  </figcaption>
-	</figure>
-	<figure class="four_images zubehoer cl">
-	  <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
-	  <figcaption>
-	    LEDER, STOFFE & ZUBEHÖR<br>
-	    <h4>Zinc</h4>
-	    <p>Arione od quaernam, occae. Cabo. Ga.
-	      Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
-	      volor aut earum.
-	    </p>
-	  </figcaption>
-	</figure>
-	<figure class="four_images stoffe cl">
-	  <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
-	  <figcaption>
-	    STOFFE<br>
-	    <h4>DEKOMA</h4>
-	    <p>Arione od quaernam, occae. Cabo. Ga.
-	      Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
-	      volor aut earum.
-	    </p>
-	  </figcaption>
-	</figure>
-	<figure class="four_images stoffe cl">
-	  <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
-	  <figcaption>
-	    STOFFE<br>
-	    <h4>ROMO</h4>
-	    <p>Arione od quaernam, occae. Cabo. Ga.
-	      Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
-	      volor aut earum.
-	    </p>
-	  </figcaption>
-	</figure>
-
-	<figure class="four_images leder cl">
-	  <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
-	  <figcaption>
-	    LEDER<br>
-	    <h4>Dieckmann Leder</h4>
-	    <p>Arione od quaernam, occae. Cabo. Ga.
-	      Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
-	      volor aut earum.
-	    </p>
-	  </figcaption>
-	</figure>
-	<figure class="four_images stoffe cl">
-	  <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
-	  <figcaption>
-	    STOFFE<br>
-	    <h4>Casal</h4>
-	    <p>Arione od quaernam, occae. Cabo. Ga.
-	      Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
-	      volor aut earum.
-	    </p>
-	  </figcaption>
-	</figure>
-	<figure class="four_images stoffe cl">
-	  <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
-	  <figcaption>
-	    STOFFE<br>
-	    <h4>KOBE</h4>
-	    <p>Arione od quaernam, occae. Cabo. Ga.
-	      Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
-	      volor aut earum.
-	    </p>
-	  </figcaption>
-	</figure>
-	<figure class="four_images stoffe cl">
-	  <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
-	  <figcaption>
-	    STOFFE<br>
-	    <h4>Rentmeister</h4>
-	    <p>Arione od quaernam, occae. Cabo. Ga.
-	      Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
-	      volor aut earum.
-	    </p>
-	  </figcaption>
-	</figure>
-
-	<figure class="four_images leder cl">
-	  <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
-	  <figcaption>
-	    LEDER<br>
-	    <h4>Hans Reinke</h4>
-	    <p>Arione od quaernam, occae. Cabo. Ga.
-	      Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
-	      volor aut earum.
-	    </p>
-	  </figcaption>
-	</figure>
-	<figure class="four_images zubehoer cl">
-	  <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
-	  <figcaption>
-	    LEDER, STOFFE & ZUBEHÖR<br>
-	    <h4>Zinc</h4>
-	    <p>Arione od quaernam, occae. Cabo. Ga.
-	      Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
-	      volor aut earum.
-	    </p>
-	  </figcaption>
-	</figure>
-	<figure class="four_images stoffe cl">
-	  <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
-	  <figcaption>
-	    STOFFE<br>
-	    <h4>DEKOMA</h4>
-	    <p>Arione od quaernam, occae. Cabo. Ga.
-	      Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
-	      volor aut earum.
-	    </p>
-	  </figcaption>
-	</figure>
-	<figure class="four_images stoffe cl">
-	  <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
-	  <figcaption>
-	    STOFFE<br>
-	    <h4>ROMO</h4>
-	    <p>Arione od quaernam, occae. Cabo. Ga.
-	      Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
-	      volor aut earum.
-	    </p>
-	  </figcaption>
-	</figure>
-      </div>
-      <div class="col-sm-2"></div>
-    </div>
-
-    <div class="row tube_row bg1">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8" style="text-align:center">
-	<h1>
-	  Über die Arbeit mit unseren Partnern:
-	</h1>
-	<s1>
-	  Biedermeier, Jugendstil, Gründerzeit, Barock & Moderne -
-	  Wir haben ständig eine Auswahl unrestaurierter Möbel in unserem
-	  Lager vorrätig, die nach Ihren Wünschen aufgearbeitet und bezogen
-	  werden können.<br>
-	</s1>
-
-	<button class="button" onclick="plusDivs(-1,0)" style="float:left;margin-top:120px;">&#10094;</button>
-	  
-	<div class="image cl">
-	  <figure class="gallery_small">
-	    <a href="shop">
-	      <img class="image_small" src="images/02.jpg" alt="workshop picture" width="100%">
-	    </a>
-	    <figcaption>
-	      <strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
-	      <h4> Knoll Antimott Sessel 765 €</h4>		
-	    </figcaption>
-	  </figure>
-
-	  <figure class="gallery_small" style="text-align:center;">
-	    <a href="shop">
-	      <img class="image_small" src="images/03.jpg" alt="workshop picture" width="100%">
-	    </a>
-	    <figcaption>
-	      <strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
-	      <h4> Knoll Antimott Sessel <br>765 €</h4>		
-	    </figcaption>
-	  </figure>
-	  
-	  <figure class="gallery_small">
-	    <a href="shop">
-	      <img class="image_small" src="images/04.jpg" alt="workshop picture" width="100%">
-	    </a>
-	    <figcaption>
-	      <strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
-	      <h4> Knoll Antimott Sessel <br>765 €</h4>		
-	    </figcaption>
-	  </figure>
-	  
-	  <figure class="gallery_small">
-	    <a href="shop">
-	      <img class="image_small" src="images/05.png" alt="workshop picture" width="100%">
-	    </a>
-	    <figcaption>
-	      <strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
-	      <h4> Knoll Antimott Sessel <br>765 €</h4>		
-	    </figcaption>
-	  </figure>
-	  
-	  <figure class="gallery_small">
-	    <a href="shop">
-	      <img class="image_small" src="images/06.png" alt="workshop picture" width="100%">
-	    </a>
-	    <figcaption>
-	      <strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
-	      <h4> Knoll Antimott Sessel <br>765 €</h4>		
-	    </figcaption>
-	  </figure>
-	  
-	  <figure class="gallery_small">
-	    <a href="shop">
-	      <img class="image_small" src="images/07.jpg" alt="workshop picture" width="100%">
-	    </a>
-	    <figcaption>
-	      <strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
-	      <h4> Knoll Antimott Sessel <br>765 €</h4>		
-	    </figcaption>
-	  </figure>
-	  
-	  <button class="button" onclick="plusDivs(1,0)" style="float:right;margin-top:120px;">&#10095;</button>
 	</div>
       </div>
-      <div class="col-sm-2"></div>
-    </div>
 
+      <div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8" style="text-align:center">
+	  <figure class="four_images leder cl">
+	    <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
+	    <figcaption>
+	      LEDER<br>
+	      <h4>Dieckmann Leder</h4>
+	      <p>Arione od quaernam, occae. Cabo. Ga.
+		Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
+		volor aut earum.
+	      </p>
+	    </figcaption>
+	  </figure>
+	  <figure class="four_images stoffe cl">
+	    <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
+	    <figcaption>
+	      STOFFE<br>
+	      <h4>Casal</h4>
+	      <p>Arione od quaernam, occae. Cabo. Ga.
+		Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
+		volor aut earum.
+	      </p>
+	    </figcaption>
+	  </figure>
+	  <figure class="four_images stoffe cl">
+	    <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
+	    <figcaption>
+	      STOFFE<br>
+	      <h4>KOBE</h4>
+	      <p>Arione od quaernam, occae. Cabo. Ga.
+		Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
+		volor aut earum.
+	      </p>
+	    </figcaption>
+	  </figure>
+	  <figure class="four_images stoffe cl">
+	    <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
+	    <figcaption>
+	      STOFFE<br>
+	      <h4>Rentmeister</h4>
+	      <p>Arione od quaernam, occae. Cabo. Ga.
+		Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
+		volor aut earum.
+	      </p>
+	    </figcaption>
+	  </figure>
+	  
+	  <figure class="four_images leder cl">
+	    <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
+	    <figcaption>
+	      LEDER<br>
+	      <h4>Hans Reinke</h4>
+	      <p>Arione od quaernam, occae. Cabo. Ga.
+		Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
+		volor aut earum.
+	      </p>
+	    </figcaption>
+	  </figure>
+	  <figure class="four_images zubehoer cl">
+	    <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
+	    <figcaption>
+	      LEDER, STOFFE &amp; ZUBEHÖR<br>
+	      <h4>Zinc</h4>
+	      <p>Arione od quaernam, occae. Cabo. Ga.
+		Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
+		volor aut earum.
+	      </p>
+	    </figcaption>
+	  </figure>
+	  <figure class="four_images stoffe cl">
+	    <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
+	    <figcaption>
+	      STOFFE<br>
+	      <h4>DEKOMA</h4>
+	      <p>Arione od quaernam, occae. Cabo. Ga.
+		Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
+		volor aut earum.
+	      </p>
+	    </figcaption>
+	  </figure>
+	  <figure class="four_images stoffe cl">
+	    <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
+	    <figcaption>
+	      STOFFE<br>
+	      <h4>ROMO</h4>
+	      <p>Arione od quaernam, occae. Cabo. Ga.
+		Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
+		volor aut earum.
+	      </p>
+	    </figcaption>
+	  </figure>
+	  
+	  <figure class="four_images leder cl">
+	    <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
+	    <figcaption>
+	      LEDER<br>
+	      <h4>Dieckmann Leder</h4>
+	      <p>Arione od quaernam, occae. Cabo. Ga.
+		Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
+		volor aut earum.
+	      </p>
+	    </figcaption>
+	  </figure>
+	  <figure class="four_images stoffe cl">
+	    <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
+	    <figcaption>
+	      STOFFE<br>
+	      <h4>Casal</h4>
+	      <p>Arione od quaernam, occae. Cabo. Ga.
+		Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
+		volor aut earum.
+	      </p>
+	    </figcaption>
+	  </figure>
+	  <figure class="four_images stoffe cl">
+	    <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
+	    <figcaption>
+	      STOFFE<br>
+	      <h4>KOBE</h4>
+	      <p>Arione od quaernam, occae. Cabo. Ga.
+		Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
+		volor aut earum.
+	      </p>
+	    </figcaption>
+	  </figure>
+	  <figure class="four_images stoffe cl">
+	    <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
+	    <figcaption>
+	      STOFFE<br>
+	      <h4>Rentmeister</h4>
+	      <p>Arione od quaernam, occae. Cabo. Ga.
+		Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
+		volor aut earum.
+	      </p>
+	    </figcaption>
+	  </figure>
+
+	  <figure class="four_images leder cl">
+	    <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
+	    <figcaption>
+	      LEDER<br>
+	      <h4>Hans Reinke</h4>
+	      <p>Arione od quaernam, occae. Cabo. Ga.
+		Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
+		volor aut earum.
+	      </p>
+	    </figcaption>
+	  </figure>
+	  <figure class="four_images zubehoer cl">
+	    <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
+	    <figcaption>
+	      LEDER, STOFFE &amp; ZUBEHÖR<br>
+	      <h4>Zinc</h4>
+	      <p>Arione od quaernam, occae. Cabo. Ga.
+		Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
+		volor aut earum.
+	      </p>
+	    </figcaption>
+	  </figure>
+	  <figure class="four_images stoffe cl">
+	    <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
+	    <figcaption>
+	      STOFFE<br>
+	      <h4>DEKOMA</h4>
+	      <p>Arione od quaernam, occae. Cabo. Ga.
+		Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
+		volor aut earum.
+	      </p>
+	    </figcaption>
+	  </figure>
+	  <figure class="four_images stoffe cl">
+	    <img src="images/placeholder.png" alt="antiquitaeten" width="100%">
+	    <figcaption>
+	      STOFFE<br>
+	      <h4>ROMO</h4>
+	      <p>Arione od quaernam, occae. Cabo. Ga.
+		Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
+		volor aut earum.
+	      </p>
+	    </figcaption>
+	  </figure>
+	</div>
+	<div class="col-sm-2"></div>
+      </div>
+
+      <div class="row tube_row bg1">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8" style="text-align:center">
+	  <h1>
+	    Über die Arbeit mit unseren Partnern:
+	  </h1>
+	  <s1>
+	    Biedermeier, Jugendstil, Gründerzeit, Barock &amp; Moderne -
+	    Wir haben ständig eine Auswahl unrestaurierter Möbel in unserem
+	    Lager vorrätig, die nach Ihren Wünschen aufgearbeitet und bezogen
+	    werden können.<br>
+	  </s1>
+	  <button class="button" onclick="plusDivs(-1,0)" style="float:left;margin-top:120px;">&#10094;</button>
+	  <div class="image cl">
+	    <figure class="gallery_small">
+	      <a href="shop">
+		<img class="image_small" src="images/02.jpg" alt="workshop picture" width="100%">
+	      </a>
+	      <figcaption>
+		<strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
+		<h4> Knoll Antimott Sessel 765 €</h4>		
+	      </figcaption>
+	    </figure>
+	    <figure class="gallery_small" style="text-align:center;">
+	      <a href="shop">
+		<img class="image_small" src="images/03.jpg" alt="workshop picture" width="100%">
+	      </a>
+	      <figcaption>
+		<strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
+		<h4> Knoll Antimott Sessel <br>765 €</h4>		
+	      </figcaption>
+	    </figure>
+	    <figure class="gallery_small">
+	      <a href="shop">
+		<img class="image_small" src="images/04.jpg" alt="workshop picture" width="100%">
+	      </a>
+	      <figcaption>
+		<strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
+		<h4> Knoll Antimott Sessel <br>765 €</h4>		
+	      </figcaption>
+	    </figure>
+	    <figure class="gallery_small">
+	      <a href="shop">
+		<img class="image_small" src="images/05.png" alt="workshop picture" width="100%">
+	      </a>
+	      <figcaption>
+		<strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
+		<h4> Knoll Antimott Sessel <br>765 €</h4>		
+	      </figcaption>
+	    </figure>
+	    <figure class="gallery_small">
+	      <a href="shop">
+		<img class="image_small" src="images/06.png" alt="workshop picture" width="100%">
+	      </a>
+	      <figcaption>
+		<strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
+		<h4> Knoll Antimott Sessel <br>765 €</h4>		
+	      </figcaption>
+	    </figure>
+	    <figure class="gallery_small">
+	      <a href="shop">
+		<img class="image_small" src="images/07.jpg" alt="workshop picture" width="100%">
+	      </a>
+	      <figcaption>
+		<strong style="color:rgb(40,90,40);">50ER JAHRE</strong>
+		<h4> Knoll Antimott Sessel <br>765 €</h4>		
+	      </figcaption>
+	    </figure>
+	    <button class="button" onclick="plusDivs(1,0)" style="float:right;margin-top:120px;">&#10095;</button>
+	  </div>
+	</div>
+	<div class="col-sm-2"></div>
+      </div>
 
       <div class="row tube_row">
 	<div class="col-sm-2"></div>
@@ -339,8 +314,8 @@
 	    #derpolsterer
 	  </h1>
 	  <s1>
-	      Wir sehen Sie und hören Ihnen zu. <br>
-	      Ganz einfach Fotos auf Instagram hochladen oder twittern, um dabei zu sein.
+	    Wir sehen Sie und hören Ihnen zu. <br>
+	    Ganz einfach Fotos auf Instagram hochladen oder twittern, um dabei zu sein.
 	  </s1><br>
 	  <figure class="four_images cl">
 	    <img src="images/couch.png" alt="antiquitaeten" width="100%">
@@ -366,7 +341,8 @@
     <div id="base_generic_bottom"></div>
   </main>
 
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/scripts_partner.js"></script>  
 </body>
 </html>
