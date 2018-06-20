@@ -40,6 +40,7 @@ s1 {
     font-size: 25px;
     line-height: 30px;
     font-style: italic;
+    padding-bottom: 15px;
 }
 
 .tube_row {
@@ -247,6 +248,7 @@ figcaption strong {
     width: 18%;
     padding-bottom: 50px;
     padding-top: 50px;
+    padding-left: 30px;
 }
 
 /* MAIN PAGE, quote */
@@ -389,28 +391,37 @@ div h2 em {
   
   /* Full-width containers */
   .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-    
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+      
   }
   
   /* Make sure that all arrows are pointing leftwards */
   .container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
   .left::after, .right::after {
-    left: 15px;
-  }
+		    left: 15px;
+		}
   
   /* Make all right containers behave like the left ones */
   .right {
-    left: 0%;
+      left: 0%;
   }
 }
 
+ul li.listing {
+    padding-bottom:10px;
+    font-size:16px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 20px;
+}

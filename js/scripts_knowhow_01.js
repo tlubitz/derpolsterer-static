@@ -45,3 +45,32 @@ $(function(){
 $(function(){
     $("#base_generic_bottom").load("base_generic_bottom.html"); 
 });
+
+
+var slideIndex = 0;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+
+    var i;
+    var x = document.getElementsByClassName("gallery_small2");
+
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    };
+    
+    var j;
+    for (j = 0; j < 5; j++) {
+	if ((slideIndex+j) < 0)
+	{slideIndex = x.length-slideIndex};
+
+	if ((slideIndex+j) > x.length-1)
+	{slideIndex = 0-j};
+
+	x[slideIndex+j].style.display = "block";
+    };
+}
