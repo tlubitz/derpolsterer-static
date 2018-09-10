@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <title>Der Polsterer ~ Berlin</title>
     <meta charset="utf-8">
@@ -7,7 +7,7 @@
 
     <!-- add bootstrap JS; normalize for JS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
     
     <!-- import google fonts -->
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
@@ -45,9 +45,9 @@
 	  <p style="font-size:24px;font-weight:bold;margin-top:20px;">Filter:</p>
 	  <em>(Mehrfachauswahl möglich)</em>
 	  <p>
-	    <button type="button_filter" class="button" id="button_pflege" onclick="content_filter('pflege')">Pflege</button>
-	    <button type="button_filter" class="button" id="button_stoffe" onclick="content_filter('stoffe')">Stoffe</button>
-	    <button type="button_filter" class="button" id="button_polster" onclick="content_filter('polster')">Polster</button>
+	    <button type="button" class="button_filter" id="button_pflege" onclick="content_filter('pflege')">Pflege</button>
+	    <button type="button" class="button_filter" id="button_stoffe" onclick="content_filter('stoffe')">Stoffe</button>
+	    <button type="button" class="button_filter" id="button_polster" onclick="content_filter('polster')">Polster</button>
 	  </p>
 	  <figure class="pflege">
 	    <img src="images/polish_narrow.png" alt="quote" style="margin-bottom:20px;width:100%">
@@ -63,7 +63,7 @@
 		<button type="button" class="button" onclick="window.location.href='knowhow-moebelpflege.html'">MEHR</button>
 	      </p>
 	    </figcaption>
-	  </figure class="pflege">
+	  </figure>
 	  <figure class="two_images cl">
 	    <img src="images/stoff.png" alt="quote" width="100%" style="margin-bottom:20px;">
 	    <figcaption>
@@ -72,9 +72,7 @@
 	      <p style="margin:0 auto;max-width:70%">Arione od quaernam, occae.
 		Cabo. Ga. Abor ad molupti cor re
 		poreiuris eum eatuisd antibus consecepudaipid eictem ratem.
-	      <p>
 		<button type="button" class="button" onclick="window.location.href='knowhow_02.html'">MEHR</button>
-	      </p>
 	      </p>
 	    </figcaption>
 	  </figure>	  
@@ -86,9 +84,7 @@
 	      <p style="margin:0 auto;max-width:70%">Quaernam, occae. Cabo. Ga.
 		Abor ad molupti cor re poreiuris eum eatiusd antibus consecepuda
 		volor aut earum et ab imo endigentis eniendipid eictem ratem.
-	      <p>
 		<button type="button" class="button" onclick="window.location.href='knowhow_03.html'">MEHR</button>
-	      </p>
 	      </p>
 	    </figcaption>
 	  </figure>
@@ -110,7 +106,7 @@
 	  </s1><br>
 	  <figure class="three_images cl">
 	    <a href="shop.html">
-	      <img src="images/placeholder.png" alt="antiquitaeten" width="100%" style="margin-bottom:10px;">
+	      <img src="images/knowhow-galeriepic-stoff.jpg" alt="Stoffmuster" width="100%" style="margin-bottom:10px;">
 	    </a>
 	    <figcaption>
 	      <strong style="color:rgb(40,90,40);">ZUR GALERIE</strong>
@@ -119,7 +115,7 @@
 	  </figure>
 	  <figure class="three_images cl">
 	    <a href="shop.html">
-	      <img src="images/placeholder.png" alt="antiquitaeten" width="100%" style="margin-bottom:10px;">
+	      <img src="images/knowhow-galeriepic-leder.jpg" alt="Ledermuster" width="100%" style="margin-bottom:10px;">
 	    </a>
 	    <figcaption>
 	      <strong style="color:rgb(40,90,40);">ZUR GALERIE</strong>
@@ -128,7 +124,7 @@
 	  </figure>
 	  <figure class="three_images cl">
 	    <a href="shop.html">
-	      <img src="images/placeholder.png" alt="antiquitaeten" width="100%" style="margin-bottom:10px;">
+	      <img src="images/knowhow-galeriepic-fellmuster.jpg" alt="Fellmuster" width="100%" style="margin-bottom:10px;">
 	    </a>
 	    <figcaption>
 	      <strong style="color:rgb(40,90,40);">ZUR GALERIE</strong>
@@ -168,18 +164,16 @@
 	    <div class="col-sm-2"></div>
 	    <div class="col-sm-4" style="text-align:right">
 	      <div id="container_ba" class="bac">
-		<img src="images/vorher.png">
-		<img src="images/nachher.png">
+		<img src="images/vorher.png" alt="vorher_bild">
+		<img src="images/nachher.png" alt="nachher_bild">
 	      </div>
 	    </div>
 	    <div class="col-sm-4">
-	      <p>
 		<h4>50er Jahre Knoll Antimott Sessel</h4>
 		<p style="text-align:left;">Sequo evercia magnamusamet doluptentet faceptam, quid qui ra si ut re
 		  liqui acest ate nimpora pro voluptae. Et eumquatio. Endit apiciis mod
 		  magni blamenecab illabo. Tem que prat poremquo bea sandes minist,
 		  vende consequam.</p>
-	      </p>
 	    </div>
 	    <div class="col-sm-2"></div>
 	  </div>
@@ -210,7 +204,7 @@
 	    <img src="images/sessel.png" alt="antiquitaeten" width="100%">
 	  </figure>
 	  <p>
-	    <button type="button" class="button" target="_blank" onclick="window.location.href='https://www.instagram.com'">INSTAGRAM</button>
+	    <button type="button" class="button" onclick="window.location.href='https://www.instagram.com'">INSTAGRAM</button>
 	  </p>
 	</div>
 	<div class="col-sm-2"></div>
@@ -224,8 +218,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/scripts_knowhow.js"></script>  
-  <script type="text/javascript" src="js/jquery.twentytwenty.js"></script>
-  <script type="text/javascript" src="js/jquery.event.move.js"></script>      
+  <script src="js/scripts_knowhow.js"></script>  
+  <script src="js/jquery.twentytwenty.js"></script>
+  <script src="js/jquery.event.move.js"></script>      
 </body>
 </html>
