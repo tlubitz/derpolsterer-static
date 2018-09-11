@@ -323,6 +323,21 @@ div h2 em {
     padding-left:15px !important;
 }
 
+.two_images_kh {
+    width: 50%;
+    padding-bottom: 50px !important;
+    padding-top: 50px !important;
+    float: left !important;
+    padding-left:15px !important;
+    width: 450px;
+    height:500px;
+}
+
+.two_images_kh > img {
+    max-width: 450px !important;
+    max-height:244px !important;
+}
+
 /* MAIN PAGE, #derpolsterer */
 
 .four_images {
