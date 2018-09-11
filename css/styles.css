@@ -39,12 +39,17 @@ h4 {
     margin-top: 0px;
 }
 
+.price {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15pt;
+}
+
 s1 {
     font-family: 'PT Serif', serif;
     font-size: 25px;
     line-height: 30px;
     font-style: italic;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .row {
@@ -53,6 +58,13 @@ s1 {
 
 .tube_row {
     margin-bottom: 30px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.tube_row {
+    margin-bottom: 0px;
     margin-top: 30px;
     padding-bottom: 30px;
     padding-top: 30px;
@@ -227,6 +239,12 @@ div p em {
  
 }
 
+.arrow {
+    background: rgb(246,246,246);
+    color:green;
+    
+}
+
 .button:hover {
     font-style: italic;
 }
@@ -263,7 +281,6 @@ div p em {
 .cl::after {
     content: "";
     clear: both;
-    display: table;
 }
 
 figcaption strong {
@@ -274,7 +291,7 @@ figcaption strong {
 
 .gallery_small {
     float: left;
-    width: 18%;
+    width: 17%;
     padding-bottom: 50px;
     padding-top: 50px;
     padding-left: 30px;
@@ -310,10 +327,10 @@ div h2 em {
 
 .four_images {
     width: 24%;
+    padding-left:5px;
     padding-bottom: 50px;
-    padding-top: 50px;
     float: left;
-    padding-left:15px;
+    height:500px;
 }
 
 .seven_images {
@@ -365,7 +382,7 @@ div h2 em {
     width: 4px;
     background-color: rgb(40,90,40);  /* green */
     top: 15px;
-    bottom: 55px;
+    bottom: 15px;
     left: 31%;
     margin-left: -3px;
 }
@@ -515,7 +532,23 @@ p {
 
 /* Hide the slides by default */
 .mySlides {
-  display: none;
+    display: none;
+}
+
+.mySlides > img {
+    max-width:1200px;
+    max-height:640px;
+    object-fit: contain;
+    background:black;
+    padding-top:50px;
+}
+
+.mySlides2 > img {
+    max-width:1200px;
+    max-height:640px;
+    object-fit: contain;
+    background:black;
+    padding-top:50px;
 }
 
 /* Hide the slides by default */

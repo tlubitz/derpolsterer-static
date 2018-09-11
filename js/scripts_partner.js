@@ -68,7 +68,7 @@ load_content();
 var page_loaded = true;
 var leder = true;
 var stoffe = true;
-var zubehoer = true;
+var tapeten = true;
 
 function content_filter(content) {
     if (content == 'leder') {
@@ -80,10 +80,10 @@ function content_filter(content) {
 		x[i].style.display = 'none';
 		stoffe = false;
 	    }
-	    var x = document.getElementsByClassName('zubehoer');
+	    var x = document.getElementsByClassName('tapeten');
 	    for (i=0; i<x.length; i++) {
 		x[i].style.display = 'none';
-		zubehoer = false;
+		tapeten = false;
 	    }
 	}
 	
@@ -117,10 +117,10 @@ function content_filter(content) {
 		x[i].style.display = 'none';
 		leder = false
 	    }
-	    var x = document.getElementsByClassName('zubehoer');
+	    var x = document.getElementsByClassName('tapeten');
 	    for (i=0; i<x.length; i++) {
 		x[i].style.display = 'none';
-		zubehoer = false
+		tapeten = false
 	    }
 	}
 	
@@ -144,7 +144,7 @@ function content_filter(content) {
 	}
     }
     
-    if (content == 'zubehoer') {
+    if (content == 'tapeten') {
 
 	/* hide the other content if page is loaded newly */
 	if (page_loaded == true) {
@@ -160,17 +160,17 @@ function content_filter(content) {
 	    }
 	}
 	/* display requested content (or hide it again) */
-	var x = document.getElementsByClassName('zubehoer');
+	var x = document.getElementsByClassName('tapeten');
 	for (i=0; i<x.length; i++) {
 	    if (x[i].style.display == 'block' && page_loaded == false) {
 		x[i].style.display = 'none';
-		document.getElementById('button_zubehoer').style.border = 'none';
-		zubehoer = false;
+		document.getElementById('button_tapeten').style.border = 'none';
+		tapeten = false;
 	    }
 	    else {
 		x[i].style.display = 'block';
-		document.getElementById('button_zubehoer').style.border = '3px solid green';
-		zubehoer = true;
+		document.getElementById('button_tapeten').style.border = '3px solid green';
+		tapeten = true;
 	    }
 	}
 	/* determine that the page is not newly loaded atm */
@@ -184,12 +184,12 @@ function content_filter(content) {
 }
 
 function load_content() {
-    if (leder == false && stoffe == false && zubehoer == false) {
+    if (leder == false && stoffe == false && tapeten == false) {
 	leder = true;
 	stoffe = true;
-	zubehoer = true;
+	tapeten = true;
 	page_loaded = true;
-	var contents = ['zubehoer','leder','stoffe'];
+	var contents = ['tapeten','leder','stoffe'];
 	for (i=0; i<contents.length; i++) {
 	    var x = document.getElementsByClassName(contents[i]);
 	    for (j=0; j<x.length; j++) {
