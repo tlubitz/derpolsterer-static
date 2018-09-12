@@ -291,7 +291,7 @@ figcaption strong {
 
 .gallery_small {
     float: left;
-    width: 17%;
+    width: 20%;
     padding-bottom: 50px;
     padding-top: 50px;
     padding-left: 30px;
@@ -638,4 +638,17 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.subh1 {
+    margin-top:0px;
+}
+
+.subimg {
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.subp {
+    text-align:left;
 }

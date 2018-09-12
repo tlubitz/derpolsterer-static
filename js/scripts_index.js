@@ -32,7 +32,7 @@ function plusDivs(n) {
 function showDivs(n) {
 
     var i;
-    var x = document.getElementsByClassName("gallery_small");
+    var x = document.getElementsByClassName("gallery_small2");
 
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none"; 
