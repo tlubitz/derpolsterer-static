@@ -300,10 +300,10 @@ figcaption strong {
 
 .gallery_small2 {
     float: left;
-    width: 18%;
+    width: 17%;
     padding-bottom: 50px;
     padding-top: 50px;
-    padding-left: 30px;
+    padding-left: 25px;
 }
 
 /* MAIN PAGE, quote */
@@ -330,7 +330,6 @@ div h2 em {
     padding-top: 50px !important;
     float: left !important;
     padding-left:15px !important;
-    width: 450px;
     height:500px;
 }
 
@@ -350,14 +349,16 @@ div h2 em {
 }
 
 .four_images_shop {
-    width: 24%;
-    padding-left:5px;
+    width: 25%;
+
     margin-bottom: 50px;
     float: left;
-    height:500px;
-    line-height:500px!important;
-    vertical-align:middle;
+    height:550px;
+    padding-left:50px;
     max-width:275px;
+
+
+    
 }
 
 
