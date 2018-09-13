@@ -18,6 +18,15 @@
           <nav class="navbar navbar-default">
             <div class="container-fluid">
 	      <div class="navbar-header">
+
+		<!-- button is hidden on desktop, becomes a hamburger on mobile! the span items are the hamburger lines --> 
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		  <span class="sr-only">Toggle navigation</span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		</button>
+		
                 <a class="navbar-brand" href="index.html" style="margin-left:20px;line-height:0px">
 		  <strong class="navbrand">Der Polsterer ~ Berlin</strong><br>
                   <div style="float:right;font-size:15px;padding-top:0px;margin-bottom:0px;border:0px;line-height:0px">
@@ -26,7 +35,7 @@
 		</a>
 	      </div>
 	      
-	      <ul class="nav navbar-nav navbar-dp">
+	      <ul class="nav navbar-nav navbar-dp" id="bs-example-navbar-collapse-1">
                 <li>
                   <a class="black" href="derpolsterer.html" id="derpolsterer_nav">DER POLSTERER</a>
                 </li>
