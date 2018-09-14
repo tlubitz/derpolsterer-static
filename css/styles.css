@@ -3,11 +3,11 @@
 body {
     background-color: rgb(246,246,246);
     color: rgb(0,0,0);
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 h0 {
-    font-family: 'PT Sans Serif', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 58pt;
     line-height: 58pt;
     padding-top:20px;
@@ -16,7 +16,7 @@ h0 {
 }
 
 h1 {
-    font-family: 'PT Serif', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 35pt;
     line-height: 42pt;
     text-align: center;
@@ -24,7 +24,7 @@ h1 {
 }
 
 h3 {
-    font-family: 'PT Serif', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 24pt;
     line-height: 26pt;
     text-align: center;
@@ -32,7 +32,7 @@ h3 {
 }
 
 h4 {
-    font-family: 'PT Serif', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 18pt;
     line-height: 22pt;
     text-align: center;
@@ -40,12 +40,12 @@ h4 {
 }
 
 .price {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 15pt;
 }
 
 s1 {
-    font-family: 'PT Serif', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 25px;
     line-height: 30px;
     font-style: italic;
@@ -95,7 +95,7 @@ s1 {
     margin-bottom:0px;
     border:0px;
     font-size:23pt;
-    font-family: 'PT Serif', serif;
+    font-family: 'Playfair Display', serif;
     float:right;
 }
 
@@ -107,7 +107,7 @@ s1 {
     margin-bottom:0px;
     border:0px;
     font-size:16pt;
-    font-family: 'PT Serif', serif;
+    font-family: 'Playfair Display', serif;
     float:right;
 }
 
@@ -234,7 +234,7 @@ div p em {
     color: rgb(255,250,250);    /* white */
     font-weight:bold;
     font-size: 12pt;
-    font-family: 'PT Sans';
+    font-family: 'Playfair Display', serif;
     letter-spacing: 2pt;
     border:0px;
  

@@ -5,7 +5,7 @@ $.ajaxPrefilter(function( options, originalOptions, jqXHR ) { options.async = tr
    holds the required element. if we have it, we change its style. */
 var y = document.getElementsByClassName("page_id");
 page_id = y[0].getAttribute("id")
-pi = '#' + page_id + '_nav';
+pi = '#' + page_id + '_nav\\';
 
 /* function to fetch HTML page */
 var getHTML = function ( url, callback ) {
