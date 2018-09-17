@@ -51,14 +51,14 @@ function showDivs(n) {
     };
 }
 
-/* required functions to include other HTML file templates */
+/* required functions to include other HTML file templates
 $(function(){
     $("#base_generic_top").load("base_generic_top.html"); 
 });
 
 $(function(){
     $("#base_generic_bottom").load("base_generic_bottom.html"); 
-});
+}); */
 
 
 /* Image gallery lightbox 1 (modal) */
@@ -89,19 +89,13 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
   var captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
 /* Image gallery lightbox 2 (modal) */
@@ -132,19 +126,13 @@ function currentSlide2(n) {
 function showSlides2(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides2");
-  var dots = document.getElementsByClassName("demo");
   var captionText = document.getElementById("caption2");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
 /* SHOP ITEMS */
