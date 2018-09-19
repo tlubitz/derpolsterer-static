@@ -503,6 +503,24 @@ div h2 em {
   .right {
       left: 0%;
   }
+  img {
+      max-width: 100%;
+  }
+  
+  .navbar {
+    z-index: 3;
+    border-style: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    top:0px;
+    width:100%;
+    position:fixed;
+    box-shadow: 3px 3px 3px darkgrey;
+  }
+  .navbrand {
+      font-size:8pt;
+  }
+  
 }
 
 ul li.listing {
