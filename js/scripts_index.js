@@ -21,7 +21,7 @@ function carousel() {
 }
 
 /* gallery small manual slider MAIN */
-
+var clicked = 0;
 var slideIndex2 = 0;
 showDivs(slideIndex2);
 
@@ -35,7 +35,7 @@ function showDivs(n) {
     var x = document.getElementsByClassName("gallery_small2");
 
     for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
+        x[i].style.display = "none";
     }
     
     var j;
@@ -47,8 +47,16 @@ function showDivs(n) {
 	{slideIndex2 = 0-j};
 
 	x[slideIndex2+j].style.display = "block";
-	
+
+	/* by some reason the iframe of the hidden elements
+	   is set to 'auto', which makes it too small for our
+	   interface; thus, we correct this manually */
+	if (clicked == 1) {
+	    ifr = x[slideIndex2+j].getElementsByTagName("iframe");
+	    ifr[0].style.height = "361px"; }
+
     };
+    clicked = 1;
 }
 
 /* required functions to include other HTML file templates
@@ -181,7 +189,7 @@ function showSlides2(n) {
       "quantity": false
     },
     "text": {
-      "button": "VIEW PRODUCT"
+      "button": "Produkt anzeigen"
     },
     "styles": {
       "product": {
@@ -200,6 +208,9 @@ function showSlides2(n) {
     "contents": {
       "button": true
     },
+    "text": {
+      "button": "Zur Kasse"
+    },      
     "styles": {
       "footer": {
         "background-color": "#ffffff"
@@ -212,8 +223,11 @@ function showSlides2(n) {
       "imgWithCarousel": true,
       "variantTitle": false,
       "buttonWithQuantity": true,
-      "button": false,
+      "button": true,
       "quantity": false
+    },
+    "text": {
+      "button": "In den Einkaufswagen"
     },
     "styles": {
       "product": {
@@ -286,7 +300,7 @@ function showSlides2(n) {
       "quantity": false
     },
     "text": {
-      "button": "VIEW PRODUCT"
+      "button": "Produkt anzeigen"
     },
     "styles": {
       "product": {
@@ -305,6 +319,9 @@ function showSlides2(n) {
     "contents": {
       "button": true
     },
+    "text": {
+      "button": "Zur Kasse"
+    },      
     "styles": {
       "footer": {
         "background-color": "#ffffff"
@@ -319,6 +336,9 @@ function showSlides2(n) {
       "buttonWithQuantity": true,
       "button": false,
       "quantity": false
+    },
+    "text": {
+      "button": "In den Einkaufswagen"
     },
     "styles": {
       "product": {
@@ -390,7 +410,7 @@ function showSlides2(n) {
       "quantity": false
     },
     "text": {
-      "button": "VIEW PRODUCT"
+      "button": "Produkt anzeigen"
     },
     "styles": {
       "product": {
@@ -409,6 +429,9 @@ function showSlides2(n) {
     "contents": {
       "button": true
     },
+    "text": {
+      "button": "Zur Kasse"
+    },      
     "styles": {
       "footer": {
         "background-color": "#ffffff"
@@ -424,6 +447,9 @@ function showSlides2(n) {
       "button": false,
       "quantity": false
     },
+    "text": {
+      "button": "In den Einkaufswagen"
+    },      
     "styles": {
       "product": {
         "@media (min-width: 601px)": {
@@ -494,7 +520,7 @@ function showSlides2(n) {
       "quantity": false
     },
     "text": {
-      "button": "VIEW PRODUCT"
+      "button": "Produkt anzeigen"
     },
     "styles": {
       "product": {
@@ -513,6 +539,9 @@ function showSlides2(n) {
     "contents": {
       "button": true
     },
+    "text": {
+      "button": "Zur Kasse"
+    },      
     "styles": {
       "footer": {
         "background-color": "#ffffff"
@@ -528,6 +557,9 @@ function showSlides2(n) {
       "button": false,
       "quantity": false
     },
+    "text": {
+      "button": "In den Einkaufswagen"
+    },      
     "styles": {
       "product": {
         "@media (min-width: 601px)": {
@@ -598,7 +630,7 @@ function showSlides2(n) {
       "quantity": false
     },
     "text": {
-      "button": "VIEW PRODUCT"
+      "button": "Produkt anzeigen"
     },
     "styles": {
       "product": {
@@ -617,6 +649,9 @@ function showSlides2(n) {
     "contents": {
       "button": true
     },
+    "text": {
+      "button": "Zur Kasse"
+    },      
     "styles": {
       "footer": {
         "background-color": "#ffffff"
@@ -632,6 +667,9 @@ function showSlides2(n) {
       "button": false,
       "quantity": false
     },
+    "text": {
+      "button": "In den Einkaufswagen"
+    },      
     "styles": {
       "product": {
         "@media (min-width: 601px)": {
@@ -702,7 +740,7 @@ function showSlides2(n) {
       "quantity": false
     },
     "text": {
-      "button": "VIEW PRODUCT"
+      "button": "Produkt anzeigen"
     },
     "styles": {
       "product": {
@@ -721,6 +759,9 @@ function showSlides2(n) {
     "contents": {
       "button": true
     },
+    "text": {
+      "button": "Zur Kasse"
+    },      
     "styles": {
       "footer": {
         "background-color": "#ffffff"
@@ -736,6 +777,9 @@ function showSlides2(n) {
       "button": false,
       "quantity": false
     },
+    "text": {
+      "button": "In den Einkaufswagen"
+    },      
     "styles": {
       "product": {
         "@media (min-width: 601px)": {
@@ -806,7 +850,7 @@ function showSlides2(n) {
       "quantity": false
     },
     "text": {
-      "button": "VIEW PRODUCT"
+      "button": "Produkt anzeigen"
     },
     "styles": {
       "product": {
@@ -825,6 +869,9 @@ function showSlides2(n) {
     "contents": {
       "button": true
     },
+    "text": {
+      "button": "Zur Kasse"
+    },      
     "styles": {
       "footer": {
         "background-color": "#ffffff"
@@ -839,6 +886,9 @@ function showSlides2(n) {
       "buttonWithQuantity": true,
       "button": false,
       "quantity": false
+    },
+    "text": {
+      "button": "In den Einkaufswagen"
     },
     "styles": {
       "product": {
@@ -910,7 +960,7 @@ function showSlides2(n) {
       "quantity": false
     },
     "text": {
-      "button": "VIEW PRODUCT"
+      "button": "Produkt anzeigen"
     },
     "styles": {
       "product": {
@@ -929,6 +979,9 @@ function showSlides2(n) {
     "contents": {
       "button": true
     },
+    "text": {
+      "button": "Zur Kasse"
+    },      
     "styles": {
       "footer": {
         "background-color": "#ffffff"
@@ -944,6 +997,9 @@ function showSlides2(n) {
       "button": false,
       "quantity": false
     },
+    "text": {
+      "button": "In den Einkaufswagen"
+    },      
     "styles": {
       "product": {
         "@media (min-width: 601px)": {
@@ -1014,7 +1070,7 @@ function showSlides2(n) {
       "quantity": false
     },
     "text": {
-      "button": "VIEW PRODUCT"
+      "button": "Produkt anzeigen"
     },
     "styles": {
       "product": {
@@ -1033,6 +1089,9 @@ function showSlides2(n) {
     "contents": {
       "button": true
     },
+    "text": {
+      "button": "Zur Kasse"
+    },      
     "styles": {
       "footer": {
         "background-color": "#ffffff"
@@ -1048,6 +1107,9 @@ function showSlides2(n) {
       "button": false,
       "quantity": false
     },
+    "text": {
+      "button": "In den Einkaufswagen"
+    },      
     "styles": {
       "product": {
         "@media (min-width: 601px)": {
@@ -1118,7 +1180,7 @@ function showSlides2(n) {
       "quantity": false
     },
     "text": {
-      "button": "VIEW PRODUCT"
+      "button": "Produkt anzeigen"
     },
     "styles": {
       "product": {
@@ -1137,6 +1199,9 @@ function showSlides2(n) {
     "contents": {
       "button": true
     },
+    "text": {
+      "button": "Zur Kasse"
+    },      
     "styles": {
       "footer": {
         "background-color": "#ffffff"
@@ -1152,6 +1217,9 @@ function showSlides2(n) {
       "button": false,
       "quantity": false
     },
+    "text": {
+      "button": "In den Einkaufswagen"
+    },      
     "styles": {
       "product": {
         "@media (min-width: 601px)": {
@@ -1222,7 +1290,7 @@ function showSlides2(n) {
       "quantity": false
     },
     "text": {
-      "button": "VIEW PRODUCT"
+      "button": "Produkt anzeigen"
     },
     "styles": {
       "product": {
@@ -1241,6 +1309,9 @@ function showSlides2(n) {
     "contents": {
       "button": true
     },
+    "text": {
+      "button": "Zur Kasse"
+    },      
     "styles": {
       "footer": {
         "background-color": "#ffffff"
@@ -1256,6 +1327,9 @@ function showSlides2(n) {
       "button": false,
       "quantity": false
     },
+    "text": {
+      "button": "In den Einkaufswagen"
+    },      
     "styles": {
       "product": {
         "@media (min-width: 601px)": {
@@ -1326,7 +1400,7 @@ function showSlides2(n) {
       "quantity": false
     },
     "text": {
-      "button": "VIEW PRODUCT"
+      "button": "Produkt anzeigen"
     },
     "styles": {
       "product": {
@@ -1345,6 +1419,9 @@ function showSlides2(n) {
     "contents": {
       "button": true
     },
+    "text": {
+      "button": "Zur Kasse"
+    },      
     "styles": {
       "footer": {
         "background-color": "#ffffff"
@@ -1360,6 +1437,9 @@ function showSlides2(n) {
       "button": false,
       "quantity": false
     },
+    "text": {
+      "button": "In den Einkaufswagen"
+    },      
     "styles": {
       "product": {
         "@media (min-width: 601px)": {
@@ -1430,7 +1510,7 @@ function showSlides2(n) {
       "quantity": false
     },
     "text": {
-      "button": "VIEW PRODUCT"
+      "button": "Produkt anzeigen"
     },
     "styles": {
       "product": {
@@ -1449,6 +1529,9 @@ function showSlides2(n) {
     "contents": {
       "button": true
     },
+    "text": {
+      "button": "Zur Kasse"
+    },      
     "styles": {
       "footer": {
         "background-color": "#ffffff"
@@ -1464,6 +1547,9 @@ function showSlides2(n) {
       "button": false,
       "quantity": false
     },
+    "text": {
+      "button": "In den Einkaufswagen"
+    },      
     "styles": {
       "product": {
         "@media (min-width: 601px)": {
@@ -1534,7 +1620,7 @@ function showSlides2(n) {
       "quantity": false
     },
     "text": {
-      "button": "VIEW PRODUCT"
+      "button": "Produkt anzeigen"
     },
     "styles": {
       "product": {
@@ -1553,6 +1639,9 @@ function showSlides2(n) {
     "contents": {
       "button": true
     },
+    "text": {
+      "button": "Zur Kasse"
+    },      
     "styles": {
       "footer": {
         "background-color": "#ffffff"
@@ -1568,6 +1657,9 @@ function showSlides2(n) {
       "button": false,
       "quantity": false
     },
+    "text": {
+      "button": "In den Einkaufswagen"
+    },      
     "styles": {
       "product": {
         "@media (min-width: 601px)": {
@@ -1638,7 +1730,7 @@ function showSlides2(n) {
       "quantity": false
     },
     "text": {
-      "button": "VIEW PRODUCT"
+      "button": "Produkt anzeigen"
     },
     "styles": {
       "product": {
@@ -1657,6 +1749,9 @@ function showSlides2(n) {
     "contents": {
       "button": true
     },
+    "text": {
+      "button": "Zur Kasse"
+    },      
     "styles": {
       "footer": {
         "background-color": "#ffffff"
@@ -1672,6 +1767,9 @@ function showSlides2(n) {
       "button": false,
       "quantity": false
     },
+    "text": {
+      "button": "In den Einkaufswagen"
+    },      
     "styles": {
       "product": {
         "@media (min-width: 601px)": {
@@ -1698,5 +1796,441 @@ function showSlides2(n) {
 })();
 
 /* 16 */
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'test-polsterer.myshopify.com',
+      storefrontAccessToken: '0ae1ef1a65581fa69b7bb96bbf56a31b',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [1578302046323],
+        node: document.getElementById('product-component-dfaee869f1c'),
+        moneyFormat: '%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D',
+        options: {
+  "product": {
+    "buttonDestination": "modal",
+    "variantId": "all",
+    "contents": {
+      "imgWithCarousel": false,
+      "variantTitle": false,
+      "options": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "Produkt anzeigen"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "compareAt": {
+        "font-size": "12px"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "text": {
+      "button": "Zur Kasse"
+    },
+    "styles": {
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "In den Einkaufswagen"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
 
 /* 17 */
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'test-polsterer.myshopify.com',
+      storefrontAccessToken: '0ae1ef1a65581fa69b7bb96bbf56a31b',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [1578249715827],
+        node: document.getElementById('product-component-3dde04e196d'),
+        moneyFormat: '%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D',
+        options: {
+  "product": {
+    "buttonDestination": "modal",
+    "variantId": "all",
+    "contents": {
+      "imgWithCarousel": false,
+      "variantTitle": false,
+      "options": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "Produkt anzeigen"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "compareAt": {
+        "font-size": "12px"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "text": {
+      "button": "Zur Kasse"
+    },
+    "styles": {
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "In den Einkaufswagen"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+
+/* 18 */
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'test-polsterer.myshopify.com',
+      storefrontAccessToken: '0ae1ef1a65581fa69b7bb96bbf56a31b',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [1578277109875],
+        node: document.getElementById('product-component-aaaf710a01a'),
+        moneyFormat: '%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D',
+        options: {
+  "product": {
+    "buttonDestination": "modal",
+    "variantId": "all",
+    "contents": {
+      "imgWithCarousel": false,
+      "variantTitle": false,
+      "options": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "Produkt anzeigen"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "compareAt": {
+        "font-size": "12px"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "text": {
+      "button": "Zur Kasse"
+    },
+    "styles": {
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "In den Einkaufswagen"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+
+/* 19 */
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'test-polsterer.myshopify.com',
+      storefrontAccessToken: '0ae1ef1a65581fa69b7bb96bbf56a31b',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [1578198368371],
+        node: document.getElementById('product-component-8ed7d5b971a'),
+        moneyFormat: '%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D',
+        options: {
+  "product": {
+    "buttonDestination": "modal",
+    "variantId": "all",
+    "contents": {
+      "imgWithCarousel": false,
+      "variantTitle": false,
+      "options": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "Produkt anzeigen"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "compareAt": {
+        "font-size": "12px"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "text": {
+      "button": "Zur Kasse"
+    },
+    "styles": {
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "In den Einkaufswagen"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
