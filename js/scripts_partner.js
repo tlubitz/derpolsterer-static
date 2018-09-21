@@ -25,7 +25,14 @@ function showDivs(n) {
     }
     
     var j;
-    for (j = 0; j < 5; j++) {
+    if (screen.width >= 600) {
+	var els = 5;
+    }
+    else {
+	var els = 1;
+    }
+    
+    for (j = 0; j < els; j++) {
 	if ((slideIndex+j) < 0)
 	{slideIndex = x.length-slideIndex};
 

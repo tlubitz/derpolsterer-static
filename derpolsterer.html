@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 
     <!-- Add additional CSS in static file -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
@@ -46,33 +47,41 @@
                     <em class="navbrand-sub">Manfred Kranz</em>
                   </div>
 		</a>
+                <a class="navbar-mobile" href="index.html">
+		  <strong>Der Polsterer ~ Berlin</strong>
+                  <div>
+                    <em>Manfred Kranz</em>
+                  </div>
+		</a>
 	      </div>
 	      
-	      <ul class="nav navbar-nav navbar-dp" id="bs-example-navbar-collapse-1">
-                <li>
-                  <a class="black" href="derpolsterer.html" id="derpolsterer_nav">DER POLSTERER</a>
-                </li>
-                <li>
-                  <a class="black" href="leistungen.html" id="leistungen_nav">LEISTUNGEN</a>
-                </li>
-                <li>
-                  <a class="black" href="shop.html" id="shop_nav">SHOP</a>
-                </li>
-                <li>
-                  <a class="black" href="knowhow.html" id="knowhow_nav">KNOW-HOW</a>
-                </li>
-                <li>
-                  <a class="black" href="partner.html" id="partner_nav">PARTNER</a>
-                </li>
-                <li>
-                  <a class="black" href="kontakt.html" id="kontakt_nav">KONTAKT</a>
-                </li>
-		<!--
-                <li>
-                  <a href="search.html"><img class="lupe" src="images/lupe.png" width="18px" alt="Lupe"></a>
-                </li>
-		-->
-	      </ul>
+	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav navbar-dp navbar-right">
+                  <li>
+                    <a class="black" href="derpolsterer.html" id="derpolsterer_nav">DER POLSTERER</a>
+                  </li>
+                  <li>
+                    <a class="black" href="leistungen.html" id="leistungen_nav">LEISTUNGEN</a>
+                  </li>
+                  <li>
+                    <a class="black" href="shop.html" id="shop_nav">SHOP</a>
+                  </li>
+                  <li>
+                    <a class="black" href="knowhow.html" id="knowhow_nav">KNOW-HOW</a>
+                  </li>
+                  <li>
+                    <a class="black" href="partner.html" id="partner_nav">PARTNER</a>
+                  </li>
+                  <li>
+                    <a class="black" href="kontakt.html" id="kontakt_nav">KONTAKT</a>
+                  </li>
+		  <!--
+                      <li>
+			<a href="search.html"><img class="lupe" src="images/lupe.png" width="18px" alt="Lupe"></a>
+                      </li>
+		      -->
+		</ul>
+              </div>
             </div>
           </nav>
         </div>
@@ -98,7 +107,7 @@
         <div class="row tube_row">
           <div class="col-sm-2"></div>
           <div class="col-sm-8" style="text-align:center">
-            <h1>Firmengeschichte</h1><s1>Seit 1962 sind wir dabei</s1>
+            <h1>Firmen&shy;geschichte</h1><s1>Seit 1962 sind wir dabei</s1>
             <div class="timeline">
               <div class="container right" data-descr="1961">
                 <div class="content">
@@ -108,8 +117,8 @@
               <div class="container right" data-descr="1968">
                 <div class="content">
                   <p>Ich habe meine Meisterprüfung am 03.09.1968 abgelegt. 2018 hatten wir unser 50. Meisterjubiläum! Im Anschluss daran habe ich die Prüfung zum Schreinermeister bestanden.
-</p>
- <img alt="meisterbrief" src="images/meisterbrief.jpg" width="50%" >
+		  </p>
+		  <img alt="meisterbrief" src="images/meisterbrief.jpg" id="meister" width="50%" >
                 </div>
               </div>
               <div class="container right" data-descr="1974">
@@ -640,5 +649,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/scripts_derpolsterer.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
 </body>
 </html>

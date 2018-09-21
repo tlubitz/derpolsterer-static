@@ -118,7 +118,7 @@
 			type = types[i];
 			handlers = events[type] || (events[type] = []);
 			handlers.push([fn, handler]);
-			node.addEventListener(type, handler);
+		    node.addEventListener(type, handler);
 		}
 	}
 
