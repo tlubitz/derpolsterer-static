@@ -61,7 +61,7 @@ function showDivs(n) {
 	   interface; thus, we correct this manually */
 	if (clicked == 1) {
 	    ifr = x[slideIndex2+j].getElementsByTagName("iframe");
-	    ifr[0].style.height = "361px"; }
+	    ifr[0].style.height = "400px"; }
 
     };
     clicked = 1;

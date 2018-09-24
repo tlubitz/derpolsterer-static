@@ -349,20 +349,34 @@ div h2 em {
     padding-left:5px;
     padding-bottom: 50px;
     float: left;
-    height:500px;
+    height:400px;
 }
 
 .four_images_shop {
     width: 25%;
     margin-bottom: 50px;
     float: left;
-    height:550px;
+    height: 600px;
     padding-left:50px;
     max-width:275px;   
 }
 
+.four_images_shop_s {
+    width: 25%;
+    margin-bottom: 50px;
+    float: left;
+    height: 500px;
+    padding-left:50px;
+    max-width:275px;
+}
 
 .col-sm-8 > .four_images_shop > iframe {
+    height: 500px !important;
+    line-height:500px!important;
+    vertical-align:middle;
+}
+
+.col-sm-8 > .four_images_shop_s > iframe {
     height: 500px !important;
     line-height:500px!important;
     vertical-align:middle;
