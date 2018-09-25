@@ -186,6 +186,7 @@ ul li a.black {
     font-size: 12px;
     font-weight: bold;
     width:300px;
+    background-color: rgb(255,250,250)!important;
 }
 
 /* FOOTER */
@@ -361,6 +362,14 @@ div h2 em {
     max-width:275px;   
 }
 
+.four_images_pt {
+    width: 25%;
+    padding-left:5px;
+    padding-bottom: 0px;
+    float: left;
+    height:550px;
+}
+
 .four_images_shop_s {
     width: 25%;
     margin-bottom: 50px;
@@ -529,7 +538,7 @@ p {
 
 /* The Close Button */
 .close {
-  color: white;
+  color: white!important;
   position: absolute;
   top: 150px;
   right: 25px;
@@ -650,6 +659,7 @@ img.hover-shadow {
 
 .subp {
     text-align:left;
+    margin-bottom:50px;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
