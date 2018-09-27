@@ -118,6 +118,7 @@ s1 {
 
 ul li a.black {
     color:rgb(0,0,0) !important;
+    font-family: 'PT Sans';
     padding-top:20px;
     font-weight:bold;
     line-height:30px;
@@ -163,6 +164,7 @@ ul li a.black {
 #toptext {
     margin-top:4px;
     margin-left:50px;
+    font-family: 'PT Sans';
 }
 
 #bottomtext {
@@ -192,6 +194,7 @@ ul li a.black {
 /* FOOTER */
 
 #footer {
+    font-family: 'PT Sans';
     background-color: rgb(40,90,40);  /* green */
     color: rgb(255,250,250);          /* white */
     text-align:center;
@@ -233,6 +236,12 @@ div p em {
     text-align: center;
 }
 
+.rubrique {
+    color:rgb(40,90,40);
+    font-family: 'PT Sans';
+    font-size:12pt;
+}
+
 .button {
     padding: 12px 23px 12px 23px;
     margin: 20px 0px 20px 0px;
@@ -240,7 +249,7 @@ div p em {
     color: rgb(255,250,250);    /* white */
     font-weight:bold;
     font-size: 12pt;
-    font-family: 'Playfair Display', serif;
+    font-family: 'PT Sans';
     letter-spacing: 2pt;
     border:0px;
  
@@ -248,7 +257,7 @@ div p em {
 
 .arrow {
     background: rgb(246,246,246);
-    color:green;
+    color:rgb(40,90,40);
     
 }
 
@@ -660,9 +669,16 @@ img.hover-shadow {
 
 .subp {
     text-align:left;
+    margin:0 auto;
+    max-width:60%;
     margin-bottom:50px;
 }
 
+.subp2 {
+    text-align:left;
+    margin:0 auto;
+    margin-bottom:50px;
+}
 /* Media queries - Responsive timeline on screens less than 600px wide */
 
 @media screen and (max-width: 600px) {
