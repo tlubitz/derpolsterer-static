@@ -339,6 +339,7 @@ div h2 em {
     padding-left:15px !important;
 }
 
+
 .two_images_kh {
     width: 50%;
     padding-bottom: 50px !important;
@@ -678,6 +679,15 @@ img.hover-shadow {
     text-align:left;
     margin:0 auto;
     margin-bottom:50px;
+}
+
+/* Hide some instagram stuff */
+div > .Feedback {
+    display:none !important;
+}
+
+div > .SocialProof {
+    display:none !important;
 }
 /* Media queries - Responsive timeline on screens less than 600px wide */
 
