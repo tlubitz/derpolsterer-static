@@ -109,7 +109,8 @@ function showDivs(n) {
         "font-size": "12px"
       },
 	"button": {
-	    "background": "rgb(40,90,40)"
+	    "background": "rgb(40,90,40)",
+	    "padding": "12px 20px"
 	}
     }
   },
@@ -223,7 +224,8 @@ function showDivs(n) {
         "font-size": "12px"
       },
 	"button": {
-	    "background": "rgb(40,90,40)"
+	    "background": "rgb(40,90,40)",
+	    "padding": "12px 20px"
 	}
     }
   },
@@ -336,7 +338,8 @@ function showDivs(n) {
         "font-size": "12px"
       },
 	"button": {
-	    "background": "rgb(40,90,40)"
+	    "background": "rgb(40,90,40)",
+	    "padding": "12px 20px"
 	}
     }
   },
@@ -562,7 +565,8 @@ function showDivs(n) {
         "font-size": "12px"
       },
 	"button": {
-	    "background": "rgb(40,90,40)"
+	    "background": "rgb(40,90,40)",
+	    "padding": "12px 20px"
 	}
     }
   },
@@ -675,7 +679,8 @@ function showDivs(n) {
         "font-size": "12px"
       },
 	"button": {
-	    "background": "rgb(40,90,40)"
+	    "background": "rgb(40,90,40)",
+	    "padding": "12px 20px"
 	}
     }
   },
@@ -788,7 +793,8 @@ function showDivs(n) {
         "font-size": "12px"
       },
 	"button": {
-	    "background": "rgb(40,90,40)"
+	    "background": "rgb(40,90,40)",
+	    "padding": "12px 20px"
 	}
     }
   },
@@ -901,7 +907,8 @@ function showDivs(n) {
         "font-size": "12px"
       },
 	"button": {
-	    "background": "rgb(40,90,40)"
+	    "background": "rgb(40,90,40)",
+	    "padding": "12px 20px"
 	}
     }
   },
@@ -1127,7 +1134,8 @@ function showDivs(n) {
         "font-size": "12px"
       },
 	"button": {
-	    "background": "rgb(40,90,40)"
+	    "background": "rgb(40,90,40)",
+	    "padding": "12px 20px"
 	}
     }
   },
@@ -1240,7 +1248,8 @@ function showDivs(n) {
         "font-size": "12px"
       },
 	"button": {
-	    "background": "rgb(40,90,40)"
+	    "background": "rgb(40,90,40)",
+	    "padding": "12px 20px"
 	}
     }
   },
@@ -1353,7 +1362,8 @@ function showDivs(n) {
         "font-size": "12px"
       },
 	"button": {
-	    "background": "rgb(40,90,40)"
+	    "background": "rgb(40,90,40)",
+	    "padding": "12px 20px"
 	}
     }
   },
@@ -1466,7 +1476,8 @@ function showDivs(n) {
         "font-size": "12px"
       },
 	"button": {
-	    "background": "rgb(40,90,40)"
+	    "background": "rgb(40,90,40)",
+	    "padding": "12px 20px"
 	}
     }
   },
@@ -1579,7 +1590,8 @@ function showDivs(n) {
         "font-size": "12px"
       },
 	"button": {
-	    "background": "rgb(40,90,40)"
+	    "background": "rgb(40,90,40)",
+	    "padding": "12px 20px"
 	}
     }
   },
@@ -1692,7 +1704,8 @@ function showDivs(n) {
         "font-size": "12px"
       },
 	"button": {
-	    "background": "rgb(40,90,40)"
+	    "background": "rgb(40,90,40)",
+	    "padding": "12px 20px"
 	}
     }
   },
@@ -1805,7 +1818,8 @@ function showDivs(n) {
         "font-size": "12px"
       },
 	"button": {
-	    "background": "rgb(40,90,40)"
+	    "background": "rgb(40,90,40)",
+	    "padding": "12px 20px"
 	}
     }
   },
@@ -1918,7 +1932,8 @@ function showDivs(n) {
         "font-size": "12px"
       },
 	"button": {
-	    "background": "rgb(40,90,40)"
+	    "background": "rgb(40,90,40)",
+	    "padding": "12px 20px"
 	}
     }
   },
@@ -2031,7 +2046,8 @@ function showDivs(n) {
         "font-size": "12px"
       },
 	"button": {
-	    "background": "rgb(40,90,40)"
+	    "background": "rgb(40,90,40)",
+	    "padding": "12px 20px"
 	}
     }
   },
@@ -2144,7 +2160,8 @@ function showDivs(n) {
         "font-size": "12px"
       },
 	"button": {
-	    "background": "rgb(40,90,40)"
+	    "background": "rgb(40,90,40)",
+	    "padding": "12px 20px"
 	}
     }
   },
