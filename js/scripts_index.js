@@ -40,7 +40,7 @@ function showDivs(n) {
     
     var j;
 
-    if (screen.width >= 600) {
+    if (screen.width > 767) {
 	var els = 5;
     }
     else {
@@ -61,7 +61,7 @@ function showDivs(n) {
 	   interface; thus, we correct this manually */
 	if (clicked == 1) {
 	    ifr = x[slideIndex2+j].getElementsByTagName("iframe");
-	    ifr[0].style.height = "400px"; }
+	    ifr[0].style.height = "450px"; }
 
     };
     clicked = 1;

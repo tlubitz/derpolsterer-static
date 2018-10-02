@@ -25,7 +25,7 @@ function showDivs(n) {
     }
     
     var j;
-    if (screen.width >= 600) {
+    if (screen.width > 767) {
 	var els = 5;
     }
     else {

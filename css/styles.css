@@ -696,7 +696,8 @@ div > .SocialProof {
 }
 /* Media queries - Responsive timeline on screens less than 600px wide */
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  /*@media screen and (max-width: 600px) {*/
   /* Place the timelime to the left */
   .timeline::after {
     left: 50px;
@@ -851,7 +852,7 @@ div > .SocialProof {
       padding-bottom: 0px !important;
       padding-top: 0px !important;
       float: none !important;
-      padding-left:0px !important;
+      padding-left:30px !important;
   }
 
   .breadcrumb {
@@ -874,11 +875,11 @@ div > .SocialProof {
     height:350px;
   }
   .four_images_pt {
-    width: 100%;
+    width: 50%;
     padding-left:5px;
     padding-bottom: 0px;
     float: none;
-    height:550px;
+    height:600px;
   }
   #neubankfrau {
       width: 100%;
@@ -924,7 +925,7 @@ div > .SocialProof {
   }
   
   #gmap_canvas {
-      width:100%;
+      width:300px;
       height:100%;
       max-width:300px;
       max-height:100%;
@@ -943,19 +944,16 @@ div > .SocialProof {
     margin-top:0px;
     margin-bottom:30px;
   }
+  .mapouter{
+    position:relative;
+    height:500px;
+    width:300px;
+    margin: 0 auto;
+  }
+  .gmap_canvas {
+      width: 100%;
+  }
 }
 
 
 /* #################################### */
-
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-  html {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100vh;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-}
