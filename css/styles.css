@@ -696,7 +696,7 @@ div > .SocialProof {
 }
 /* Media queries - Responsive timeline on screens less than 600px wide */
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   /*@media screen and (max-width: 600px) {*/
   /* Place the timelime to the left */
   .timeline::after {
@@ -821,10 +821,10 @@ div > .SocialProof {
   }
   .gallery_small2 {
       float: left;
-      width: 70%;
+      width: 100%;
       padding-bottom: 50px;
       padding-top: 50px;
-      padding-left: 50px;
+      padding-left: 90px;
   }
   .arrow {
       padding: 12px 2px 12px 2px;
@@ -953,6 +953,30 @@ div > .SocialProof {
   .gmap_canvas {
       width: 100%;
   }
+  iframe {
+      width: 400px;
+  }
+  .image_single {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .four_images_shop_s {
+    width: 100%;
+    margin-bottom: 50px;
+    float: none;
+    height: 500px;
+    padding-left:50px;
+    max-width:275px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #politur {
+      margin-left:0;
+  }
+
+
 }
 
 

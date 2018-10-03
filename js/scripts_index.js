@@ -40,8 +40,11 @@ function showDivs(n) {
     
     var j;
 
-    if (screen.width > 767) {
+    if (screen.width >= 767) {
 	var els = 5;
+    }
+    else if (screen.width >= 600){
+	var els = 2;
     }
     else {
 	var els = 1;
