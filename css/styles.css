@@ -13,6 +13,7 @@ h0 {
     padding-top:20px;
     padding-bottom:20px;
     padding-left:20px;
+    font-style: italic;
 }
 
 h1 {
@@ -21,6 +22,7 @@ h1 {
     line-height: 42pt;
     text-align: center;
     font-weight: bold;
+    font-style: italic;
 }
 
 h3 {
@@ -29,6 +31,7 @@ h3 {
     line-height: 26pt;
     text-align: center;
     margin-top: 5px;
+    font-style: italic;
 }
 
 h4 {
@@ -37,11 +40,13 @@ h4 {
     line-height: 22pt;
     text-align: center;
     margin-top: 0px;
+    font-style: italic;
 }
 
 .price {
     font-family: 'Playfair Display', serif;
     font-size: 15pt;
+    font-style: italic;
 }
 
 s1 {
@@ -71,7 +76,8 @@ s1 {
 }
 
 .bg1 {
-    background-color: lightgrey;
+    background-color: rgb(40,90,40);  /* green */
+    color: rgb(255,250,250);          /* white */
 }
 
 .bg2 {
@@ -85,6 +91,7 @@ s1 {
     float:right;
     margin-bottom: none;
     padding-top:10px;
+    font-style:normal;
 }
 
 .navbar-mobile {
@@ -169,6 +176,7 @@ ul li a.black {
 
 #bottomtext {
     margin-top:4px;
+    font-style: normal;
 }
 
 #nav_height {
@@ -237,9 +245,10 @@ div p em {
 }
 
 .rubrique {
-    color:rgb(40,90,40);
+    color: rgb(255,250,250);          /* white */
     font-family: 'PT Sans';
     font-size:12pt;
+    font-style: italic;
 }
 
 .button {
@@ -252,6 +261,7 @@ div p em {
     font-family: 'PT Sans';
     letter-spacing: 2pt;
     border:0px;
+    font-style: normal;
 }
 
 .arrow {
@@ -300,6 +310,7 @@ div p em {
 
 figcaption strong {
     padding-bottom: 0;
+    font-style: italic;
 }
 
 /* MAIN PAGE, gallery small */
@@ -322,7 +333,13 @@ figcaption strong {
 
 /* MAIN PAGE, quote */
 div h2 em {
-    color: rgb(40,90,40);  /* green */
+    color:  rgb(255,250,250);          /* white */
+}
+
+.quotes {
+    font-size:200px;
+    color:  rgb(255,250,250);          /* white */
+    line-height:1;
 }
 
 .center_column {
@@ -513,10 +530,13 @@ ul li.listing {
     padding-bottom:10px;
     font-size:16px;
 }
-
+ul  {
+    font-style: italic;
+}
 p {
     font-size: 16px;
     line-height: 20px;
+    font-style: italic;
 }
 
 /* Image gallery used as lightbox (modal) */
