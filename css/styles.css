@@ -246,7 +246,7 @@ div p em {
 }
 
 .rubrique {
-    color: rgb(255,250,250);          /* white */
+    color: black;
     font-family: 'PT Sans';
     font-size:12pt;
     font-style: italic;
