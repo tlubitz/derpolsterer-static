@@ -197,7 +197,7 @@ ul li a.black {
     font-size: 12px;
     font-weight: bold;
     width:300px;
-    background-color: rgb(255,250,250)!important;
+    background-color: rgb(246,246,246)!important; /*rgb(255,250,250)!important;*/
 }
 
 /* FOOTER */
