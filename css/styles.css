@@ -60,18 +60,16 @@ s1 {
 .row {
     width:100%;
     margin-left:0px;
+    background-color: rgb(40,90,40);  /* green */
 }
 
-.tube_row {
-    margin-bottom: 30px;
-    margin-top: 30px;
+.shop_row {
     padding-bottom: 30px;
     padding-top: 30px;
 }
 
 .tube_row {
-    margin-bottom: 0px;
-    margin-top: 30px;
+    color:white;
     padding-bottom: 30px;
     padding-top: 30px;
 }
@@ -100,7 +98,7 @@ s1 {
 }
 
 .navbrand {
-    color:rgb(0,0,0);
+    color:white;
     line-height:0px;
     padding-bottom:5px;
     padding-top:20px;
@@ -112,7 +110,7 @@ s1 {
 }
 
 .navbrand-sub {
-    color:rgb(0,0,0);
+    color:white;
     line-height:0px;
     padding-bottom:5px;
     padding-top:25px;
@@ -123,9 +121,12 @@ s1 {
     float:right;
 }
 
+.container-fluid {
+    padding-left:0px;
+}
 
 ul li a.black {
-    color:rgb(0,0,0) !important;
+    color:white !important;
     font-family: 'PT Sans';
     padding-top:20px;
     font-weight:bold;
@@ -155,7 +156,9 @@ ul li a.black {
     width:100%;
     position:fixed!important;
     box-shadow: 3px 3px 3px darkgrey;
+    background-color: rgb(40,90,40);  /* green */
 }
+
 
 #topline {
     z-index: 3;
@@ -826,6 +829,7 @@ div > .SocialProof {
   }
   .tube_row {
       margin-top:0px;
+      color:white;
   }
   h1 {
       margin-top:0px;
