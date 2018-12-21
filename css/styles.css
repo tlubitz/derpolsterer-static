@@ -116,7 +116,7 @@ s1 {
     padding-top:20px;
     margin-bottom:0px;
     border:0px;
-    font-size:23pt;
+    font-size:30pt;
     font-family: 'Playfair Display', serif;
     float:right;
 }
@@ -140,11 +140,10 @@ s1 {
 ul li a.black {
     color:white !important;
     font-family: 'PT Sans';
-    padding-top:20px;
+    padding-left: 140px;
     font-weight:bold;
     line-height:30px;
-    padding-left:20px;
-    padding-right:25px;
+    font-size:20px;
 }
 
 #black {
@@ -164,7 +163,7 @@ ul li a.black {
     border-style: none;
     margin-bottom: 20px;
     padding-bottom: 15px;
-    top:30px;
+    top:10px;
     width:100%;
     position:fixed!important;
     box-shadow: 3px 3px 3px darkgrey;
@@ -196,7 +195,7 @@ ul li a.black {
 }
 
 #nav_height {
-    height:90px;
+    height:140px;
 }
 
 .lupe {
