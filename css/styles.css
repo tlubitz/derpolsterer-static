@@ -93,7 +93,6 @@ s1 {
 }
 
 /* NAVBAR and TOP OF THE PAGE */
-
 .navbar-dp {
     float:right;
     margin-bottom: none;
@@ -107,7 +106,6 @@ s1 {
 .navbar-mobile-fig {
     display:none;
 }
-
 
 .navbrand {
     color:white;
@@ -821,13 +819,16 @@ div > .SocialProof {
   .navbar-brand {
       display:none;
   }
+  .navbrand {
+      display:none;
+  }
   .navbar-mobile-fig {
       display:block;
       
   }
   .navbar-mobile {
       display:block;
-      font-size:8pt;
+      font-size:18pt;
       color:white;
       margin-left:30px;
       margin-top:7px;
