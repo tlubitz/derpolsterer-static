@@ -6,6 +6,10 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
+#teaser {
+    width:100%;
+}
+
 h0 {
     font-family: 'Playfair Display', serif;
     font-size: 58pt;
@@ -751,287 +755,291 @@ div > .SocialProof {
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  /*@media screen and (max-width: 600px) {*/
-  /* Place the timelime to the left */
-  .timeline::after {
-    left: 50px;
-  }
+    #teaser {
+	width:90%;
+    }
 
-  #animate {
-      display:none;
-  }
+    /*@media screen and (max-width: 600px) {*/
+    /* Place the timelime to the left */
+    .timeline::after {
+	left: 50px;
+    }
+
+    #animate {
+	display:none;
+    }
   
-  /* Full-width containers */
-  .container {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-      margin-left:0px;
-  }
+    /* Full-width containers */
+    .container {
+	width: 100%;
+	padding-left: 70px;
+	padding-right: 25px;
+	margin-left:0px;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+	left: 60px;
+	border: medium solid white;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent white transparent transparent;
+    }
+    
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+		      left: 15px;
+		  }
   
-  /* Make sure that all arrows are pointing leftwards */
-  .container::before {
-      left: 60px;
-      border: medium solid white;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
-  }
+    /* Make all right containers behave like the left ones */
+    .right {
+	left: 0px;
+	right: 0px;
+    }
+    img {
+	max-width: 100%;
+	max-height:100%;
+	margin-left:15px;
+	margin-bottom: 30px;
+    }
+    p {
+	max-width:100%!important;
+	margin-left:15px!important;
+    }
+    .row > .col-sm-8 > .timeline > .right > .content > p {
+	width:200px !important;
+	max-width:200px !important;
+    }
+    #meister {
+	width: 150px;
+	max-width: 150px;
+    }
+    
+    .navbar {
+	z-index: 3;
+	border-style: none;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	top:0px;
+	width:100%;
+	position:fixed!important;
+	box-shadow: 3px 3px 3px darkgrey;
+    }
+    .navbar-brand {
+	display:none;
+    }
+    .navbrand {
+	display:none;
+    }
+    .navbar-mobile-fig {
+	display:block;
+	
+    }
+    .navbar-mobile {
+	display:block;
+	font-size:18pt;
+	color:white;
+	margin-left:30px;
+	margin-top:7px;
+    }
+    h0 {
+	font-size:10pt;
+	padding:0px;
+	line-height:10pt!important;
+	margin-left:20px;
+	padding-top:5pt;
+	padding-left:5pt;
+	padding-bottom:5pt;
+    }
+    .gallery_index {
+	margin-left:10px;
+	margin-top:0px;
+	width:100%;
+	margin-right:0px;
+    }
+    #topline {
+	display:none;
+    }
+      #nav_height {
+	  height:30px;
+      }
+      .navbar-default {
+	  float:left;
+	  position:fixed!important;
+      }
+      .container-fluid {
+	  padding-left:0px;
+      }
+      .tube_row {
+	  margin-top:0px;
+	  color:white;
+      }
+      h1 {
+	  margin-top:0px;
+	  font-size: 30pt;
+	  line-height: 35pt;
+	  margin-left:15px;
+	  hyphens:  manual;
 
-  /* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-		    left: 15px;
-		}
-  
-  /* Make all right containers behave like the left ones */
-  .right {
-      left: 0px;
-      right: 0px;
-  }
-  img {
-      max-width: 100%;
-      max-height:100%;
-      margin-left:15px;
-      margin-bottom: 30px;
-  }
-  p {
-      max-width:100%!important;
-      margin-left:15px!important;
-  }
-  .row > .col-sm-8 > .timeline > .right > .content > p {
-      width:200px !important;
-      max-width:200px !important;
-  }
-  #meister {
-      width: 150px;
-      max-width: 150px;
-  }
-  
-  .navbar {
-    z-index: 3;
-    border-style: none;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    top:0px;
-    width:100%;
-    position:fixed!important;
-    box-shadow: 3px 3px 3px darkgrey;
-  }
-  .navbar-brand {
-      display:none;
-  }
-  .navbrand {
-      display:none;
-  }
-  .navbar-mobile-fig {
-      display:block;
-      
-  }
-  .navbar-mobile {
-      display:block;
-      font-size:18pt;
-      color:white;
-      margin-left:30px;
-      margin-top:7px;
-  }
-  h0 {
-      font-size:10pt;
-      padding:0px;
-      line-height:10pt!important;
-      margin-left:20px;
-      padding-top:5pt;
-      padding-left:5pt;
-      padding-bottom:5pt;
-  }
-  .gallery_index {
-      margin-left:10px;
-      margin-top:0px;
-      width:100%;
-      margin-right:0px;
-  }
-  #topline {
-      display:none;
-  }
-  #nav_height {
-      height:30px;
-  }
-  .navbar-default {
-      float:left;
-      position:fixed!important;
-  }
-  .container-fluid {
-      padding-left:0px;
-  }
-  .tube_row {
-      margin-top:0px;
-      color:white;
-  }
-  h1 {
-      margin-top:0px;
-      font-size: 30pt;
-      line-height: 35pt;
-      margin-left:15px;
-      hyphens:  manual;
+      }
 
-  }
+      .button {
+	  margin-left:20px;
+      }
+      .three_images {
+	width:90%;
+	padding-bottom: 0px;
+	padding-top: 50px;
+	float: none;
+	padding-left: 10px;
+      }
+      .gallery_small2 {
+	  float: left;
+	  width: 70%;
+	  padding-bottom: 50px;
+	  padding-top: 50px;
+	  padding-left: 30px;
+      }
+      .arrow {
+	  padding: 12px 2px 12px 2px;
+	  margin: 20px 0px 20px 15px;
+	  background: rgb(40,90,40);  /* green */
+	  color: rgb(255,250,250);    /* white */
+	  font-weight:bold;
+	  font-size: 12pt;
+	  font-family: 'Playfair Display', serif;
+	  letter-spacing: 2pt;
+	  border:0px;
+      }
+      h2 {
+	  margin-left:10px;
+      }
+      .two_images {
+	  float:none!important;
+	  width: 100%!important;
+	  padding-bottom: 0px !important;
+	  padding-top: 50px !important;
+	  padding-left:0px !important;
+      }
+      .two_images_insta {
+	  width:20%!important;
+	  padding-bottom: 0px !important;
+	  padding-top: 0px !important;
+	  float: none !important;
+	  padding-left:10px !important;
+      }
 
-  .button {
-      margin-left:20px;
-  }
-  .three_images {
-    width:90%;
-    padding-bottom: 0px;
-    padding-top: 50px;
-    float: none;
-    padding-left: 10px;
-  }
-  .gallery_small2 {
-      float: left;
-      width: 70%;
-      padding-bottom: 50px;
-      padding-top: 50px;
-      padding-left: 30px;
-  }
-  .arrow {
-      padding: 12px 2px 12px 2px;
-      margin: 20px 0px 20px 15px;
-      background: rgb(40,90,40);  /* green */
-      color: rgb(255,250,250);    /* white */
-      font-weight:bold;
-      font-size: 12pt;
-      font-family: 'Playfair Display', serif;
-      letter-spacing: 2pt;
-      border:0px;
-  }
-  h2 {
-      margin-left:10px;
-  }
-  .two_images {
-      float:none!important;
-      width: 100%!important;
-      padding-bottom: 0px !important;
-      padding-top: 50px !important;
-      padding-left:0px !important;
-  }
-  .two_images_insta {
-      width:20%!important;
-      padding-bottom: 0px !important;
-      padding-top: 0px !important;
-      float: none !important;
-      padding-left:10px !important;
-  }
+      .breadcrumb {
+	  margin-left: 15px;
+	  margin-bottom: 0px;
+      }
+      .seven_images {
+	  width: 100%;
+	  padding-bottom: 0px;
+	  padding-top: 0px;
+      }
+      #l_pfeil {
+	  display:none;
+      }
+      .four_images {
+	width: 100%;
+	padding-left:5px;
+	padding-bottom: 0px;
+	float: none;
+	height:350px;
+      }
+      .four_images_pt {
+	width: 50%;
+	padding-left:5px;
+	padding-bottom: 0px;
+	float: none;
+	height:600px;
+      }
+      #neubankfrau {
+	  width: 100%;
+	  height: 100%;
 
-  .breadcrumb {
-      margin-left: 15px;
-      margin-bottom: 0px;
-  }
-  .seven_images {
-      width: 100%;
-      padding-bottom: 0px;
-      padding-top: 0px;
-  }
-  #l_pfeil {
-      display:none;
-  }
-  .four_images {
-    width: 100%;
-    padding-left:5px;
-    padding-bottom: 0px;
-    float: none;
-    height:350px;
-  }
-  .four_images_pt {
-    width: 50%;
-    padding-left:5px;
-    padding-bottom: 0px;
-    float: none;
-    height:600px;
-  }
-  #neubankfrau {
-      width: 100%;
-      height: 100%;
+      }
+      .bg2 {
+	  margin-left:25px!important;
+      }
+      .four_images_shop {
+	width: 100%;
+	margin-bottom: 50px;
+	float: none;
+	height:550px;
+	padding-left:50px;
+	max-width:275px;
+      }
+      .two_images_kh {
+	width: 100%;
+	padding-bottom: 0px !important;
+	padding-top: 0px !important;
+	float: none !important;
+	padding-left:15px !important;
+	height:600px;
+      }
+      .two_images_kh > img {
+	max-width: 100% !important;
+	max-height:100% !important;
+      }
+      .vorhernachher {
+	  display:none;
+      }
+      #kontakt > .row > .col-sm-6 > .mapouter > .gmap_canvas {
+	  float:none !important;
+	  text-align:left !important;
+      }
 
-  }
-  .bg2 {
-      margin-left:25px!important;
-  }
-  .four_images_shop {
-    width: 100%;
-    margin-bottom: 50px;
-    float: none;
-    height:550px;
-    padding-left:50px;
-    max-width:275px;
-  }
-  .two_images_kh {
-    width: 100%;
-    padding-bottom: 0px !important;
-    padding-top: 0px !important;
-    float: none !important;
-    padding-left:15px !important;
-    height:600px;
-  }
-  .two_images_kh > img {
-    max-width: 100% !important;
-    max-height:100% !important;
-  }
-  .vorhernachher {
-      display:none;
-  }
-  #kontakt > .row > .col-sm-6 > .mapouter > .gmap_canvas {
-      float:none !important;
-      text-align:left !important;
-  }
-  
-  #gmap_canvas {
-      width:300px;
-      height:100%;
-      max-width:300px;
-      max-height:100%;
-  }
-  s1 {
-      margin-left:25px;
-      display:block;
-  }
-  .gallery_small {
-    float: none;
-    width: 80%;
-    padding-bottom: 40px;
-    padding-top: 0px;
-  }
-  .subimg {
-    margin-top:0px;
-    margin-bottom:30px;
-  }
-  .mapouter{
-    position:relative;
-    height:500px;
-    width:300px;
-    margin: 0 auto;
-  }
-  .gmap_canvas {
-      width: 100%;
-  }
-  iframe {
-      width: 400px;
-  }
-  .image_single {
-      display: block;
-      margin-right: auto;
-  }
-  .four_images_shop_s {
-    width: 100%;
-    margin-bottom: 50px;
-    float: none;
-    height: 500px;
-    padding-left:50px;
-    max-width:275px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #politur {
-      margin-left:0;
-  }
+      #gmap_canvas {
+	  width:300px;
+	  height:100%;
+	  max-width:300px;
+	  max-height:100%;
+      }
+      s1 {
+	  margin-left:25px;
+	  display:block;
+      }
+      .gallery_small {
+	float: none;
+	width: 80%;
+	padding-bottom: 40px;
+	padding-top: 0px;
+      }
+      .subimg {
+	margin-top:0px;
+	margin-bottom:30px;
+      }
+      .mapouter{
+	position:relative;
+	height:500px;
+	width:300px;
+	margin: 0 auto;
+      }
+      .gmap_canvas {
+	  width: 100%;
+      }
+      iframe {
+	  width: 400px;
+      }
+      .image_single {
+	  display: block;
+	  margin-right: auto;
+      }
+      .four_images_shop_s {
+	width: 100%;
+	margin-bottom: 50px;
+	float: none;
+	height: 500px;
+	padding-left:50px;
+	max-width:275px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+      }
+      #politur {
+	  margin-left:0;
+      }
 
 
 }
