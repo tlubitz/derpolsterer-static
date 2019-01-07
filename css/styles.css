@@ -139,6 +139,11 @@ s1 {
     padding-left:0px;
 }
 
+.cntr {
+    margin:auto;
+    width:80%;
+}
+
 ul li a.black {
     color:white !important;
     font-family: 'PT Sans';
@@ -1049,8 +1054,11 @@ div > .SocialProof {
       #politur {
 	  margin-left:0;
       }
-
-
+      
+      .cntr {
+	  margin:auto;
+	  width:100%;
+      }
 }
 
 
