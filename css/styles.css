@@ -832,8 +832,11 @@ div > .SocialProof {
     }
     .navbar-mobile-fig {
 	display:block;
-	
     }
+    .container[data-descr] {
+	width: 90%;
+    }
+    
     .navbar-mobile {
 	display:block;
 	font-size:18pt;
@@ -1027,16 +1030,22 @@ div > .SocialProof {
 	  margin-right: auto;
       }
       .four_images_shop_s {
-	width: 100%;
+	width: 90%;
 	margin-bottom: 50px;
 	float: none;
-	height: 500px;
+	height: 550px;
 	padding-left:50px;
 	max-width:275px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
       }
+      .col-sm-8 > .four_images_shop_s > iframe {
+	  height: 550px !important;
+	  line-height:550px!important;
+	  vertical-align:middle;
+      }
+      
       #politur {
 	  margin-left:0;
       }
