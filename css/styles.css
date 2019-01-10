@@ -615,6 +615,7 @@ p {
   right: 25px;
   font-size: 35px;
   font-weight: bold;
+  margin-top:100px;
 }
 
 .close:hover,
@@ -634,7 +635,7 @@ p {
     max-height:640px;
     object-fit: contain;
     background:black;
-    padding-top:50px;
+    padding-top:200px;
 }
 
 .mySlides2 > img {
@@ -642,7 +643,7 @@ p {
     max-height:640px;
     object-fit: contain;
     background:black;
-    padding-top:50px;
+    padding-top:200px;
 }
 
 /* Hide the slides by default */
