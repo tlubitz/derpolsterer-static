@@ -904,12 +904,11 @@ div > .SocialProof {
 
     #teaser {
 	width:90%;
-	margin-top:140px;
+	margin-top:0px!important;
     }
     #teaser2 {
-	margin:0px;
+	margin:0px!important;
     }
-    
     
     /*@media screen and (max-width: 600px) {*/
     /* Place the timelime to the left */
@@ -1092,6 +1091,9 @@ div > .SocialProof {
       .breadcrumb {
 	  margin-left: 15px;
 	  margin-bottom: 0px;
+      }
+      .page_id {
+	  margin-top:140px;
       }
       .seven_images {
 	  width: 100%;
