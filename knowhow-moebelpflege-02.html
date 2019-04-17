@@ -22,9 +22,8 @@
 </head>
 
 <body>
-  <!-- Include top of document -->
   <header>
-    <div class="container-fluid">
+    <div class="container-fluid cf-x">
     
       <div class="row" id="nav_height">
         <div class="col-sm-12">
@@ -40,34 +39,43 @@
 		  <span class="icon-bar"></span>
 		</button>
 		
-		<div class="floater">
-		  <figure class="navbar-brand" style="float:left;margin-left:10px;">
-		    <img alt="polsterer logo" src="images/logo-polsterer-neu.png" width="100%">
-		  </figure>
-		  
-                  <a class="navbar-brand" href="index.html" style="margin-left:0px;line-height:0px">
-		    <strong class="navbrand">Der Polsterer ~ Berlin</strong><br></br><br></br><br>
-                    <div style="float:right;font-size:15px;padding-top:10px;margin-bottom:0px;border:0px;line-height:0px">
-                      <em class="navbrand-sub">Raumausstatter & Schreinermeister</em><br></br>
-		      <em class="navbrand-sub" style="font-size:35px;margin-top:10px;">Manfred Kranz</em><br>
-                    </div>
-		  </a>
+		<!--<div class="floater"> -->
+		<div class="flex-container">
+		  <div class="flex-item-small">
+		    <figure>
+		      <img alt="polsterer logo" src="images/logo-polsterer-neu.png" width="100%">
+		    </figure>
+		  </div>
 
-		  <div class="navbrand" style="margin-top:20px;margin-left:20px;">
-		    <p style="font-size:25px;"><strong>Tel:</strong> 030 - 41721866</p>
-		    <p style="font-size:25px;"><strong>Fax:</strong> 030 - 41724715</p>
-		    <p style="font-size:25px;"><strong>Mobil:</strong> 0172 - 2764195</p>
+		  <div class="flex-item-medium name">
+                    <a href="index.html"> <!-- class="navbar-brand" style="margin-left:0px;line-height:0px"-->
+		      <strong class="flexbrand">Der Polsterer ~ Berlin</strong>
+                      <div style="margin-top:20px;">
+			<em class="flexbrand fb-sub">Raum&shy;aus&shy;statter & Schreiner&shy;meister</em><br></br>
+			<em class="flexbrand fb-sub" style="font-size:35px;margin-top:10px;">Manfred Kranz</em><br>
+                      </div>
+		    </a>
 		  </div>
 		  
-		  <div class="navbrand" id="addresses" style="margin-top:0px;margin-left:10px;">
-		    <p style="font-size:25px;">Bänschstraße 50</p>
-		    <p style="font-size:25px;">10247 Berlin</p>
-		    <p style="font-size:25px;">www.derpolsterer-berlin.de</p>
-		    <p style="font-size:25px;">kranz@derpolsterer-berlin.de</p>
+		  <div class="flex-item-medium tel">
+		    <div> <!-- class="navbrand" style="margin-top:20px;margin-left:20px;" -->
+		      <p style="font-size:25px;line-height:1;"><strong>Tel:</strong> 030-41721866</p>
+		      <p style="font-size:25px;line-height:1;"><strong>Fax:</strong> 030-41724715</p>
+		      <p style="font-size:25px;line-height:1;"><strong>Mobil:</strong> 0172-2764195</p>
+		    </div>
+		  </div>
+		  
+		  <div class="flex-item-medium add">		  
+		    <div> <!-- class="navbrand" id="addresses" style="margin-top:0px;margin-left:10px;" -->
+		      <p style="font-size:25px;line-height:1;">Bänschstraße 50</p>
+		      <p style="font-size:25px;line-height:1;">10247 Berlin</p>
+		      <p style="font-size:25px;line-height:1;">www.derpolsterer-berlin.de</p>
+		      <p style="font-size:25px;line-height:1;">kranz@derpolsterer-berlin.de</p>
+		    </div>
 		  </div>
 		</div>
 
-	      <div class="row">
+	      <div class="row go3">
 		<div class="col-sm-12">
 		  <figure class="navbar-mobile-fig">
 		    <img alt="polsterer logo" src="images/logo-polsterer-neu.png" width="20%"  style="margin-bottom:0px!important;margin-right:10px;float:left;margin-top:5px;">
@@ -80,7 +88,23 @@
 		  </a>
 		</div>
 	      </div>
-		
+
+	      <div class="row go2">
+		<div class="col-sm-12">
+		  <div class="smallrunner">
+		    Telefon: 030-41721866; Mobil: 0172-2764195; Fax: 030-41724715
+		  </div>
+		</div>
+	      </div>
+	      
+	      <div class="row go2">
+		<div class="col-sm-12">
+		  <div class="smallrunner">
+		    Bänschstraße 50, 10247 Berlin, kranz@derpolsterer-berlin.de
+		  </div>
+		</div>
+	      </div>
+	      
 	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top:5px;">
 		<ul class="nav navbar-nav navbar-dp navbar-right">
                   <li>
@@ -104,13 +128,7 @@
 		</ul>
               </div>
 
-	      <div class="row">
-		<div class="col-sm-12">
-		  <div class="smallrunner">
-		    Telefon: 030-41721866; Mobil: 0172-2764195; Fax: 030-41724715
-		  </div>
-		</div>
-	      </div>
+	      
           </nav>
 	  </div>
         </div>
