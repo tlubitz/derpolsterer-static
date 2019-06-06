@@ -5,6 +5,14 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
+#instagram-embed-0 {
+    min-width:280px!important;
+}
+
+#instagram-embed-1 {
+    min-width:280px!important;
+}
+
 #teaser {
     width:100%;
     margin-top:0px;
@@ -300,7 +308,7 @@ ul li a.black {
 /* MAIN PAGE, PICTURE + HEADER */
 
 .image h0{
-    z-index: 3;
+    z-index: 2;
     position: absolute;
     bottom: 8%;
     left: 3.5%;
@@ -1071,6 +1079,14 @@ div > .SocialProof {
 	display:none;
     }
 
+    #instagram-embed-0 {
+	min-width:280px!important;
+    }
+
+    #instagram-embed-1 {
+	min-width:280px!important;
+    }
+    
     .go2 {
 	margin-top:10px;
     }
