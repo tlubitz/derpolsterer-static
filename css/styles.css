@@ -13,9 +13,15 @@ body {
     min-width:280px!important;
 }
 
-#teaser {
-    width:100%;
-    margin-top:0px;
+#index > .row > .col-sm-12 > .ff-row {
+    overflow:hidden;
+    max-height:480px;
+}
+
+#teaser-m {
+    max-height:100%;
+    position:relative;
+    top:-230px;
 }
 
 h0 {
@@ -837,6 +843,10 @@ div > .SocialProof {
 
 
 @media screen and (min-width: 1315px) and (max-width: 1550px) {
+    #teaser-m {
+	top:-130px!important;
+    }
+    
     .navbar-dp {
 	text-align:center;
 	float:none;
@@ -871,7 +881,12 @@ div > .SocialProof {
     }
 
 }
-
+@media screen and (min-width: 1200px) and (max-width: 1314px) {
+    #teaser-m {
+	top:-130px!important;
+    }
+    
+}
 
 @media screen and (min-width: 1045px) and (max-width: 1314px) {
     .navbar-dp {
@@ -918,6 +933,10 @@ div > .SocialProof {
     .navbar-dp {
 	text-align:center;
 	float:none;
+    }
+
+    #teaser-m {
+	top: -100px;
     }
 
     .flexbrand {
@@ -974,6 +993,14 @@ div > .SocialProof {
     }
 }
 @media screen and (min-width: 768px) and (max-width: 924px) {
+    main {
+	margin-top:0px!important;
+    }
+
+    #teaser-m {
+	top:-90px;
+    }
+    
     .flex-container {
 	display:flex;
 	flex-wrap: wrap;
@@ -1071,10 +1098,27 @@ div > .SocialProof {
 	padding-right:5px!important;
     }
 }
-
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    #index-main {
+	margin-top:180px!important;
+    }
+    
+ }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (min-width: 320px) and (max-width: 767px) {
+    
+    #index > .row > .col-sm-12 > .ff-row {
+	overflow:hidden;
+	max-height:480px;
+    }
+
+    #teaser-m {
+	max-height:100%;
+	position:relative;
+	top:15px;
+    }
+    
     .flex-container {
 	display:none;
     }
@@ -1092,7 +1136,11 @@ div > .SocialProof {
     }
 
     main {
-	margin-top:250px;
+	margin-top:250px!important;
+    }
+
+    #index-main {
+	margin-top:230px;
     }
     
     #navbutton {

@@ -14,7 +14,31 @@ $(function(){
 
 $(function(){
     $("#base_generic_bottom").load("base_generic_bottom.html"); 
-}); */
+    }); */
+
+/*
+var iframes = document.querySelectorAll("iframe");
+console.log(iframes);
+
+iframes.forEach(function (currentValue, currentIndex, listObj){
+    console.log(currentValue);
+})
+
+var iframe = document.getElementById('iframe');
+var style = document.createElement('style');
+style.textContent =
+  'body {' +
+  '  background-color: some-color;' +
+  '  background-image: some-image;' +
+  '}' 
+;
+iframe.contentDocument.head.appendChild(style);
+
+$('iframe').load( function() {
+    $('iframe').contents().find("head")
+      .append($("<style type='text/css'>  .shopify-buy__product__title{ min-height:43px; }  </style>"));
+});
+*/
 
 /* SHOP ITEMS */
 /* 1 */
