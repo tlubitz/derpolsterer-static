@@ -2375,8 +2375,16 @@ $('iframe').load( function() {
             "font-size": "16px",
             "padding-top": "16px",
             "padding-bottom": "16px"
+          },
+          "description": {
+            "font-family": "Josefin Slab, sans-serif",
+            "font-weight": "bold",
+            "font-size": "15px"
           }
         },
+        "googleFonts": [
+          "Josefin Slab"
+        ],        
         "buttonDestination": "modal",
         "contents": {
           "options": false
@@ -2428,8 +2436,16 @@ $('iframe').load( function() {
             "font-size": "16px",
             "padding-top": "16px",
             "padding-bottom": "16px"
+          },
+          "description": {
+            "font-family": "Josefin Slab, sans-serif",
+            "font-weight": "bold",
+            "font-size": "15px"
           }
         },
+        "googleFonts": [
+          "Josefin Slab"
+        ],
         "text": {
           "button": "In den Einkaufswagen"
         }
@@ -2610,8 +2626,16 @@ $('iframe').load( function() {
             "font-size": "16px",
             "padding-top": "16px",
             "padding-bottom": "16px"
+          },
+          "description": {
+            "font-family": "Josefin Slab, sans-serif",
+            "font-weight": "bold",
+            "font-size": "15px"
           }
         },
+        "googleFonts": [
+          "Josefin Slab"
+        ], 
         "buttonDestination": "modal",
         "contents": {
           "options": false
@@ -2663,8 +2687,16 @@ $('iframe').load( function() {
             "font-size": "16px",
             "padding-top": "16px",
             "padding-bottom": "16px"
+          },
+          "description": {
+            "font-family": "Josefin Slab, sans-serif",
+            "font-weight": "bold",
+            "font-size": "15px"
           }
         },
+        "googleFonts": [
+          "Josefin Slab"
+        ], 
         "text": {
           "button": "In den Einkaufswagen"
         }
@@ -2845,8 +2877,16 @@ $('iframe').load( function() {
             "font-size": "16px",
             "padding-top": "16px",
             "padding-bottom": "16px"
+          },
+          "description": {
+            "font-family": "Josefin Slab, sans-serif",
+            "font-weight": "bold",
+            "font-size": "15px"
           }
         },
+        "googleFonts": [
+          "Josefin Slab"
+        ], 
         "buttonDestination": "modal",
         "contents": {
           "options": false
@@ -2898,8 +2938,16 @@ $('iframe').load( function() {
             "font-size": "16px",
             "padding-top": "16px",
             "padding-bottom": "16px"
+          },
+          "description": {
+            "font-family": "Josefin Slab, sans-serif",
+            "font-weight": "bold",
+            "font-size": "15px"
           }
         },
+        "googleFonts": [
+          "Josefin Slab"
+        ], 
         "text": {
           "button": "In den Einkaufswagen"
         }
@@ -3080,8 +3128,16 @@ $('iframe').load( function() {
             "font-size": "16px",
             "padding-top": "16px",
             "padding-bottom": "16px"
+          },
+          "description": {
+            "font-family": "Josefin Slab, sans-serif",
+            "font-weight": "bold",
+            "font-size": "15px"
           }
         },
+        "googleFonts": [
+          "Josefin Slab"
+        ], 
         "buttonDestination": "modal",
         "contents": {
           "options": false
@@ -3133,8 +3189,16 @@ $('iframe').load( function() {
             "font-size": "16px",
             "padding-top": "16px",
             "padding-bottom": "16px"
+          },
+          "description": {
+            "font-family": "Josefin Slab, sans-serif",
+            "font-weight": "bold",
+            "font-size": "15px"
           }
         },
+        "googleFonts": [
+          "Josefin Slab"
+        ], 
         "text": {
           "button": "In den Einkaufswagen"
         }
@@ -3315,8 +3379,16 @@ $('iframe').load( function() {
             "font-size": "16px",
             "padding-top": "16px",
             "padding-bottom": "16px"
+          },
+          "description": {
+            "font-family": "Josefin Slab, sans-serif",
+            "font-weight": "bold",
+            "font-size": "15px"
           }
         },
+        "googleFonts": [
+          "Josefin Slab"
+        ], 
         "buttonDestination": "modal",
         "contents": {
           "options": false
@@ -3368,8 +3440,16 @@ $('iframe').load( function() {
             "font-size": "16px",
             "padding-top": "16px",
             "padding-bottom": "16px"
+          },
+          "description": {
+            "font-family": "Josefin Slab, sans-serif",
+            "font-weight": "bold",
+            "font-size": "15px"
           }
         },
+        "googleFonts": [
+          "Josefin Slab"
+        ], 
         "text": {
           "button": "In den Einkaufswagen"
         }
@@ -3550,8 +3630,16 @@ $('iframe').load( function() {
             "font-size": "16px",
             "padding-top": "16px",
             "padding-bottom": "16px"
+          },
+          "description": {
+            "font-family": "Josefin Slab, sans-serif",
+            "font-weight": "bold",
+            "font-size": "15px"
           }
         },
+        "googleFonts": [
+          "Josefin Slab"
+        ], 
         "buttonDestination": "modal",
         "contents": {
           "options": false
@@ -3603,8 +3691,16 @@ $('iframe').load( function() {
             "font-size": "16px",
             "padding-top": "16px",
             "padding-bottom": "16px"
+          },
+          "description": {
+            "font-family": "Josefin Slab, sans-serif",
+            "font-weight": "bold",
+            "font-size": "15px"
           }
         },
+        "googleFonts": [
+          "Josefin Slab"
+        ], 
         "text": {
           "button": "In den Einkaufswagen"
         }
@@ -3785,8 +3881,16 @@ $('iframe').load( function() {
             "font-size": "16px",
             "padding-top": "16px",
             "padding-bottom": "16px"
+          },
+          "description": {
+            "font-family": "Josefin Slab, sans-serif",
+            "font-weight": "bold",
+            "font-size": "15px"
           }
         },
+        "googleFonts": [
+          "Josefin Slab"
+        ], 
         "buttonDestination": "modal",
         "contents": {
           "options": false
@@ -3838,8 +3942,16 @@ $('iframe').load( function() {
             "font-size": "16px",
             "padding-top": "16px",
             "padding-bottom": "16px"
+          },
+          "description": {
+            "font-family": "Josefin Slab, sans-serif",
+            "font-weight": "bold",
+            "font-size": "15px"
           }
         },
+        "googleFonts": [
+          "Josefin Slab"
+        ], 
         "text": {
           "button": "In den Einkaufswagen"
         }
@@ -4020,8 +4132,16 @@ $('iframe').load( function() {
             "font-size": "16px",
             "padding-top": "16px",
             "padding-bottom": "16px"
+          },
+          "description": {
+            "font-family": "Josefin Slab, sans-serif",
+            "font-weight": "bold",
+            "font-size": "15px"
           }
         },
+        "googleFonts": [
+          "Josefin Slab"
+        ], 
         "buttonDestination": "modal",
         "contents": {
           "options": false
@@ -4073,8 +4193,16 @@ $('iframe').load( function() {
             "font-size": "16px",
             "padding-top": "16px",
             "padding-bottom": "16px"
+          },
+          "description": {
+            "font-family": "Josefin Slab, sans-serif",
+            "font-weight": "bold",
+            "font-size": "15px"
           }
         },
+        "googleFonts": [
+          "Josefin Slab"
+        ], 
         "text": {
           "button": "In den Einkaufswagen"
         }
@@ -4255,8 +4383,16 @@ $('iframe').load( function() {
             "font-size": "16px",
             "padding-top": "16px",
             "padding-bottom": "16px"
+          },
+          "description": {
+            "font-family": "Josefin Slab, sans-serif",
+            "font-weight": "bold",
+            "font-size": "15px"
           }
         },
+        "googleFonts": [
+          "Josefin Slab"
+        ], 
         "buttonDestination": "modal",
         "contents": {
           "options": false
@@ -4308,8 +4444,16 @@ $('iframe').load( function() {
             "font-size": "16px",
             "padding-top": "16px",
             "padding-bottom": "16px"
+          },
+          "description": {
+            "font-family": "Josefin Slab, sans-serif",
+            "font-weight": "bold",
+            "font-size": "15px"
           }
         },
+        "googleFonts": [
+          "Josefin Slab"
+        ], 
         "text": {
           "button": "In den Einkaufswagen"
         }
@@ -4490,8 +4634,16 @@ $('iframe').load( function() {
             "font-size": "16px",
             "padding-top": "16px",
             "padding-bottom": "16px"
+          },
+          "description": {
+            "font-family": "Josefin Slab, sans-serif",
+            "font-weight": "bold",
+            "font-size": "15px"
           }
         },
+        "googleFonts": [
+          "Josefin Slab"
+        ], 
         "buttonDestination": "modal",
         "contents": {
           "options": false
@@ -4543,8 +4695,16 @@ $('iframe').load( function() {
             "font-size": "16px",
             "padding-top": "16px",
             "padding-bottom": "16px"
+          },
+          "description": {
+            "font-family": "Josefin Slab, sans-serif",
+            "font-weight": "bold",
+            "font-size": "15px"
           }
         },
+        "googleFonts": [
+          "Josefin Slab"
+        ], 
         "text": {
           "button": "In den Einkaufswagen"
         }
@@ -4725,8 +4885,16 @@ $('iframe').load( function() {
             "font-size": "16px",
             "padding-top": "16px",
             "padding-bottom": "16px"
+          },
+          "description": {
+            "font-family": "Josefin Slab, sans-serif",
+            "font-weight": "bold",
+            "font-size": "15px"
           }
         },
+        "googleFonts": [
+          "Josefin Slab"
+        ], 
         "buttonDestination": "modal",
         "contents": {
           "options": false
@@ -4778,8 +4946,16 @@ $('iframe').load( function() {
             "font-size": "16px",
             "padding-top": "16px",
             "padding-bottom": "16px"
+          },
+          "description": {
+            "font-family": "Josefin Slab, sans-serif",
+            "font-weight": "bold",
+            "font-size": "15px"
           }
         },
+        "googleFonts": [
+          "Josefin Slab"
+        ], 
         "text": {
           "button": "In den Einkaufswagen"
         }
