@@ -515,13 +515,13 @@ div h2 em {
 }
 
 .col-sm-8 > .four_images_shop > iframe {
-    height: 500px !important;
+    height: 600px !important;
     line-height:500px!important;
     vertical-align:middle;
 }
 
 .col-sm-8 > .four_images_shop_s > iframe {
-    height: 500px !important;
+    height: 600px !important;
     line-height:500px!important;
     vertical-align:middle;
 }
