@@ -506,7 +506,7 @@ div h2 em {
     float: left;
     height: 500px;
     padding-left:50px;
-    max-width:275px;
+    max-width: 275px!important;
 }
 
 .col-sm-12 {
