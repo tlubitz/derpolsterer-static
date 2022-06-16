@@ -1098,12 +1098,83 @@ div > .SocialProof {
 	padding-right:5px!important;
     }
 }
+
+
 @media screen and (min-width: 600px) and (max-width: 767px) {
     #index-main {
 	margin-top:180px!important;
     }
     
  }
+
+ 
+ @media screen and (min-width: 320px) {
+    #bewertungen {
+        padding: 3rem 2rem;
+        text-align: center;
+    }
+
+    .bewertung {
+        padding-bottom: 5rem;
+    }
+
+    .b-name {
+        padding-bottom: 1rem;
+        font-weight: 900;
+    }
+
+    .stars {
+        margin-bottom: 1rem;
+    }
+
+    .b-text {
+        font-style: italic;
+    }
+
+    #bewertungen > .flex-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .bewertung a {
+        color: white;
+    }
+ }
+
+
+ @media screen and (min-width: 768px) {
+    #bewertungen {
+        padding: 3rem 6rem;
+    }
+ }
+
+
+
+ @media screen and (min-width: 992px) {
+    #bewertungen {
+        padding: 3rem 15rem;
+    }
+ }
+
+
+ @media screen and (min-width: 1200px) {
+    #bewertungen .flex-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .bewertung {
+        padding: 2rem 5rem;
+        max-width: 47rem;
+    }
+
+    #bewertungen {
+        max-width: 137rem;
+        margin: auto;
+    }
+ }
+
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (min-width: 320px) and (max-width: 767px) {
